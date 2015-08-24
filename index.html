@@ -6,96 +6,175 @@
         <title>Overpass Web Font</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="http://red-hat-overpass-fonts.s3.amazonaws.com/overpass.css" rel="stylesheet">
+        <style>
+/* Webfont: Overpass-Bold */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-Bold.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-Bold.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-Bold.svg#Overpass-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+/* Webfont: Overpass-BoldItalic */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-BoldItalic.svg#Overpass-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Overpass-Reg */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-Reg.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-Reg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-Reg.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-Reg.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-Reg.svg#Overpass-Reg') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: Overpass-Italic */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-Italic.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-Italic.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-Italic.svg#Overpass-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: Overpass-Light */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-Light.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-Light.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-Light.svg#Overpass-Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Overpass-LightItalic */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-LightItalic.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-LightItalic.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-LightItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-LightItalic.svg#Overpass-LightItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Overpass-ExtraLight */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-ExtraLight.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-ExtraLight.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-ExtraLight.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-ExtraLight.svg#Overpass-ExtraLight') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Overpass-ExtraLightItalic */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-ExtraLightItalic.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-ExtraLightItalic.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-ExtraLightItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-ExtraLightItalic.svg#Overpass-ExtraLightItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
+
+
+body{font-family:Overpass,sans-serif; max-width: 40em; margin: 0 auto; perspective: 1000px; background-color:#eee;}
+
+
+h1{font-size : 6em; transition: all .15s ease; font-weight: 400; padding: .4em;
+     user-select: none !important;
+    background-color: #4a7; color:#fff; text-align:center; border-radius: .133333em; box-shadow:  0 0 0 .1em #fff, 0 0 0 .15em #4a7; }
+
+h1:hover{transform: rotatex(-33deg) rotatey(5deg) rotatez(2deg);transition: all 1s ease; }
+a:link, a:visited{color:#36c; text-decoration:none; display:inline-block; background-color:#;}
+p small{display:block; padding-top:2em; color:#ccc;}
+
+body{text-align:center; font-size:1.6vmin; color:#444;}
+.button{text-align:center;}
+
+.sample{margin-top:5em; text-align:left; color:#545a64;}
+.sample   p{margin:0; padding:0; line-height:1em; }
+.sample     p:nth-child(1){font-size:12em;font-weight: 900;text-transform: uppercase; letter-spacing: .02em; text-indent:-.09em; line-height: .9em;}
+.sample     p:nth-child(2){font-size:2.5em;font-weight: 600; line-height: 1.4em; font-style:italic;letter-spacing: .05em;text-indent:-.09em;}
+.sample     p:nth-child(3){font-size:2.5em;font-weight: 300;  text-indent:-.09em; margin: .3em 0; }
+.sample     p:nth-child(4){font-size:.83em;font-weight: 400;  text-indent:-.09em; margin: 1.5em 0; letter-spacing:.066em;}
+.sample     p:nth-child(5){font-style:italic;font-size:6.5em;font-weight: 600;  text-indent:-.06em; margin: -.1em 0 0  0; }
+.sample     p:nth-child(6){font-size:1.7em;font-weight: 600;  text-indent:-.06em; margin:  .5em 0;  letter-spacing: .05em;}
+.sample     p:nth-child(7){font-style:italic;font-size:10em;font-weight: 300;  text-indent:-.06em; margin: -.1em 0; }
+.sample     p:nth-child(8){font-size:.75em;font-weight: 700;  text-indent:-.06em; line-height: 1.5em;margin: 1.5em 0; letter-spacing: .15em; text-transform: uppercase;}
+.sample     p:nth-child(9){font-style:italic;font-size:2.1em;font-weight: 700;  text-indent:-.06em; margin:  .5em 0;   }
+.sample     p:nth-child(10){font-size:4em;font-weight: 300;  text-indent:-.09em; margin: .3em 0;  letter-spacing: -.035em;}
+.sample     p:nth-child(11){font-size:2em;font-weight: 900; text-indent:-.09em; margin: .3em 0;  letter-spacing: .3em; word-spacing: .9em;}
+
+footer{color:#888; margin-top:6em; padding-top:2em; word-spacing: .3333em;  border-top: .1em solid #eee; text-transform: uppercase; letter-spacing: .2em; font-size: .7em;}
+a.button,
+.button a{ font-weight: 600; text-transform:uppercase; letter-spacing: .1em; background-color:#555; color:#fff !important; display:inline-block; text-decoration: none;   padding: .2em 1em;; box-shadow:0 0 0 .15em #fff, 0 0 0 .35em #444; border-radius:.1em; margin:;}
+.button a:hover{background-color:#c00;box-shadow:0 0 0 .15em #fff, 0 0 0 .35em #900;}
+
+        </style>
 
     </head>
-    <body style="font-size: 2.25vmax">
-    <h1>Overpass</h1>
-    <p style="letter-spacing: .021em;">Is an open source webfont family</p> <p style="letter-spacing: .021em; margin-bottom:2em;">Sponsored by <a href="http://www.redhat.com">Red Hat</a> </br>Inspired by <a href="http://en.wikipedia.org/wiki/Highway_Gothic">Highway Gothic</a></br> and created by <a href="http://www.delvefonts.com/"> Delve Withrington</a></p>
-<h2>To use it online</h2>
-<h4>Firstly: Include this HTML in  &lt;head&gt; </h4>
-<pre>
-&lt;link href="http://red-hat-overpass-fonts.s3.amazonaws.com/overpass.css" rel="stylesheet"&gt;
-</pre>
-<h4>Secondly: Reference Overpass by name in your CSS</h4>
-<pre>
-body{font-family: Overpass,sans-serif;}
-</pre>
-<h2>Download each weight</h2>
+    <body style="">
+    <h1>OVERPASS</h1>
+    <p style="letter-spacing: .021em;">Is an open source webfont family</p> <p style="letter-spacing: .021em; margin-bottom:2em;">Sponsored by <a href="http://www.redhat.com">Red Hat</a> </br>Inspired by <a href="http://en.wikipedia.org/wiki/Highway_Gothic">Highway Gothic</a></br> and created by <a href="http://www.delvefonts.com/"> Delve Fonts</a></p>
 
-<a class="download bold" href="http://red-hat-overpass-fonts.s3.amazonaws.com/overpass_bold-webfont.ttf">Download Overpass Bold</a>
-<a class="download regular" href="http://red-hat-overpass-fonts.s3.amazonaws.com/overpass_regular-webfont.ttf">Download Overpass Regular</a>
-<a class="download light" href="http://red-hat-overpass-fonts.s3.amazonaws.com/overpass_light-webfont.ttf">Download Overpass Light</a>
+<p class="button"><a href="https://github.com/andyfitz/overpass" class="repo">Get Overpass on GitHub</a></p>
 
 
-<h2>Get all source files on Github</h2>
-<p><a href="https://github.com/andyfitz/overpass" class="repo">Overpass Git Repository</a></p>
 
-<h2>Released under the SIL Open Font License</h2>
-<div class="copyright">
-
-<p>Copyright 2015 Red Hat, Inc.,
-with Reserved Font Name OVERPASS.</p>
-
-<p>This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at:
-<a href="http://scripts.sil.org/OFL">http://scripts.sil.org/OFL</a></p>
-
-<h4>
-<a id="user-content-sil-open-font-license" class="anchor" href="#sil-open-font-license" aria-hidden="true"><span class="octicon octicon-link"></span></a>SIL OPEN FONT LICENSE</h4>
-
-<p>Version 1.1 - 26 February 2007</p>
-
-<hr>
-
-<h4>
-<a id="user-content-preamble" class="anchor" href="#preamble" aria-hidden="true"><span class="octicon octicon-link"></span></a>PREAMBLE</h4>
-
-<p>The goals of the Open Font License (OFL) are to stimulate worldwide development of collaborative font projects, to support the font creation efforts of academic and linguistic communities, and to provide a free and open framework in which fonts may be shared and improved in partnership with others.</p>
-
-<p>The OFL allows the licensed fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. The fonts, including any derivative works, can be bundled, embedded, redistributed and/or sold with any software provided that any reserved names are not used by derivative works. The fonts and derivatives, however, cannot be released under any other type of license. The requirement for fonts to remain under this license does not apply to any document created using the fonts or their derivatives.</p>
-
-<h4>
-<a id="user-content-definitions" class="anchor" href="#definitions" aria-hidden="true"><span class="octicon octicon-link"></span></a>DEFINITIONS</h4>
-
-<p>“Font Software” refers to the set of files released by the Copyright Holder(s) under this license and clearly marked as such. This may include source files, build scripts and documentation.</p>
-
-<p>“Reserved Font Name” refers to any names specified as such after the copyright statement(s).</p>
-
-<p>“Original Version” refers to the collection of Font Software components as distributed by the Copyright Holder(s).</p>
-
-<p>“Modified Version” refers to any derivative made by adding to, deleting, or substituting—in part or in whole—any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.</p>
-
-<p>“Author” refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software.</p>
-
-<h4>
-<a id="user-content-permission--conditions" class="anchor" href="#permission--conditions" aria-hidden="true"><span class="octicon octicon-link"></span></a>PERMISSION &amp; CONDITIONS</h4>
-
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:</p>
-
-<p>1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.</p>
-
-<p>2) Original or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.</p>
-
-<p>3) No Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as presented to the users.</p>
-
-<p>4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written permission.</p>
-
-<p>5) The Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.</p>
-
-<h4>
-<a id="user-content-termination" class="anchor" href="#termination" aria-hidden="true"><span class="octicon octicon-link"></span></a>TERMINATION</h4>
-
-<p>This license becomes null and void if any of the above conditions are not met.</p>
-
-<h4>
-<a id="user-content-disclaimer" class="anchor" href="#disclaimer" aria-hidden="true"><span class="octicon octicon-link"></span></a>DISCLAIMER</h4>
-
-<p>THE FONT SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.</p>
+<div class="sample">
+    <p>Hello</p>
+    <p>everybody out there using minix</p>
+    <p>I’m doing a (free) operating system </p>
+    <p>(just a hobby, won’t be big and
+professional like gnu) for 386(486) AT clones. This has been </p>
+<p>brewing since </p>
+<p>april, and is starting to get ready. I’d like any</p>
+<p>feedback </p>
+<p>on things people like/dislike in minix, as my OS resembles it somewhat</p>
+<p>(same physical layout of the file-system(</p>
+<p>due to practical reasons</p>
+<p>) among other things).</p>
 
 </div>
+<p><small>Taken from Linus Torvalds’s 1991 Linux announcement email</small></p>
+<p></p>
+
+
+
+<footer><p>Copyright 2015 Red Hat, Inc., with Reserved Font Name OVERPASS.</p>
+<p>Released under the <a href="http://scripts.sil.org/OFL">SIL Open Font License</a></p></footer>
     </body>
 </html>
