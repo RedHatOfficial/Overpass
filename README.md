@@ -3,20 +3,7 @@
 
 Sponsored by [Red Hat](http//www.redhat.com), Inspired by [Highway Gothic](en.wikipedia.org/wiki/Highway_Gothic), Designed by [Delve Wirthington](www.delvefonts.com)
 
-
-
-
-
-### Use Overpass online:
-**1** Include this HTML in `<head>`
-
-    <link href="http://red-hat-overpass-fonts.s3.amazonaws.com/overpass.css" rel="stylesheet">
-    
-**2** Reference Overpass in your CSS
-
-    body{font-family: Overpass,sans-serif;}
-    
-    
+        
 
 For more information please visit  [overpassfont.org](http://www.overpassfont.org  "overpassfont.org")
 
