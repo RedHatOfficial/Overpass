@@ -1,7 +1,7 @@
 # Overpass
 **Overpass** — _an open source web font family_
 
-Sponsored by [Red Hat](http//www.redhat.com), Inspired by [Highway Gothic](en.wikipedia.org/wiki/Highway_Gothic), Designed by [Delve Wirthington](www.delvefonts.com)
+Sponsored by [Red Hat](http://www.redhat.com), Inspired by [Highway Gothic](http://en.wikipedia.org/wiki/Highway_Gothic), Designed by [Delve Wirthington](http://www.delvefonts.com)
 
         
 
