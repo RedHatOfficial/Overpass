@@ -10,7 +10,17 @@ For more information, please visit  [overpassfont.org](http://www.overpassfont.o
 
 
 ---
+## Contributors
 
+#### Designers
+* Delve Withrington
+* Dave Bailey
+* Thomas Jockin
+
+#### Reviewers
+* Jakub Steiner
+* Ben Dubrovsky
+* Andy Fitzsimon
 
 
 ## License
