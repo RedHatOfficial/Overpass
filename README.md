@@ -28,6 +28,4 @@ For more information, please visit  [overpassfont.org](http://www.overpassfont.o
 Copyright 2015 Red Hat, Inc.,
 with Reserved Font Name OVERPASS.
 
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
-This license is copied below, and is also available with a FAQ at:
-http://scripts.sil.org/OFL
+This Font Software is licensed under the SIL Open Font License, Version 1.1. http://scripts.sil.org/OFL
