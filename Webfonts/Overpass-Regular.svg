@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" >
-<font id="Overpass-Reg">
+<font id="Overpass-Regular">
 <font-face  font-family="Overpass" units-per-em="2048" ascent="1536" descent="-512" font-style="normal" font-weight="400" font-stretch="normal" cap-height="1434" x-height="1047" underline-position="-270" underline-thickness="184" />
 <hkern u1="&#xd0;" u2="&#xdd;" k="113" />
 <hkern u1="&#xd0;" u2="A" k="100" />
