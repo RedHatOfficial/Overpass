@@ -1,0 +1,16 @@
+{
+  "name": "overpass",
+  "version": "2.1.0",
+  "homepage": "http://overpassfont.org/",
+  "authors": [
+    "Delve Fonts",
+    "Red Hat"
+  ],
+  "description": "Overpass — an open source web font family",
+  "main": "Webfonts/recommended.css",
+  "keywords": [
+    "font",
+    "overpath"
+  ],
+  "license": "SIL"
+}
