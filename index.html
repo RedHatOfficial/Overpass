@@ -6,6 +6,8 @@
         <title>Overpass Web Font</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
         <style>
 /* Webfont: Overpass-Bold */@font-face {
     font-family: 'Overpass';
@@ -105,75 +107,222 @@
     text-rendering: optimizeLegibility;
 }
 
+*{box-sizing:border-box;}
+label{text-transform: uppercase; font-weight: 600; font-style: normal; 
+  padding: .2em .4em;}
+
+body{padding:2em;text-align:left; max-width: 55em;font-family:Overpass,sans-serif; margin: 0 auto; color:#545a64; background-color:#eee;
+font-size: 1rem;}
+label{transition: box-shadow .25s ease}
+
+.x05{font-size: .5em ;}
+.x066{font-size: .66em; }
+.x075{font-size: .75em; }
+.x08{font-size: .8em; }
+.x1{font-size: 1em;}
+.x15{font-size: 1.5em;}
+.x2{font-size: 2em;}
+.x3{font-size: 3em;}
+.x4{font-size: 4em;}
+.x5{font-size: 5em;}
+.x6{font-size: 6em;}
+.x7{font-size: 7em;}
+
+input + label:hover{color:#555;}
+
+.padd .sample-line{overflow:hidden; white-space:nowrap;}
+
+.sample-line{line-height: 1.33em;  margin-bottom:1rem;  }
+.sample-line:before{content:""; clear:both; height: 1em; display:block; width: 100%; height: 1rem; border-top: 1px solid #ddd;}
+
+
+#type-sample{margin: 1rem auto;font-family:Overpass,sans-serif;display:block;  font-size: 2em; appearance:none; border:0; padding: .3333em .6em; color:#333;background-color: rgba(222,222,222,0.3); outline:0; margin-bottom:1rem; width: 100%; 
+&:focus,
+  &:hover{background-color:#ddd;color:#000;}
+}
+
+
+.extra-light{font-weight: 300;}
+.light{font-weight: 400;}
+.regular{font-weight: 600;}
+.bold{font-weight: 700;}
+.italic {font-style:italic}
+.uppercase, .caps{text-transform:uppercase;}
+
+
+.grid{font-size: 3.5rem; margin: 4rem auto; color:#888ea2;
+  span{user-select:none;text-align:center;display:inline-block;position:relative; 
+    transition:none; vertical-align:top; width: 1.5em; line-height:2em;height:2em; box-shadow: 0 0 0 1px rgba(0,0,0,0.015); margin: .5px;
+    
+    &:hover{transition:transform .2s cubic-bezier(0,1,.9,1) ;transform:scale(2.5);z-index:4; box-shadow: 0 .15em .25em 1px rgba(0,0,0,0.25); cursor:default; background-color:#fff; color:#000; }
+  }
+}
 
 
 
+label{cursor:pointer; color:#aaa; font-size: .7em;;display:inline-block; 
+  line-height:3em; height: 3em; margin-bottom:1em;}
+
+input:checked + label{ box-shadow: 0 .5em 0 -.2em #4a7; color:#333;}
+#italic:checked ~ div{font-style: italic}
+#non-italic:checked ~ div{font-style: normal}
 
 
-body{font-family:Overpass,sans-serif; max-width: 40em; margin: 0 auto; perspective: 1000px; background-color:#eee;}
+#uppercase:checked ~ div{text-transform: uppercase;}
+#lowercase:checked ~ div{text-transform: lowercase;}
 
 
-h1{font-size : 6em; transition: all .15s ease; font-weight: 400; padding: .4em;
-     user-select: none !important;
-    background-color: #4a7; color:#fff; text-align:center; border-radius: .133333em; box-shadow:  0 0 0 .1em #fff, 0 0 0 .15em #4a7; }
+#extralight-variant:checked ~ div{font-weight: 300}
+#light-variant:checked ~ div{font-weight: 400}
+#regular-variant:checked ~ div{font-weight: 600}
+#bold-variant:checked ~ div{font-weight: 700}
 
-a:link, a:visited{color:#36c; text-decoration:none; display:inline-block; background-color:#;}
-p small{display:block; padding-top:2em; color:#ccc;}
+input[type="radio"]{display:none;}
 
-body{text-align:center; font-size:1.6vmin; color:#444;}
-.button{text-align:center;}
+h1{    width: 7em; margin: 3rem 0;
+font-size: 3em;
+    transition: all .15s ease;
+    font-weight: 400;
+    padding: .9em 0; float:left;
+    user-select: none !important;
+    background-color: #4a7;
+    color: #fff;
+    text-align: center;
+    border-radius: .133333em;
+    box-shadow: 0 0 0 .1em #fff, 0 0 0 .15em #4a7; margin-right: 1em;
+}
+.vr{border-left: .1em solid; opacity:.2; margin: .2em; margin-right:.5em;  height: 2em;}
 
-.sample{margin-top:5em; text-align:left; color:#545a64;}
-.sample   p{margin:0; padding:0; line-height:1em; }
-.sample     p:nth-child(1){font-size:12em;font-weight: 900;text-transform: uppercase; letter-spacing: .02em; text-indent:-.09em; line-height: .9em;}
-.sample     p:nth-child(2){font-size:2.5em;font-weight: 600; line-height: 1.4em; font-style:italic;letter-spacing: .05em;text-indent:-.09em;}
-.sample     p:nth-child(3){font-size:2.5em;font-weight: 300;  text-indent:-.09em; margin: .3em 0; }
-.sample     p:nth-child(4){font-size:.83em;font-weight: 400;  text-indent:-.09em; margin: 1.5em 0; letter-spacing:.066em;}
-.sample     p:nth-child(5){font-style:italic;font-size:6.5em;font-weight: 600;  text-indent:-.06em; margin: -.1em 0 0  0; }
-.sample     p:nth-child(6){font-size:1.7em;font-weight: 600;  text-indent:-.06em; margin:  .5em 0;  letter-spacing: .05em;}
-.sample     p:nth-child(7){font-style:italic;font-size:10em;font-weight: 300;  text-indent:-.06em; margin: -.1em 0; }
-.sample     p:nth-child(8){font-size:.75em;font-weight: 700;  text-indent:-.06em; line-height: 1.5em;margin: 1.5em 0; letter-spacing: .15em; text-transform: uppercase;}
-.sample     p:nth-child(9){font-style:italic;font-size:2.1em;font-weight: 700;  text-indent:-.06em; margin:  .5em 0;   }
-.sample     p:nth-child(10){font-size:4em;font-weight: 300;  text-indent:-.09em; margin: .3em 0;  letter-spacing: -.035em;}
-.sample     p:nth-child(11){font-size:2em;font-weight: 900; text-indent:-.09em; margin: .3em 0;  letter-spacing: .3em; word-spacing: .9em;}
+#type-sample, input, #inner-editor{}
 
-footer{color:#888; margin-top:6em; padding-top:2em; word-spacing: .3333em;  border-top: .1em solid #eee; text-transform: uppercase; letter-spacing: .2em; font-size: .7em;}
-a.button,
-.button a{ font-weight: 600; text-transform:uppercase; letter-spacing: .1em; background-color:#555; color:#fff !important; display:inline-block; text-decoration: none;   padding: .2em 1em;; box-shadow:0 0 0 .15em #fff, 0 0 0 .35em #444; border-radius:.1em; margin:;}
+.about{min-width: 10em; float:left;}
+
+hr{width: 100%; clear:both; opacity:0;}
+
+.button a{ font-weight: 600; text-transform:uppercase; letter-spacing: .1em; background-color:#555; color:#fff !important; display:inline-block; text-decoration: none;   padding: .2em 1em; box-shadow:0 0 0 .15em #fff, 0 0 0 .35em #444; border-radius:.1em; }
+
 .button a:hover{background-color:#c00;box-shadow:0 0 0 .15em #fff, 0 0 0 .35em #900;}
 
+.editor{display:block; width: 100%; height: auto;}
+
+
+a:link, a:visited{color:#36c; text-decoration:none; display:inline-block; }
+
+.padd{padding: 0em 1em }
+
+.spec{line-height:1em; margin:1rem 0;}
         </style>
 
     </head>
     <body style="">
-    <h1>OVERPASS</h1>
-    <p style="letter-spacing: .021em;">Is an open source webfont family</p> <p style="letter-spacing: .021em; margin-bottom:2em;">Sponsored by <a href="http://www.redhat.com">Red Hat</a> </br>Inspired by <a href="http://en.wikipedia.org/wiki/Highway_Gothic">Highway Gothic</a></br> and created by <a href="http://www.delvefonts.com/"> Delve Fonts</a></p>
+  <h1>OVERPASS</h1>
 
-<p class="button"><a href="https://github.com/andyfitz/overpass" class="repo">Get Overpass on GitHub</a></p>
+<br>
+<div class="about">
+<p >An open source webfont family inspired by <a href="http://en.wikipedia.org/wiki/Highway_Gothic">Highway Gothic.</a> <br>Sponsored by <a href="http://www.redhat.com">Red Hat</a> Created by <a href="http://www.delvefonts.com/"> Delve Fonts</a></p>
 
-
-
-<div class="sample">
-    <p>Hello</p>
-    <p>everybody out there using minix</p>
-    <p>I’m doing a (free) operating system </p>
-    <p>(just a hobby, won’t be big and
-professional like gnu) for 386(486) AT clones. This has been </p>
-<p>brewing since </p>
-<p>april, and is starting to get ready. I’d like any</p>
-<p>feedback </p>
-<p>on things people like/dislike in minix, as my OS resembles it somewhat</p>
-<p>(same physical layout of the file-system(</p>
-<p>due to practical reasons</p>
-<p>) among other things).</p>
-
+<p class="button"><a href="https://github.com/andyfitz/overpass" class="repo">Get Overpass on GitHub</a></p> 
+<p><a style="font-size: small" href="https://github.com/RedHatBrand/overpass/releases/download/2.1/overpass-fonts-ttf-2.1.zip">Download only the TTF Files (898kb)</a>
+<br>
+<a style="font-size: small" href="https://github.com/RedHatBrand/overpass/releases/download/2.1/overpass-fonts-web-fonts-2.1.zip">Download only the Webfont Files (967kb)</a></p>
 </div>
-<p><small>Taken from Linus Torvalds’s 1991 Linux announcement email</small></p>
-<p></p>
+<hr>
 
 
 
-<footer><p>Copyright 2015 Red Hat, Inc., with Reserved Font Name OVERPASS.</p>
-<p>Released under the <a href="http://scripts.sil.org/OFL">SIL Open Font License</a></p></footer>
+
+<br>
+
+<input id="extralight-variant" type="radio" name="variant" />
+<label for="extralight-variant">300</label>
+
+<input id="light-variant" type="radio" name="variant" checked />
+<label for="light-variant">400</label>
+
+<input id="regular-variant" type="radio" name="variant" />
+<label for="regular-variant">600</label>
+
+<input id="bold-variant" type="radio" name="variant" />
+<label for="bold-variant">700</label>
+
+<span class="vr" ></span>
+<input id="italic" type="radio" name="italics" />
+<label for="italic">italic</label>
+
+<input id="non-italic" type="radio" name="italics" checked/>
+<label for="non-italic">non</label>
+
+
+<span class="vr" ></span>
+<input id="uppercase" type="radio" name="uppercase" />
+<label for="uppercase">upper </label>
+
+<input id="standard" type="radio" name="uppercase" checked/>
+<label for="standard">regular</label>
+
+
+<input id="lowercase" type="radio" name="uppercase" />
+<label for="lowercase">lower </label>
+
+<br>
+
+<div>
+<p class="x075">Hello everybody out there using minix — I’m doing a (free) operating
+system (just a hobby, won’t be big and professional like gnu) for 386
+(486) AT clones. This has been brewing since april, and is starting to
+get ready. I’d like any feedback on things people like/dislike in
+minix, as my OS resembles it somewhat (same physical layout of the
+  file-system (due to practical reasons) among other things).</p>
+<p>Hello everybody out there using minix — I’m doing a (free) operating
+system (just a hobby, won’t be big and professional like gnu) for 386
+(486) AT clones. This has been brewing since april, and is starting to
+get ready. I’d like any feedback on things people like/dislike in
+minix, as my OS resembles it somewhat (same physical layout of the
+  file-system (due to practical reasons) among other things).</p>
+  
+  
+  
+  <p class="x15">Hello everybody out there using minix — I’m doing a (free) operating
+system (just a hobby, won’t be big and professional like gnu) for 386
+(486) AT clones. This has been brewing since april, and is starting to
+get ready. I’d like any feedback on things people like/dislike in
+minix, as my OS resembles it somewhat (same physical layout of the
+  file-system (due to practical reasons) among other things).</p>
+  <br><br>
+</div>
+
+
+
+
+<label class="editor"> Click below to edit sample text
+  <input onkeyup="getVal()" id="type-sample" value="your text here" type="text"  onclick="this.value = &#39;&#39;" />
+</label>
+
+<div class="padd">
+  <div class="sample-line x075">If I have seen further, it is by standing on the shoulders of giants. — Isaac Newton</div>
+  <div class="sample-line x1  ">If I have seen further, it is by standing on the shoulders of giants. — Isaac Newton</div>
+  <div class="sample-line x15">If I have seen further, it is by standing on the shoulders of giants. — Isaac Newton</div>
+  <div class="sample-line x2  ">If I have seen further, it is by standing on the shoulders of giants. — Isaac Newton</div>
+  <div class="sample-line x4 ">If I have seen further, it is by standing on the shoulders of giants</div>
+  <div class="sample-line x7">If I have seen further</div>
+</div>
+
+
+<div class="grid">1234567890abcdefghijklmnopqrstuvwxyz~!@#$%^&*()_+`-=,./<>?[]\{}|;':"°•›‹</div>
+  
+  <p class="x3 bold spec">Lorem ipsum dolor sit amet,</p><p class="spec x4 extra-light"> consectetur adipiscing elit. Vestibulum justo risus</p><p class="spec bold caps"> interdum id condimentum eget, fermentum vel ex. </p><p class="spec caps x2 regular italic">Curabitur pharetra, tellus id finibus accumsan,</p><p class="spec "> ligula est pharetra ex, eget lobortis tortor mauris vitae tortor. </p><p class="spec">Vestibulum interdum ligula vel gravida euismod. </p><p class="spec">Morbi suscipit consectetur elit, eu ultrices felis maximus sit amet. Aliquam aliquam ex eu pharetra venenatis. Pellentesque semper vehicula nisi, non sollicitudin purus dignissim et. Fusce sit amet arcu sed tellus euismod consequat id in libero. Quisque congue varius metus, sit amet aliquam dolor sagittis ut. Donec blandit quam at diam sagittis, sit amet gravida arcu faucibus. In laoreet commodo dui, eget congue orci molestie id. Duis maximus erat quis elit ornare, id elementum orci laoreet. Maecenas consectetur erat nibh, ac luctus eros dictum sed. Integer et est vel tellus egestas imperdiet. Duis auctor ut lorem non facilisis. Suspendisse potenti.</p>
+  <br><br><br>
+
+          <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js" ></script>
+        <script>$(document).ready(function() {
+    $(".grid").lettering();
+  });
+
+//
+$("#type-sample").on('keyup change', function(event) {
+       var data=$(this).val();
+       $(".sample-line").text(data);
+});</script>
     </body>
 </html>
