@@ -1,58 +1,556 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Overpass Web Font</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
-        <style>
 
-@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-Bold.eot);src:url(//overpassfont.org/Webfonts/Overpass-Bold.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-Bold.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-Bold.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-Bold.svg#Overpass-Bold) format("svg");font-style:normal;font-weight:700;text-rendering:optimizeLegibility}@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-BoldItalic.eot);src:url(//overpassfont.org/Webfonts/Overpass-BoldItalic.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-BoldItalic.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-BoldItalic.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-BoldItalic.svg#Overpass-BoldItalic) format("svg");font-style:italic;font-weight:700;text-rendering:optimizeLegibility}@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-Reg.eot);src:url(//overpassfont.org/Webfonts/Overpass-Reg.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-Reg.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-Reg.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-Reg.svg#Overpass-Reg) format("svg");font-style:normal;font-weight:600;text-rendering:optimizeLegibility}@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-Italic.eot);src:url(//overpassfont.org/Webfonts/Overpass-Italic.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-Italic.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-Italic.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-Italic.svg#Overpass-Italic) format("svg");font-style:italic;font-weight:600;text-rendering:optimizeLegibility}@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-Light.eot);src:url(//overpassfont.org/Webfonts/Overpass-Light.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-Light.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-Light.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-Light.svg#Overpass-Light) format("svg");font-style:normal;font-weight:400;text-rendering:optimizeLegibility}@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-LightItalic.eot);src:url(//overpassfont.org/Webfonts/Overpass-LightItalic.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-LightItalic.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-LightItalic.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-LightItalic.svg#Overpass-LightItalic) format("svg");font-style:italic;font-weight:400;text-rendering:optimizeLegibility}@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-ExtraLight.eot);src:url(//overpassfont.org/Webfonts/Overpass-ExtraLight.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-ExtraLight.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-ExtraLight.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-ExtraLight.svg#Overpass-ExtraLight) format("svg");font-style:normal;font-weight:300;text-rendering:optimizeLegibility}@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.eot);src:url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.svg#Overpass-ExtraLightItalic) format("svg");font-style:italic;font-weight:300;text-rendering:optimizeLegibility}*{box-sizing:border-box}label{text-transform:uppercase;font-weight:600;font-style:normal;padding:.2em .4em}body{padding:2em;text-align:left;max-width:90em;font-family:Overpass,sans-serif;margin:0 auto;color:#545a64;background-color:#eee;font-size:1rem}label{transition:all .25s ease}.x05{font-size:.5em}.x066{font-size:.66em}.x075{font-size:.75em}.x08{font-size:.8em}.x1{font-size:1em}.x15{font-size:1.5em}.x2{font-size:2em}.x3{font-size:3em}.x4{font-size:4em}.x5{font-size:5em}.x6{font-size:6em}.x7{font-size:7em}.x13{font-size:13em}input + label:hover{color:#555}.padd .sample-line{overflow:hidden;white-space:nowrap}.sample-line{line-height:1.33em;margin-bottom:1rem}.sample-line:before{content:"";clear:both;height:1em;display:block;width:100%;height:1rem;border-top:1px solid #ddd}#type-sample{margin:1rem auto;font-family:Overpass,sans-serif;display:block;font-size:2em;appearance:none;border:0;padding: .6666em;color:#333;background-color:rgba(222,222,222,0.3);outline:0;margin-bottom:1rem;width:100%}#type-sample:focus,#type-sample:hover{background-color:#ddd;color:#000}.extra-light{font-weight:300}.light{font-weight:400}.regular{font-weight:600}.bold{font-weight:700}.italic{font-style:italic}.uppercase,.caps{text-transform:uppercase}.grid{font-size:3.5rem;margin:4rem auto;color:#aaa}.grid span{user-select:none;text-align:center;display:inline-block;position:relative;transition:none;vertical-align:top;width:1.5em;line-height:2em;height:2em;box-shadow:0 0 0 1px rgba(0,0,0,0.015);margin:.5px}.grid span:focus,.grid span:hover{transition:transform .2s cubic-bezier(0.65, 0.09, 0.39, 1.45) .1s;transform:scale(2.5);z-index:4;box-shadow:0 .15em .25em 1px rgba(0,0,0,0.25);cursor:default;background-color:#fff;color:#000}label{cursor:pointer;color:#aaa;font-size:.7rem;display:inline-block;line-height:3em;height:3em;margin-bottom:1em}input:checked + label{olor:#333;color:#fff;background-color:#4a7}#italic:checked ~ div{font-style:italic}#non-italic:checked ~ div{font-style:normal}#uppercase:checked ~ div{text-transform:uppercase}#lowercase:checked ~ div{text-transform:lowercase}#extralight-variant:checked ~ div{font-weight:300}#light-variant:checked ~ div{font-weight:400}#regular-variant:checked ~ div{font-weight:600}#bold-variant:checked ~ div{font-weight:700}input[type="radio"]{display:none}h1{width:7em;margin:3rem 0;font-size:3em;transition:all .15s ease;font-weight:400;padding:.9em 0;float:left;user-select:none!important;background-color:#4a7;color:#fff;text-align:center;border-radius:.133333em;box-shadow:0 0 0 .1em #fff,0 0 0 .15em #4a7;margin-right:1em}.vr{border-left:.1em solid;opacity:.2;margin:.2em;margin-right:.5em;height:2em}.about{min-width:10em;float:left}hr{width:100%;clear:both;opacity:0}.button a{font-weight:600;text-transform:uppercase;letter-spacing:.1em;background-color:#555;color:#fff!important;display:inline-block;text-decoration:none;padding:.2em 1em;box-shadow:0 0 0 .15em #fff,0 0 0 .35em #444;border-radius:.1em}.button a:hover{background-color:#c00;box-shadow:0 0 0 .15em #fff,0 0 0 .35em #900}.editor{display:block;width:100%;height:auto}a:link,a:visited{color:#396;font-weight:600;text-decoration:none;display:inline-block}.padd{padding:0 1em}.spec{line-height:1em;margin:1rem 0}body:after{content:"Font Controls";display:block;position:fixed;text-align:center;text-transform:uppercase;font-weight:800;padding-top:1em;background-color:#fff;box-shadow:0 .5em 3em rgba(0,0,0,0.3);font-size:1rem;width:18em;height:22em;right:.5em;bottom:.5em;z-index:5;font-size:.7rem}label:nth-child(5),label:nth-child(7),label:nth-child(9),label:nth-child(11),label:nth-child(13),label:nth-child(15),label:nth-child(17),label:nth-child(19),label:nth-child(21){position:fixed;bottom:.5em;right:.5em;width:18em;text-align:center;z-index:7}label:nth-child(7){bottom:3.5em}label:nth-child(9){bottom:6.5em}label:nth-child(11){bottom:9.5em}label:nth-child(13){bottom:12.5em;right:9em;width:9.5em}label:nth-child(15){bottom:12.5em;width:9em}label:nth-child(17){bottom:15.5em;width:6em;right:6.5em}label:nth-child(19){bottom:15.5em;width:6em;right:12.5em}label:nth-child(21){bottom:15.5em;width:6em}
+<style>
 
-a,input,label{-webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-user-select: none;  user-select:none;}
-
-@media (max-width: 45em){ 
-
-  h1{width: 100%;}
-.repo{display:block; width: 100%; line-height:4em; text-align:center; border:none; box-shadow: none !important;}
-body:after{width: 100%; right:0; height: 7em; bottom:0;  color: transparent;}
-
-
-label:nth-child(5){bottom:.25em;width: 25%;}
-label:nth-child(7){bottom:.25em;width: 25%; right:25%;}
-label:nth-child(9){bottom:.25em;width: 25%; right: 50%;}
-label:nth-child(11){bottom:.25em;right: 75%; width: 25%;}
-
-label:nth-child(13){bottom:3.5em; width: 20%; right:0;}
-label:nth-child(15){bottom:3.5em; width: 20%; right:20%;}
-label:nth-child(17){bottom:3.5em; width: 20%; right:40%;}
-label:nth-child(19){bottom:3.5em; width: 20%; right:60%;}
-label:nth-child(21){bottom:3.5em; width: 20%;right:80%;}
-
-body{padding: 2em 1em;}
-
-
+.nojs .sample-line {
+  display: none !important; /*no javascript, no sample text replication*/
 }
 
-.sponsor{margin: 5em auto;   width: 19em;  padding-bottom:12em;}
-.sponsor p{color:white; font-style:normal;text-transform: uppercase;font-weight: 600; background-color:#c00; display:block; width: 19em; padding: .666em 1em; letter-spacing:.079em;}
-        </style>
+input, body {
+  font-family: Overpass,sans-serif;
+}
+
+#uppercase:checked ~ input,
+#uppercase:checked ~ div, .caps, .uppercase, label {
+  text-transform: uppercase;
+}
+
+.about, h1 {
+  float: left;
+}
+
+.grid span, body:after, h1 {
+  text-align: center;
+}
+
+@font-face {
+  font-family: Overpass;
+  src: url(//overpassfont.org/Webfonts/Overpass-Bold.eot);
+  src: url(//overpassfont.org/Webfonts/Overpass-Bold.eot?#iefix) format("embedded-opentype"), url(//overpassfont.org/Webfonts/Overpass-Bold.woff) format("woff"), url(//overpassfont.org/Webfonts/Overpass-Bold.ttf) format("truetype"), url(//overpassfont.org/Webfonts/Overpass-Bold.svg#Overpass-Bold) format("svg");
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: Overpass;
+  src: url(//overpassfont.org/Webfonts/Overpass-BoldItalic.eot);
+  src: url(//overpassfont.org/Webfonts/Overpass-BoldItalic.eot?#iefix) format("embedded-opentype"), url(//overpassfont.org/Webfonts/Overpass-BoldItalic.woff) format("woff"), url(//overpassfont.org/Webfonts/Overpass-BoldItalic.ttf) format("truetype"), url(//overpassfont.org/Webfonts/Overpass-BoldItalic.svg#Overpass-BoldItalic) format("svg");
+  font-style: italic;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: Overpass;
+  src: url(//overpassfont.org/Webfonts/Overpass-Reg.eot);
+  src: url(//overpassfont.org/Webfonts/Overpass-Reg.eot?#iefix) format("embedded-opentype"), url(//overpassfont.org/Webfonts/Overpass-Reg.woff) format("woff"), url(//overpassfont.org/Webfonts/Overpass-Reg.ttf) format("truetype"), url(//overpassfont.org/Webfonts/Overpass-Reg.svg#Overpass-Reg) format("svg");
+  font-style: normal;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: Overpass;
+  src: url(//overpassfont.org/Webfonts/Overpass-Italic.eot);
+  src: url(//overpassfont.org/Webfonts/Overpass-Italic.eot?#iefix) format("embedded-opentype"), url(//overpassfont.org/Webfonts/Overpass-Italic.woff) format("woff"), url(//overpassfont.org/Webfonts/Overpass-Italic.ttf) format("truetype"), url(//overpassfont.org/Webfonts/Overpass-Italic.svg#Overpass-Italic) format("svg");
+  font-style: italic;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: Overpass;
+  src: url(//overpassfont.org/Webfonts/Overpass-Light.eot);
+  src: url(//overpassfont.org/Webfonts/Overpass-Light.eot?#iefix) format("embedded-opentype"), url(//overpassfont.org/Webfonts/Overpass-Light.woff) format("woff"), url(//overpassfont.org/Webfonts/Overpass-Light.ttf) format("truetype"), url(//overpassfont.org/Webfonts/Overpass-Light.svg#Overpass-Light) format("svg");
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: Overpass;
+  src: url(//overpassfont.org/Webfonts/Overpass-LightItalic.eot);
+  src: url(//overpassfont.org/Webfonts/Overpass-LightItalic.eot?#iefix) format("embedded-opentype"), url(//overpassfont.org/Webfonts/Overpass-LightItalic.woff) format("woff"), url(//overpassfont.org/Webfonts/Overpass-LightItalic.ttf) format("truetype"), url(//overpassfont.org/Webfonts/Overpass-LightItalic.svg#Overpass-LightItalic) format("svg");
+  font-style: italic;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: Overpass;
+  src: url(//overpassfont.org/Webfonts/Overpass-ExtraLight.eot);
+  src: url(//overpassfont.org/Webfonts/Overpass-ExtraLight.eot?#iefix) format("embedded-opentype"), url(//overpassfont.org/Webfonts/Overpass-ExtraLight.woff) format("woff"), url(//overpassfont.org/Webfonts/Overpass-ExtraLight.ttf) format("truetype"), url(//overpassfont.org/Webfonts/Overpass-ExtraLight.svg#Overpass-ExtraLight) format("svg");
+  font-style: normal;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: Overpass;
+  src: url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.eot);
+  src: url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.eot?#iefix) format("embedded-opentype"), url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.woff) format("woff"), url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.ttf) format("truetype"), url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.svg#Overpass-ExtraLightItalic) format("svg");
+  font-style: italic;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+* {
+  box-sizing: border-box;
+}
+
+label {
+  font-weight: 600;
+  font-style: normal;
+  padding: .2em .4em;
+  transition: all .25s ease;
+}
+
+#italic:checked ~ input,
+#italic:checked ~ div, .italic {
+  font-style: italic;
+}
+
+body {
+  padding: 2em;
+  text-align: left;
+  max-width: 90em;
+  margin: 0 auto;
+  color: #545a64;
+  background-color: #eee;
+  font-size: 1rem;
+}
+
+.x05 {
+  font-size: .5em;
+}
+
+.x066 {
+  font-size: .66em;
+}
+
+.x075 {
+  font-size: .75em;
+}
+
+.x08 {
+  font-size: .8em;
+}
+
+.x1 {
+  font-size: 1em;
+}
+
+.x15 {
+  font-size: 1.5em;
+}
+
+.x2 {
+  font-size: 2em;
+}
+
+.x3, h1 {
+  font-size: 3em;
+}
+
+.x4 {
+  font-size: 4em;
+}
+
+.x5 {
+  font-size: 5em;
+}
+
+.x6 {
+  font-size: 6em;
+}
+
+.x7 {
+  font-size: 7em;
+}
+
+.x13 {
+  font-size: 13em;
+}
+
+input + label:hover {
+  color: #555;
+}
+
+.padd .sample-line {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sample-line {
+  line-height: 1.33em;
+  margin-bottom: 1rem;
+}
+
+.sample-line:before {
+  content: "";
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.button a, .grid span, label {
+  display: inline-block;
+}
+
+#type-sample {
+  margin: 1rem auto;
+  display: block;
+  font-size: 2em;
+  appearance: none;
+  border: 0;
+  padding: .6666em;
+  color: #333;
+  background-color: rgba(222, 222, 222, 0.3);
+  outline: 0;
+  width: 100%;
+}
+
+#type-sample:focus, #type-sample:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.extra-light {
+  font-weight: 300;
+}
+
+.light {
+  font-weight: 400;
+}
+
+.regular {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.grid {
+  font-size: 3.5rem;
+  margin: 4rem auto;
+  color: #aaa;
+}
+
+.grid span {
+  user-select: none;
+  position: relative;
+  transition: none;
+  vertical-align: top;
+  width: 1.5em;
+  line-height: 2em;
+  height: 2em;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.015);
+  margin: .5px;
+}
+
+.grid span:focus, .grid span:hover {
+  transition: transform 0.2s cubic-bezier(0.65, 0.09, 0.39, 1.45) 0.1s;
+  transform: scale(2.5);
+  z-index: 4;
+  box-shadow: 0 0.15em 0.25em 1px rgba(0, 0, 0, 0.25);
+  cursor: default;
+  background-color: #fff;
+  color: #000;
+}
+
+h1, input:checked + label {
+  background-color: #4a7;
+  color: #fff;
+}
+
+label {
+  cursor: pointer;
+  color: #aaa;
+  font-size: .7rem;
+  line-height: 3em;
+  height: 3em;
+  margin-bottom: 1em;
+}
+
+#non-italic:checked ~ div, .sponsor p {
+  font-style: normal;
+}
+
+#lowercase:checked ~ input,
+#lowercase:checked ~ div {
+  text-transform: lowercase;
+}
+
+#extralight-variant:checked ~ input,
+#extralight-variant:checked ~ div {
+  font-weight: 300;
+}
+
+#light-variant:checked ~ input,
+#light-variant:checked ~ div {
+  font-weight: 400;
+}
+
+#regular-variant:checked ~ input,
+#regular-variant:checked ~ div {
+  font-weight: 600;
+}
+
+#bold-variant:checked ~, input
+#bold-variant:checked ~ div {
+  font-weight: 700;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+h1 {
+  width: 7em;
+  margin: 3rem 1em 3rem 0;
+  transition: all .15s ease;
+  font-weight: 400;
+  padding: .9em 0;
+  user-select: none !important;
+  border-radius: .133333em;
+  box-shadow: 0 0 0 .1em #fff,0 0 0 .15em #4a7;
+}
+
+.editor, hr {
+  width: 100%;
+}
+
+.button a, a:link, a:visited {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.vr {
+  border-left: .1em solid;
+  opacity: .2;
+  margin: .2em .5em .2em .2em;
+  height: 2em;
+}
+
+.about {
+  min-width: 10em;
+}
+
+hr {
+  clear: both;
+  opacity: 0;
+}
+
+.button a {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background-color: #555;
+  color: #fff !important;
+  padding: .2em 1em;
+  box-shadow: 0 0 0 .15em #fff,0 0 0 .35em #444;
+  border-radius: .1em;
+}
+
+.button a:hover {
+  background-color: #c00;
+  box-shadow: 0 0 0 .15em #fff,0 0 0 .35em #900;
+}
+
+.editor {
+  display: block;
+  height: auto;
+}
+
+a:link, a:visited {
+  color: #396;
+  display: inline-block;
+}
+
+.sponsor p, body:after {
+  text-transform: uppercase;
+  display: block;
+}
+
+.padd {
+  padding: 0 1em;
+}
+
+.spec {
+  line-height: 1em;
+  margin: 1rem 0;
+}
+
+body:after {
+  content: "Font Controls";
+  position: fixed;
+  font-weight: 800;
+  padding-top: 1em;
+  background-color: #fff;
+  box-shadow: 0 0.5em 3em rgba(0, 0, 0, 0.3);
+  width: 18em;
+  height: 22em;
+  right: .5em;
+  bottom: .5em;
+  z-index: 5;
+  font-size: .7rem;
+}
+
+label:nth-child(11), label:nth-child(13), label:nth-child(15), label:nth-child(17), label:nth-child(19), label:nth-child(21), label:nth-child(5), label:nth-child(7), label:nth-child(9) {
+  position: fixed;
+  bottom: .5em;
+  right: .5em;
+  width: 18em;
+  text-align: center;
+  z-index: 7;
+}
+
+label:nth-child(17), label:nth-child(19), label:nth-child(21) {
+  bottom: 15.5em;
+  width: 6em;
+}
+
+label:nth-child(7) {
+  bottom: 3.5em;
+}
+
+label:nth-child(9) {
+  bottom: 6.5em;
+}
+
+label:nth-child(11) {
+  bottom: 9.5em;
+}
+
+label:nth-child(13) {
+  bottom: 12.5em;
+  right: 9em;
+  width: 9.5em;
+}
+
+label:nth-child(15) {
+  bottom: 12.5em;
+  width: 9em;
+}
+
+label:nth-child(17) {
+  right: 6.5em;
+}
+
+label:nth-child(19) {
+  right: 12.5em;
+}
+
+a, input, label {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 45em) {
+  .repo, body:after, h1 {
+    width: 100%;
+  }
+
+  .repo {
+    display: block;
+    line-height: 4em;
+    text-align: center;
+    border: none;
+    box-shadow: none !important;
+  }
+
+  label:nth-child(11), label:nth-child(5), label:nth-child(7), label:nth-child(9) {
+    bottom: .25em;
+    width: 25%;
+  }
+
+  body:after {
+    right: 0;
+    height: 7em;
+    bottom: 0;
+    color: transparent;
+  }
+
+  label:nth-child(7) {
+    right: 25%;
+  }
+
+  label:nth-child(9) {
+    right: 50%;
+  }
+
+  label:nth-child(11) {
+    right: 75%;
+  }
+
+  label:nth-child(13) {
+    bottom: 3.5em;
+    width: 20%;
+    right: 0;
+  }
+
+  label:nth-child(15) {
+    bottom: 3.5em;
+    width: 20%;
+    right: 20%;
+  }
+
+  label:nth-child(17) {
+    bottom: 3.5em;
+    width: 20%;
+    right: 40%;
+  }
+
+  label:nth-child(19) {
+    bottom: 3.5em;
+    width: 20%;
+    right: 60%;
+  }
+
+  label:nth-child(21) {
+    bottom: 3.5em;
+    width: 20%;
+    right: 80%;
+  }
+
+  body {
+    padding: 2em 1em;
+  }
+}
+.sponsor {
+  margin: 5em auto;
+  width: 19em;
+  padding-bottom: 12em;
+}
+
+.sponsor p {
+  color: #fff;
+  font-weight: 600;
+  background-color: #c00;
+  width: 19em;
+  padding: .666em 1em;
+  letter-spacing: .079em;
+}
+
+</style>
 
     </head>
-    <body style="">
+    <body class="no-js">
 <h1>OVERPASS</h1>
 
 <br>
 <div class="about">
-<p >An open source webfont family inspired by <a href="http://en.wikipedia.org/wiki/Highway_Gothic">Highway Gothic.</a> <br>Sponsored by <a href="http://www.redhat.com">Red Hat</a> Created by <a href="http://www.delvefonts.com/"> Delve Fonts</a></p>
-
-<p class="button"><a href="https://github.com/andyfitz/overpass" class="repo">Get Overpass on GitHub</a></p> 
-<p><a style="font-size: small" href="https://github.com/RedHatBrand/overpass/releases/download/2.1/overpass-fonts-ttf-2.1.zip">Just the TTF Files (898kb)</a>
-<br>
-<a style="font-size: small" href="https://github.com/RedHatBrand/overpass/releases/download/2.1/overpass-fonts-web-fonts-2.1.zip">Just the Webfont Files (967kb)</a><br><a style="font-size: small" href="https://github.com/RedHatBrand/overpass/blob/master/Overpass%20Specimen%208-20-15.pdf">Full specimen PDF (590kb)</a></p>
+  <p>An open source webfont family inspired by <a href="http://en.wikipedia.org/wiki/Highway_Gothic">Highway Gothic.</a>
+    <br>Sponsored by <a href="http://www.redhat.com">Red Hat</a> Created by <a href="http://www.delvefonts.com/"> Delve Fonts</a></p>
+  <p class="button"><a href="https://github.com/andyfitz/overpass" class="repo">Get Overpass on GitHub</a></p>
+  <p><a style="font-size: small" href="https://github.com/RedHatBrand/overpass/releases/download/2.1/overpass-fonts-ttf-2.1.zip">Just the TTF Files (898kb)</a>
+    <br>
+    <a style="font-size: small" href="https://github.com/RedHatBrand/overpass/releases/download/2.1/overpass-fonts-web-fonts-2.1.zip">Just the Webfont Files (967kb)</a>
+    <br><a style="font-size: small" href="https://github.com/RedHatBrand/overpass/blob/master/Overpass%20Specimen%208-20-15.pdf">Full specimen PDF (590kb)</a></p>
 </div>
 
 <input id="extralight-variant" type="radio" name="variant" />
@@ -75,7 +573,6 @@ body{padding: 2em 1em;}
 <label for="non-italic">normal</label>
 
 
-
 <input id="uppercase" type="radio" name="uppercase" />
 <label for="uppercase">upper </label>
 
@@ -89,14 +586,7 @@ body{padding: 2em 1em;}
 <hr>
 
 
-
-  <input onkeyup="getVal()" id="type-sample" 
-
-
-         type="text"
-           placeholder="Type your text here" 
-        value="Type your text here"   
-      onclick="this.value = &#39;&#39;" />
+<input onkeyup="getVal()" id="type-sample" type="text" placeholder="Type your text here" value="Type your text here" onclick="this.value = &#39;&#39;" />
 
 
 <div class="padd">
@@ -111,103 +601,81 @@ body{padding: 2em 1em;}
 </div>
 
 
-<div class="grid"><span class="char1" aria-hidden="true">1</span><span class="char2" aria-hidden=
-"true">2</span><span class="char3" aria-hidden="true">3</span><span class="char4"
-aria-hidden="true">4</span><span class="char5" aria-hidden="true">5</span><span class=
-"char6" aria-hidden="true">6</span><span class="char7" aria-hidden=
-"true">7</span><span class="char8" aria-hidden="true">8</span><span class="char9"
-aria-hidden="true">9</span><span class="char10" aria-hidden="true">0</span><span class=
-"char11" aria-hidden="true">a</span><span class="char12" aria-hidden=
-"true">b</span><span class="char13" aria-hidden="true">c</span><span class="char14"
-aria-hidden="true">d</span><span class="char15" aria-hidden="true">e</span><span class=
-"char16" aria-hidden="true">f</span><span class="char17" aria-hidden=
-"true">g</span><span class="char18" aria-hidden="true">h</span><span class="char19"
-aria-hidden="true">i</span><span class="char20" aria-hidden="true">j</span><span class=
-"char21" aria-hidden="true">k</span><span class="char22" aria-hidden=
-"true">l</span><span class="char23" aria-hidden="true">m</span><span class="char24"
-aria-hidden="true">n</span><span class="char25" aria-hidden="true">o</span><span class=
-"char26" aria-hidden="true">p</span><span class="char27" aria-hidden=
-"true">q</span><span class="char28" aria-hidden="true">r</span><span class="char29"
-aria-hidden="true">s</span><span class="char30" aria-hidden="true">t</span><span class=
-"char31" aria-hidden="true">u</span><span class="char32" aria-hidden=
-"true">v</span><span class="char33" aria-hidden="true">w</span><span class="char34"
-aria-hidden="true">x</span><span class="char35" aria-hidden="true">y</span><span class=
-"char36" aria-hidden="true">z</span><span class="char37" aria-hidden=
-"true">~</span><span class="char38" aria-hidden="true">!</span><span class="char39"
-aria-hidden="true">@</span><span class="char40" aria-hidden="true">#</span><span class=
-"char41" aria-hidden="true">$</span><span class="char42" aria-hidden=
-"true">%</span><span class="char43" aria-hidden="true">^</span><span class="char44"
-aria-hidden="true">&amp;</span><span class="char45" aria-hidden=
-"true">*</span><span class="char46" aria-hidden="true">(</span><span class="char47"
-aria-hidden="true">)</span><span class="char48" aria-hidden="true">_</span><span class=
-"char49" aria-hidden="true">+</span><span class="char50" aria-hidden=
-"true">`</span><span class="char51" aria-hidden="true">-</span><span class="char52"
-aria-hidden="true">=</span><span class="char53" aria-hidden="true">,</span><span class=
-"char54" aria-hidden="true">.</span><span class="char55" aria-hidden=
-"true">/</span><span class="char56" aria-hidden="true">&lt;</span><span class="char57"
-aria-hidden="true">&gt;</span><span class="char58" aria-hidden=
-"true">?</span><span class="char59" aria-hidden="true">[</span><span class="char60"
-aria-hidden="true">]</span><span class="char61" aria-hidden="true">\</span><span class=
-"char62" aria-hidden="true">{</span><span class="char63" aria-hidden=
-"true">}</span><span class="char64" aria-hidden="true">|</span><span class="char65"
-aria-hidden="true">;</span><span class="char66" aria-hidden="true">'</span><span class=
-"char67" aria-hidden="true">:</span><span class="char68" aria-hidden=
-"true">"</span></div>
-  
-  <p class="x3 bold spec">Lorem ipsum dolor sit amet,</p><p class="spec x4 extra-light"> consectetur adipiscing elit. Vestibulum justo risus</p><p class="spec bold caps"> interdum id condimentum eget, fermentum vel ex. </p><p class="spec caps x2 regular italic">Curabitur pharetra, tellus id finibus accumsan,</p><p class="spec "> ligula est pharetra ex, eget lobortis tortor mauris vitae tortor. </p><p class="spec">Vestibulum interdum ligula vel gravida euismod. </p>
-  <br><br><br>
-  
-  
-<div>
-<p class="x075">Hello everybody out there using minix — I’m doing a (free) operating
-system (just a hobby, won’t be big and professional like gnu) for 386
-(486) AT clones. This has been brewing since april, and is starting to
-get ready. I’d like any feedback on things people like/dislike in
-minix, as my OS resembles it somewhat (same physical layout of the
-  file-system (due to practical reasons) among other things).</p>
-<p>Hello everybody out there using minix — I’m doing a (free) operating
-system (just a hobby, won’t be big and professional like gnu) for 386
-(486) AT clones. This has been brewing since april, and is starting to
-get ready. I’d like any feedback on things people like/dislike in
-minix, as my OS resembles it somewhat (same physical layout of the
-  file-system (due to practical reasons) among other things).</p>
-  
-  
-  
-  <p class="x15">Hello everybody out there using minix — I’m doing a (free) operating
-system (just a hobby, won’t be big and professional like gnu) for 386
-(486) AT clones. This has been brewing since april, and is starting to
-get ready. I’d like any feedback on things people like/dislike in
-minix, as my OS resembles it somewhat (same physical layout of the
-  file-system (due to practical reasons) among other things).</p>
-  <br><br>
-</div>
+<div class="grid"><span class="char1" aria-hidden="true">1</span><span class="char2" aria-hidden="true">2</span><span class="char3" aria-hidden="true">3</span><span class="char4" aria-hidden="true">4</span><span class="char5" aria-hidden="true">5</span><span class="char6"
+  aria-hidden="true">6</span><span class="char7" aria-hidden="true">7</span><span class="char8" aria-hidden="true">8</span><span class="char9" aria-hidden="true">9</span><span class="char10" aria-hidden="true">0</span><span class="char11" aria-hidden="true">a</span>
+  <span class="char12" aria-hidden="true">b</span><span class="char13" aria-hidden="true">c</span><span class="char14" aria-hidden="true">d</span><span class="char15" aria-hidden="true">e</span><span class="char16" aria-hidden="true">f</span><span class="char17"
+  aria-hidden="true">g</span>
+  <span class="char18" aria-hidden="true">h</span><span class="char19" aria-hidden="true">i</span><span class="char20" aria-hidden="true">j</span><span class="char21" aria-hidden="true">k</span><span class="char22" aria-hidden="true">l</span><span class="char23"
+  aria-hidden="true">m</span>
+  <span class="char24" aria-hidden="true">n</span><span class="char25" aria-hidden="true">o</span><span class="char26" aria-hidden="true">p</span><span class="char27" aria-hidden="true">q</span><span class="char28" aria-hidden="true">r</span><span class="char29"
+  aria-hidden="true">s</span>
+  <span class="char30" aria-hidden="true">t</span><span class="char31" aria-hidden="true">u</span><span class="char32" aria-hidden="true">v</span><span class="char33" aria-hidden="true">w</span><span class="char34" aria-hidden="true">x</span><span class="char35"
+  aria-hidden="true">y</span>
+  <span class="char36" aria-hidden="true">z</span><span class="char37" aria-hidden="true">~</span><span class="char38" aria-hidden="true">!</span><span class="char39" aria-hidden="true">@</span><span class="char40" aria-hidden="true">#</span><span class="char41"
+  aria-hidden="true">$</span>
+  <span class="char42" aria-hidden="true">%</span><span class="char43" aria-hidden="true">^</span><span class="char44" aria-hidden="true">&amp;</span><span class="char45" aria-hidden="true">*</span><span class="char46" aria-hidden="true">(</span>
+  <span
+  class="char47" aria-hidden="true">)</span>
+    <span class="char48" aria-hidden="true">_</span><span class="char49" aria-hidden="true">+</span><span class="char50" aria-hidden="true">`</span><span class="char51" aria-hidden="true">-</span><span class="char52" aria-hidden="true">=</span><span class="char53"
+    aria-hidden="true">,</span>
+    <span class="char54" aria-hidden="true">.</span><span class="char55" aria-hidden="true">/</span><span class="char56" aria-hidden="true">&lt;</span><span class="char57" aria-hidden="true">&gt;</span><span class="char58" aria-hidden="true">?</span>
+    <span
+    class="char59" aria-hidden="true">[</span>
+      <span class="char60" aria-hidden="true">]</span><span class="char61" aria-hidden="true">\</span><span class="char62" aria-hidden="true">{</span><span class="char63" aria-hidden="true">}</span><span class="char64" aria-hidden="true">|</span>
+      <span
+      class="char65" aria-hidden="true">;</span>
+        <span class="char66" aria-hidden="true">'</span><span class="char67" aria-hidden="true">:</span><span class="char68" aria-hidden="true">"</span></div>
 
+<p class="x3 bold spec">Lorem ipsum dolor sit amet,</p>
+<p class="spec x4 extra-light"> consectetur adipiscing elit. Vestibulum justo risus</p>
+<p class="spec bold caps"> interdum id condimentum eget, fermentum vel ex. </p>
+<p class="spec caps x2 regular italic">Curabitur pharetra, tellus id finibus accumsan,</p>
+<p class="spec "> ligula est pharetra ex, eget lobortis tortor mauris vitae tortor. </p>
+<p class="spec">Vestibulum interdum ligula vel gravida euismod. </p>
+<br>
+<br>
+<br>
+
+
+<div>
+  <p class="x075">Hello everybody out there using minix — I’m doing a (free) operating system (just a hobby, won’t be big and professional like gnu) for 386 (486) AT clones. This has been brewing since april, and is starting to get ready. I’d like any feedback on things
+    people like/dislike in minix, as my OS resembles it somewhat (same physical layout of the file-system (due to practical reasons) among other things).</p>
+  <p>Hello everybody out there using minix — I’m doing a (free) operating system (just a hobby, won’t be big and professional like gnu) for 386 (486) AT clones. This has been brewing since april, and is starting to get ready. I’d like any feedback on things
+    people like/dislike in minix, as my OS resembles it somewhat (same physical layout of the file-system (due to practical reasons) among other things).</p>
+
+
+  <p class="x15">Hello everybody out there using minix — I’m doing a (free) operating system (just a hobby, won’t be big and professional like gnu) for 386 (486) AT clones. This has been brewing since april, and is starting to get ready. I’d like any feedback on things
+    people like/dislike in minix, as my OS resembles it somewhat (same physical layout of the file-system (due to practical reasons) among other things).</p>
+  <br>
+  <br>
+</div>
 
 
 <div class="sponsor">
-<a href="http://redhat.com" target="_blank">
-<svg preserveAspectRatio="xMinYMax meet"
-            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 494 180" height="90" width="240" class="redhat-logo">
-            <path d="m 491.6,118.6 c 0,1.8 -1.5,3.3 -3.3,3.3 -1.8,0 -3.3,-1.5 -3.3,-3.3 0,-1.8 1.5,-3.3 3.3,-3.3 1.8,0 3.3,1.5 3.3,3.3 z m 0.7,0 c 0,-2.2 -1.8,-4 -4,-4 -2.2,0 -4,1.8 -4,4 0,2.2 1.8,4 4,4 2.2,0 4,-1.8 4,-4 m -4,-0.2 c 0.6,0 1,-0.1 1,-0.7 0,-0.5 -0.4,-0.6 -0.9,-0.6 l -0.8,0 0,1.3 z m -0.7,0.5 0,1.8 -0.6,0 0,-4.1 1.5,0 c 1,0 1.5,0.3 1.5,1.1 0,0.8 -0.5,1.1 -1.1,1.2 l 1.2,1.8 -0.7,0 -1.1,-1.8 -0.7,0 m -22.2,-63.12 -5.3,1.97 0,9.94 -9.1,0 0,4.34 9.1,0 0,34.17 c 0,5.5 0.8,10.1 3.3,12.9 2.1,2.6 5.4,3.9 9.3,3.9 3.3,0 5.7,-0.6 7.5,-1.3 l -0.7,-4.2 c -1.4,0.5 -3.3,0.9 -6.1,0.9 -5.8,0 -8,-4.3 -8,-11.2 l 0,-35.17 15.4,0 0,-4.34 -15.4,0 0,-11.91 m -26.6,48.72 c 0,0.9 -0.2,2.1 -0.6,3.2 -1.8,5.3 -7,10.9 -16,10.9 -5.6,0 -10.7,-3.5 -10.7,-11.3 0,-12.98 15.5,-14.77 27.3,-14.43 z m 5.3,4.4 0,-21.06 c 0,-9.67 -3,-21.38 -18.6,-21.38 -4.9,0 -10.9,1.32 -15.8,4.67 l 1.7,3.89 c 3.9,-2.76 8.8,-4.03 13.5,-4.03 12.8,-0.1 13.9,10.59 13.9,15.94 l 0,1.44 c -22,-0.23 -33,7.29 -33,19.73 0,7.3 5,14.9 15.9,14.9 8.6,0 14.6,-4.8 17.2,-9 l 0.3,0 0.8,7.8 4.9,0 c -0.6,-4.2 -0.8,-8.6 -0.8,-12.9 M 377.3,66.46 c 5.2,0 18.8,2.56 18.8,22.7 l 0,32.64 -5.3,0 0,-32.05 c 0,-9.74 -3.8,-18.62 -14.9,-18.62 -7.7,0 -14,5.52 -16.3,12.25 -0.6,1.6 -0.8,3.13 -0.8,5.33 l 0,33.09 -5.3,0 0,-71.31 5.3,1.58 0,25.29 0.3,0 c 1.5,-3.01 4.1,-5.92 7.3,-7.8 3.1,-1.91 6.8,-3.1 10.9,-3.1 m -36.1,40.14 c 0,5.6 0.2,11.5 0.5,15.2 l -12.2,0 -0.6,-8.6 -0.3,0 c -3.2,6.1 -9.7,9.8 -17.5,9.8 -12.9,0 -23.1,-11 -23.1,-27.62 -0.1,-18.11 11.2,-28.86 24.2,-28.86 7.4,0 12.7,3.05 15.1,7.04 l 0.3,0 0,-30.48 13.6,3.85 z m -13.6,-8.25 0,-8.1 c 0,-1.09 -0.1,-2.46 -0.3,-3.57 -1.3,-5.26 -5.7,-9.59 -11.8,-9.59 -8.8,0 -13.7,7.76 -13.7,17.79 0,9.92 4.9,17.22 13.5,17.22 5.6,0 10.5,-3.9 11.8,-9.8 0.4,-1.2 0.5,-2.52 0.5,-3.95 m -81.9,-9.43 c 0.6,-5.54 4.1,-13.17 12.5,-13.17 9.2,0 11.3,8.16 11.3,13.17 z m 0,9.51 36.2,0.1 c 0.2,-1.26 0.5,-3.3 0.5,-5.83 0,-11.83 -5.8,-26.28 -23.3,-26.28 -17.4,0 -26.5,14.11 -26.5,29.02 0,16.56 10.3,27.36 27.9,27.36 7.8,0 14.2,-1.4 18.8,-3.4 l -2,-9.4 c -4.1,1.5 -8.6,2.5 -14.9,2.5 -8.7,0 -16.3,-4.3 -16.7,-14.07 m -46.8,-13.33 -0.1,36.7 13.7,0 0,-28.05 c 0,-1.47 0.1,-2.92 0.4,-4.12 1.2,-6.19 5.7,-10.33 12.2,-10.33 1.7,0 2.8,0.13 4.1,0.38 l 0,-12.87 c -1.1,-0.29 -1.8,-0.29 -3.2,-0.29 -5.8,0 -12.1,3.88 -14.8,11.48 l -0.4,0 -0.5,-10.26 -11.8,0 c 0.3,4.81 0.4,10.13 0.4,17.36 m -37,33.5 c 0,1.8 -1.4,3.3 -3.2,3.3 -1.8,0 -3.3,-1.5 -3.3,-3.3 0,-1.8 1.5,-3.3 3.3,-3.3 1.8,0 3.2,1.5 3.2,3.3 z m 0.8,0 c 0,-2.2 -1.8,-4 -4,-4 -2.2,0 -4,1.8 -4,4 0,2.2 1.8,4 4,4 2.2,0 4,-1.8 4,-4 m -4,-0.2 c 0.5,0 1,-0.1 1,-0.7 0,-0.5 -0.5,-0.6 -0.9,-0.6 l -0.9,0 0,1.3 z m -0.8,0.5 0,1.8 -0.6,0 0,-4.1 1.6,0 c 0.9,0 1.4,0.3 1.4,1.1 0,0.8 -0.4,1.1 -1,1.2 l 1.1,1.8 -0.7,0 -1,-1.8 -0.8,0" style="" class="logotext"></path>
-            <path d="M146.083 123.002c-3.04-.697-6.264-1.138-9.526-1.138-5.579 0-10.655.965-14.398 2.527-.413.204-.706.636-.706 1.125 0 .181.045.361.113.515.443 1.281-.284 2.671-3.908 3.469-5.372 1.181-8.764 6.725-10.704 8.565-2.279 2.165-8.716 3.493-7.747 2.203.758-1.006 3.654-4.154 5.416-7.553 1.576-3.04 2.979-3.904 4.912-6.805.566-.848 2.765-3.837 3.405-6.201.718-2.305.476-5.203.751-6.393.396-1.721 2.018-5.451 2.14-7.556.071-1.193-4.974 1.7-7.367 1.7-2.392 0-4.724-1.436-6.862-1.538-2.647-.122-4.347 2.043-6.742 1.664-1.366-.219-2.518-1.425-4.908-1.513-3.402-.124-7.56 1.892-15.368 1.641-7.68-.251-14.775-9.708-15.743-11.212-1.135-1.763-2.521-1.763-4.03-.375-1.513 1.384-3.375.295-3.905-.635-1.007-1.76-3.701-6.912-7.873-7.993-5.769-1.495-8.69 3.193-8.31 6.925.385 3.788 2.833 4.85 3.967 6.863 1.132 2.015 1.712 3.312 3.846 4.203 1.511.634 2.074 1.564 1.625 2.807-.395 1.08-1.968 1.327-3.002 1.378-2.198.105-3.739-.492-4.862-1.208-1.307-.836-2.37-1.992-3.51-3.955-1.32-2.168-3.398-3.113-5.82-3.113-1.154 0-2.234.304-3.193.798-3.794 1.978-8.312 3.144-13.175 3.144l-5.484.005c10.518 31.194 40.013 53.656 74.756 53.656 27.752 0 52.156-14.331 66.214-36.001" style="fill:white" class="face"></path>
-            <path d="m 96.89,115.8 c -1.02,1.2 -1.46,1.6 -2.2,2.2 -1.78,1.4 -3.81,-0.2 -5.11,-1 -2.9,-1.7 -5.23,-0.6 -5.8,0.7 -0.57,1.3 0.1,2.9 1.64,2.7 2.21,-0.3 2.31,0.1 3.9,1.1 2.98,1.9 5.15,0.8 6.26,-0.1 0.92,-0.7 1.43,-1.3 1.91,-2.2 0.86,-1.7 0.16,-3 -0.25,-3.4 -0.1,-0.1 -0.25,-0.1 -0.35,0 z m 49.21,7.2 c 8,-12.3 12.6,-27.06 12.6,-42.87 C 158.7,36.57 123.4,1.262 79.88,1.262 36.32,1.262 1.003,36.57 1.003,80.13 c 0,8.82 1.447,17.3 4.116,25.17 l 5.481,0 c 4.87,0 9.38,-1.1 13.18,-3.1 0.96,-0.5 2.04,-0.8 3.19,-0.8 2.42,0 4.5,0.9 5.82,3.1 1.14,2 2.2,3.1 3.51,4 1.12,0.7 2.66,1.3 4.86,1.2 1.04,-0.1 2.61,-0.3 3,-1.4 0.45,-1.2 -0.11,-2.2 -1.62,-2.8 -2.13,-0.9 -2.71,-2.2 -3.85,-4.2 -1.13,-2.03 -3.58,-3.09 -3.96,-6.88 -0.38,-3.73 2.54,-8.42 8.31,-6.92 4.17,1.08 6.86,6.23 7.87,8 0.53,0.92 2.39,2.01 3.9,0.63 1.51,-1.39 2.9,-1.39 4.03,0.38 0.97,1.5 8.07,10.99 15.75,11.19 7.81,0.3 11.96,-1.7 15.37,-1.6 2.39,0.1 3.54,1.3 4.9,1.5 2.4,0.4 4.1,-1.8 6.74,-1.7 2.1,0.1 4.5,1.6 6.9,1.6 2.4,0 7.4,-2.9 7.3,-1.7 -0.1,2.1 -1.7,5.8 -2.1,7.5 -0.3,1.2 0,4.1 -0.8,6.4 -0.6,2.4 -2.8,5.4 -3.4,6.2 -1.9,2.9 -3.3,3.8 -4.9,6.8 -1.7,3.4 -4.63,6.6 -5.39,7.6 -0.97,1.3 5.49,-0.1 7.79,-2.2 1.9,-1.9 5.3,-7.4 10.7,-8.6 3.6,-0.8 4.3,-2.2 3.9,-3.5 -0.1,-0.1 -0.1,-0.3 -0.1,-0.5 0,-0.5 0.2,-0.9 0.7,-1.1 3.7,-1.6 8.8,-2.5 14.4,-2.5 3.2,0 6.9,0.5 9.5,1.1 z" style="fill:black" class="black-circle"></path>
-            <path d="m 117.6,67.65 c -0.8,0.37 -1,-0.24 -0.7,-0.8 1.9,-3.17 2.2,-3.97 2.7,-5.22 0.8,-1.83 1.2,-4.43 -0.3,-9.85 -3,-10.67 -9.2,-24.94 -13.7,-29.57 -4.3,-4.47 -12.18,-5.72 -19.28,-3.9 -2.62,0.67 -7.74,3.33 -17.24,1.19 -16.44,-3.7 -18.88,4.53 -19.82,8.12 -0.95,3.59 -3.21,13.78 -3.21,13.78 -0.76,4.15 -1.74,11.37 23.78,16.23 11.9,2.26 12.5,5.34 13.02,7.55 0.95,3.96 2.46,6.23 4.16,7.36 1.69,1.14 0,2.07 -1.89,2.27 C 80.06,75.33 61.34,69.96 50.27,63.67 41.21,58.13 41.05,53.15 43.13,48.92 29.44,47.44 19.17,50.2 17.31,56.68 14.11,67.8 41.75,86.79 73.23,96.32 106.3,106.3 140.2,99.34 144,78.58 c 1.7,-9.43 -6.2,-16.41 -19.6,-19.43 -1.3,4.87 -3.9,6.93 -6.8,8.5 z M 83.26,23.76 c -0.38,0.1 -0.4,-0.31 -0.11,-0.45 1.8,-0.88 4.4,-1.68 7.42,-1.98 1.11,-0.11 2.1,-0.17 3.09,-0.15 5.06,0.1 9.14,2.13 9.04,4.49 -0.1,2.36 -4.2,4.19 -9.26,4.07 -1.63,0 -3.17,-0.27 -4.49,-0.65 -0.16,0 -0.27,-0.18 -0.27,-0.33 0,-0.16 0.11,-0.3 0.27,-0.34 3.15,-0.73 5.28,-1.92 5.13,-3.05 -0.2,-1.49 -4.32,-2.3 -9.21,-1.81 -0.54,0.1 -1.33,0.17 -1.61,0.2 z m -4.87,12.67 c -0.14,-1.25 -2.77,-2.71 -6.67,-2.71 -3.84,0 -6.6,0.5 -8.99,0.56 -2.39,0.1 -4.24,-1.69 -5.1,-2.76 -0.71,-0.88 -2.97,-1.73 -4.2,1.1 -1.24,2.86 1.07,5.93 2.97,6.33 0,0 3.17,5.89 5.57,3.33 1.71,-1.82 2.65,-2.8 11.76,-3.46 4.35,-0.32 4.79,-1.32 4.66,-2.39 z" style="fill:#c00" class="hat"></path>
-        </svg>
-<p>Sponsored by Red Hat</p>
+  <a href="http://redhat.com" target="_blank">
+    <svg preserveAspectRatio="xMinYMax meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 494 180" height="90" width="240" class="redhat-logo">
+      <path d="m 491.6,118.6 c 0,1.8 -1.5,3.3 -3.3,3.3 -1.8,0 -3.3,-1.5 -3.3,-3.3 0,-1.8 1.5,-3.3 3.3,-3.3 1.8,0 3.3,1.5 3.3,3.3 z m 0.7,0 c 0,-2.2 -1.8,-4 -4,-4 -2.2,0 -4,1.8 -4,4 0,2.2 1.8,4 4,4 2.2,0 4,-1.8 4,-4 m -4,-0.2 c 0.6,0 1,-0.1 1,-0.7 0,-0.5 -0.4,-0.6 -0.9,-0.6 l -0.8,0 0,1.3 z m -0.7,0.5 0,1.8 -0.6,0 0,-4.1 1.5,0 c 1,0 1.5,0.3 1.5,1.1 0,0.8 -0.5,1.1 -1.1,1.2 l 1.2,1.8 -0.7,0 -1.1,-1.8 -0.7,0 m -22.2,-63.12 -5.3,1.97 0,9.94 -9.1,0 0,4.34 9.1,0 0,34.17 c 0,5.5 0.8,10.1 3.3,12.9 2.1,2.6 5.4,3.9 9.3,3.9 3.3,0 5.7,-0.6 7.5,-1.3 l -0.7,-4.2 c -1.4,0.5 -3.3,0.9 -6.1,0.9 -5.8,0 -8,-4.3 -8,-11.2 l 0,-35.17 15.4,0 0,-4.34 -15.4,0 0,-11.91 m -26.6,48.72 c 0,0.9 -0.2,2.1 -0.6,3.2 -1.8,5.3 -7,10.9 -16,10.9 -5.6,0 -10.7,-3.5 -10.7,-11.3 0,-12.98 15.5,-14.77 27.3,-14.43 z m 5.3,4.4 0,-21.06 c 0,-9.67 -3,-21.38 -18.6,-21.38 -4.9,0 -10.9,1.32 -15.8,4.67 l 1.7,3.89 c 3.9,-2.76 8.8,-4.03 13.5,-4.03 12.8,-0.1 13.9,10.59 13.9,15.94 l 0,1.44 c -22,-0.23 -33,7.29 -33,19.73 0,7.3 5,14.9 15.9,14.9 8.6,0 14.6,-4.8 17.2,-9 l 0.3,0 0.8,7.8 4.9,0 c -0.6,-4.2 -0.8,-8.6 -0.8,-12.9 M 377.3,66.46 c 5.2,0 18.8,2.56 18.8,22.7 l 0,32.64 -5.3,0 0,-32.05 c 0,-9.74 -3.8,-18.62 -14.9,-18.62 -7.7,0 -14,5.52 -16.3,12.25 -0.6,1.6 -0.8,3.13 -0.8,5.33 l 0,33.09 -5.3,0 0,-71.31 5.3,1.58 0,25.29 0.3,0 c 1.5,-3.01 4.1,-5.92 7.3,-7.8 3.1,-1.91 6.8,-3.1 10.9,-3.1 m -36.1,40.14 c 0,5.6 0.2,11.5 0.5,15.2 l -12.2,0 -0.6,-8.6 -0.3,0 c -3.2,6.1 -9.7,9.8 -17.5,9.8 -12.9,0 -23.1,-11 -23.1,-27.62 -0.1,-18.11 11.2,-28.86 24.2,-28.86 7.4,0 12.7,3.05 15.1,7.04 l 0.3,0 0,-30.48 13.6,3.85 z m -13.6,-8.25 0,-8.1 c 0,-1.09 -0.1,-2.46 -0.3,-3.57 -1.3,-5.26 -5.7,-9.59 -11.8,-9.59 -8.8,0 -13.7,7.76 -13.7,17.79 0,9.92 4.9,17.22 13.5,17.22 5.6,0 10.5,-3.9 11.8,-9.8 0.4,-1.2 0.5,-2.52 0.5,-3.95 m -81.9,-9.43 c 0.6,-5.54 4.1,-13.17 12.5,-13.17 9.2,0 11.3,8.16 11.3,13.17 z m 0,9.51 36.2,0.1 c 0.2,-1.26 0.5,-3.3 0.5,-5.83 0,-11.83 -5.8,-26.28 -23.3,-26.28 -17.4,0 -26.5,14.11 -26.5,29.02 0,16.56 10.3,27.36 27.9,27.36 7.8,0 14.2,-1.4 18.8,-3.4 l -2,-9.4 c -4.1,1.5 -8.6,2.5 -14.9,2.5 -8.7,0 -16.3,-4.3 -16.7,-14.07 m -46.8,-13.33 -0.1,36.7 13.7,0 0,-28.05 c 0,-1.47 0.1,-2.92 0.4,-4.12 1.2,-6.19 5.7,-10.33 12.2,-10.33 1.7,0 2.8,0.13 4.1,0.38 l 0,-12.87 c -1.1,-0.29 -1.8,-0.29 -3.2,-0.29 -5.8,0 -12.1,3.88 -14.8,11.48 l -0.4,0 -0.5,-10.26 -11.8,0 c 0.3,4.81 0.4,10.13 0.4,17.36 m -37,33.5 c 0,1.8 -1.4,3.3 -3.2,3.3 -1.8,0 -3.3,-1.5 -3.3,-3.3 0,-1.8 1.5,-3.3 3.3,-3.3 1.8,0 3.2,1.5 3.2,3.3 z m 0.8,0 c 0,-2.2 -1.8,-4 -4,-4 -2.2,0 -4,1.8 -4,4 0,2.2 1.8,4 4,4 2.2,0 4,-1.8 4,-4 m -4,-0.2 c 0.5,0 1,-0.1 1,-0.7 0,-0.5 -0.5,-0.6 -0.9,-0.6 l -0.9,0 0,1.3 z m -0.8,0.5 0,1.8 -0.6,0 0,-4.1 1.6,0 c 0.9,0 1.4,0.3 1.4,1.1 0,0.8 -0.4,1.1 -1,1.2 l 1.1,1.8 -0.7,0 -1,-1.8 -0.8,0"
+      style="" class="logotext"></path>
+      <path d="M146.083 123.002c-3.04-.697-6.264-1.138-9.526-1.138-5.579 0-10.655.965-14.398 2.527-.413.204-.706.636-.706 1.125 0 .181.045.361.113.515.443 1.281-.284 2.671-3.908 3.469-5.372 1.181-8.764 6.725-10.704 8.565-2.279 2.165-8.716 3.493-7.747 2.203.758-1.006 3.654-4.154 5.416-7.553 1.576-3.04 2.979-3.904 4.912-6.805.566-.848 2.765-3.837 3.405-6.201.718-2.305.476-5.203.751-6.393.396-1.721 2.018-5.451 2.14-7.556.071-1.193-4.974 1.7-7.367 1.7-2.392 0-4.724-1.436-6.862-1.538-2.647-.122-4.347 2.043-6.742 1.664-1.366-.219-2.518-1.425-4.908-1.513-3.402-.124-7.56 1.892-15.368 1.641-7.68-.251-14.775-9.708-15.743-11.212-1.135-1.763-2.521-1.763-4.03-.375-1.513 1.384-3.375.295-3.905-.635-1.007-1.76-3.701-6.912-7.873-7.993-5.769-1.495-8.69 3.193-8.31 6.925.385 3.788 2.833 4.85 3.967 6.863 1.132 2.015 1.712 3.312 3.846 4.203 1.511.634 2.074 1.564 1.625 2.807-.395 1.08-1.968 1.327-3.002 1.378-2.198.105-3.739-.492-4.862-1.208-1.307-.836-2.37-1.992-3.51-3.955-1.32-2.168-3.398-3.113-5.82-3.113-1.154 0-2.234.304-3.193.798-3.794 1.978-8.312 3.144-13.175 3.144l-5.484.005c10.518 31.194 40.013 53.656 74.756 53.656 27.752 0 52.156-14.331 66.214-36.001"
+      style="fill:white" class="face"></path>
+      <path d="m 96.89,115.8 c -1.02,1.2 -1.46,1.6 -2.2,2.2 -1.78,1.4 -3.81,-0.2 -5.11,-1 -2.9,-1.7 -5.23,-0.6 -5.8,0.7 -0.57,1.3 0.1,2.9 1.64,2.7 2.21,-0.3 2.31,0.1 3.9,1.1 2.98,1.9 5.15,0.8 6.26,-0.1 0.92,-0.7 1.43,-1.3 1.91,-2.2 0.86,-1.7 0.16,-3 -0.25,-3.4 -0.1,-0.1 -0.25,-0.1 -0.35,0 z m 49.21,7.2 c 8,-12.3 12.6,-27.06 12.6,-42.87 C 158.7,36.57 123.4,1.262 79.88,1.262 36.32,1.262 1.003,36.57 1.003,80.13 c 0,8.82 1.447,17.3 4.116,25.17 l 5.481,0 c 4.87,0 9.38,-1.1 13.18,-3.1 0.96,-0.5 2.04,-0.8 3.19,-0.8 2.42,0 4.5,0.9 5.82,3.1 1.14,2 2.2,3.1 3.51,4 1.12,0.7 2.66,1.3 4.86,1.2 1.04,-0.1 2.61,-0.3 3,-1.4 0.45,-1.2 -0.11,-2.2 -1.62,-2.8 -2.13,-0.9 -2.71,-2.2 -3.85,-4.2 -1.13,-2.03 -3.58,-3.09 -3.96,-6.88 -0.38,-3.73 2.54,-8.42 8.31,-6.92 4.17,1.08 6.86,6.23 7.87,8 0.53,0.92 2.39,2.01 3.9,0.63 1.51,-1.39 2.9,-1.39 4.03,0.38 0.97,1.5 8.07,10.99 15.75,11.19 7.81,0.3 11.96,-1.7 15.37,-1.6 2.39,0.1 3.54,1.3 4.9,1.5 2.4,0.4 4.1,-1.8 6.74,-1.7 2.1,0.1 4.5,1.6 6.9,1.6 2.4,0 7.4,-2.9 7.3,-1.7 -0.1,2.1 -1.7,5.8 -2.1,7.5 -0.3,1.2 0,4.1 -0.8,6.4 -0.6,2.4 -2.8,5.4 -3.4,6.2 -1.9,2.9 -3.3,3.8 -4.9,6.8 -1.7,3.4 -4.63,6.6 -5.39,7.6 -0.97,1.3 5.49,-0.1 7.79,-2.2 1.9,-1.9 5.3,-7.4 10.7,-8.6 3.6,-0.8 4.3,-2.2 3.9,-3.5 -0.1,-0.1 -0.1,-0.3 -0.1,-0.5 0,-0.5 0.2,-0.9 0.7,-1.1 3.7,-1.6 8.8,-2.5 14.4,-2.5 3.2,0 6.9,0.5 9.5,1.1 z"
+      style="fill:black" class="black-circle"></path>
+      <path d="m 117.6,67.65 c -0.8,0.37 -1,-0.24 -0.7,-0.8 1.9,-3.17 2.2,-3.97 2.7,-5.22 0.8,-1.83 1.2,-4.43 -0.3,-9.85 -3,-10.67 -9.2,-24.94 -13.7,-29.57 -4.3,-4.47 -12.18,-5.72 -19.28,-3.9 -2.62,0.67 -7.74,3.33 -17.24,1.19 -16.44,-3.7 -18.88,4.53 -19.82,8.12 -0.95,3.59 -3.21,13.78 -3.21,13.78 -0.76,4.15 -1.74,11.37 23.78,16.23 11.9,2.26 12.5,5.34 13.02,7.55 0.95,3.96 2.46,6.23 4.16,7.36 1.69,1.14 0,2.07 -1.89,2.27 C 80.06,75.33 61.34,69.96 50.27,63.67 41.21,58.13 41.05,53.15 43.13,48.92 29.44,47.44 19.17,50.2 17.31,56.68 14.11,67.8 41.75,86.79 73.23,96.32 106.3,106.3 140.2,99.34 144,78.58 c 1.7,-9.43 -6.2,-16.41 -19.6,-19.43 -1.3,4.87 -3.9,6.93 -6.8,8.5 z M 83.26,23.76 c -0.38,0.1 -0.4,-0.31 -0.11,-0.45 1.8,-0.88 4.4,-1.68 7.42,-1.98 1.11,-0.11 2.1,-0.17 3.09,-0.15 5.06,0.1 9.14,2.13 9.04,4.49 -0.1,2.36 -4.2,4.19 -9.26,4.07 -1.63,0 -3.17,-0.27 -4.49,-0.65 -0.16,0 -0.27,-0.18 -0.27,-0.33 0,-0.16 0.11,-0.3 0.27,-0.34 3.15,-0.73 5.28,-1.92 5.13,-3.05 -0.2,-1.49 -4.32,-2.3 -9.21,-1.81 -0.54,0.1 -1.33,0.17 -1.61,0.2 z m -4.87,12.67 c -0.14,-1.25 -2.77,-2.71 -6.67,-2.71 -3.84,0 -6.6,0.5 -8.99,0.56 -2.39,0.1 -4.24,-1.69 -5.1,-2.76 -0.71,-0.88 -2.97,-1.73 -4.2,1.1 -1.24,2.86 1.07,5.93 2.97,6.33 0,0 3.17,5.89 5.57,3.33 1.71,-1.82 2.65,-2.8 11.76,-3.46 4.35,-0.32 4.79,-1.32 4.66,-2.39 z"
+      style="fill:#c00" class="hat"></path>
+    </svg>
+    <p>Sponsored by Red Hat</p>
 
   </a>
 </div>
+ 
+<script>
+$("body").removeClass("nojs").addClass("js");
 
-         
-        <script>$(document).ready(function() {
-    $(".grid").lettering();
-  });
 
-//
 $("#type-sample").on('keyup change', function(event) {
-       var data=$(this).val();
-       $(".sample-line").text(data);
-});</script>
+  var data = $(this).val();
+  $(".sample-line").text(data);
+});
+</script>
     </body>
 </html>
