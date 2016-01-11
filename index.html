@@ -579,11 +579,11 @@ a, label {
 <hr>
 
 
-<input  
-         id="type-sample" 
-       type="text" 
-placeholder="Type your text here" 
-      value="Type your text here" 
+<input
+         id="type-sample"
+       type="text"
+placeholder="Type your text here"
+      value="Type your text here"
       onclick="this.value = ''" />
 
 
@@ -599,20 +599,75 @@ placeholder="Type your text here"
 </div>
 
 
-<div class="grid"><span class="char1" aria-hidden="true">1</span><span class="char2" aria-hidden="true">2</span><span class="char3" aria-hidden="true">3</span><span class="char4" aria-hidden="true">4</span><span class="char5" aria-hidden="true">5</span><span class="char6" aria-hidden="true">6</span><span class="char7" aria-hidden="true">7</span><span class="char8" aria-hidden="true">8</span><span class="char9" aria-hidden="true">9</span><span class="char10" aria-hidden="true">0</span><span class="char11" aria-hidden="true">a</span>
-  <span class="char12" aria-hidden="true">b</span><span class="char13" aria-hidden="true">c</span><span class="char14" aria-hidden="true">d</span><span class="char15" aria-hidden="true">e</span><span class="char16" aria-hidden="true">f</span><span class="char17" aria-hidden="true">g</span>
-  <span class="char18" aria-hidden="true">h</span><span class="char19" aria-hidden="true">i</span><span class="char20" aria-hidden="true">j</span><span class="char21" aria-hidden="true">k</span><span class="char22" aria-hidden="true">l</span><span class="char23" aria-hidden="true">m</span>
-  <span class="char24" aria-hidden="true">n</span><span class="char25" aria-hidden="true">o</span><span class="char26" aria-hidden="true">p</span><span class="char27" aria-hidden="true">q</span><span class="char28" aria-hidden="true">r</span><span class="char29" aria-hidden="true">s</span>
-  <span class="char30" aria-hidden="true">t</span><span class="char31" aria-hidden="true">u</span><span class="char32" aria-hidden="true">v</span><span class="char33" aria-hidden="true">w</span><span class="char34" aria-hidden="true">x</span><span class="char35" aria-hidden="true">y</span>
-  <span class="char36" aria-hidden="true">z</span><span class="char37" aria-hidden="true">~</span><span class="char38" aria-hidden="true">!</span><span class="char39" aria-hidden="true">@</span><span class="char40" aria-hidden="true">#</span><span class="char41" aria-hidden="true">$</span>
-  <span class="char42" aria-hidden="true">%</span><span class="char43" aria-hidden="true">^</span><span class="char44" aria-hidden="true">&amp;</span><span class="char45" aria-hidden="true">*</span><span class="char46" aria-hidden="true">(</span>
-  <span class="char47" aria-hidden="true">)</span>
-    <span class="char48" aria-hidden="true">_</span><span class="char49" aria-hidden="true">+</span><span class="char50" aria-hidden="true">`</span><span class="char51" aria-hidden="true">-</span><span class="char52" aria-hidden="true">=</span><span class="char53" aria-hidden="true">,</span>
-    <span class="char54" aria-hidden="true">.</span><span class="char55" aria-hidden="true">/</span><span class="char56" aria-hidden="true">&lt;</span><span class="char57" aria-hidden="true">&gt;</span><span class="char58" aria-hidden="true">?</span>
-    <span class="char59" aria-hidden="true">[</span>
-      <span class="char60" aria-hidden="true">]</span><span class="char61" aria-hidden="true">\</span><span class="char62" aria-hidden="true">{</span><span class="char63" aria-hidden="true">}</span><span class="char64" aria-hidden="true">|</span>
-      <span class="char65" aria-hidden="true">;</span>
-        <span class="char66" aria-hidden="true">'</span><span class="char67" aria-hidden="true">:</span><span class="char68" aria-hidden="true">"</span></div>
+<div class="grid"><span>1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+<span>5</span>
+<span>6</span>
+<span>7</span>
+<span>8</span>
+<span>9</span>
+<span>0</span>
+<span>a</span>
+<span>b</span>
+<span>c</span>
+<span>d</span>
+<span>e</span>
+<span>f</span>
+<span>g</span>
+<span>h</span>
+<span>i</span>
+<span>j</span>
+<span>k</span>
+<span>l</span>
+<span>m</span>
+<span>n</span>
+<span>o</span>
+<span>p</span>
+<span>q</span>
+<span>r</span>
+<span>s</span>
+<span>t</span>
+<span>u</span>
+<span>v</span>
+<span>w</span>
+<span>x</span>
+<span>y</span>
+<span>z</span>
+<span>~</span>
+<span>!</span>
+<span>@</span>
+<span>#</span>
+<span>$</span>
+<span>%</span>
+<span>^</span>
+<span>&amp;</span>
+<span>*</span>
+<span>(</span>
+<span>)</span>
+<span>_</span>
+<span>+</span>
+<span>`</span>
+<span>-</span>
+<span>=</span>
+<span>,</span>
+<span>.</span>
+<span>/</span>
+<span>&lt;</span>
+<span>&gt;</span>
+<span>?</span>
+<span>[</span>
+<span>]</span>
+<span>\</span>
+<span>{</span>
+<span>}</span>
+<span>|</span>
+<span>;</span>
+<span>'</span>
+<span>:</span>
+<span>"</span>
+</div>
 
 <p class="x3 bold spec">Lorem ipsum dolor sit amet,</p>
 <p class="spec x4 extra-light"> consectetur adipiscing elit. Vestibulum justo risus</p>
@@ -650,15 +705,20 @@ placeholder="Type your text here"
     <p>Sponsored by Red Hat</p>
 
   </a>
-</div> 
+</div>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 <script>
+
 $('body').removeClass('nojs').addClass('js');
+
 $('#type-sample').on('keyup change', function (event) {
     var data = $(this).val();
     $('.sample-line').text(data);
 });
 
+//$(document).ready(function() {
+//  $(".grid").lettering();
+//});
 </script>
 </body></html>
