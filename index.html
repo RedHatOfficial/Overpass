@@ -9,331 +9,13 @@
 
  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" ></script>
         <style>
-/* Webfont: Overpass-Bold */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-Bold.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-Bold.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-Bold.svg#Overpass-Bold') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: 700;
-    text-rendering: optimizeLegibility;
-}
 
-/* Webfont: Overpass-BoldItalic */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-BoldItalic.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-BoldItalic.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-BoldItalic.svg#Overpass-BoldItalic') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: 700;
-    text-rendering: optimizeLegibility;
-}
-
-/* Webfont: Overpass-Reg */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-Reg.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-Reg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-Reg.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-Reg.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-Reg.svg#Overpass-Reg') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: 600;
-    text-rendering: optimizeLegibility;
-}
-
-
-/* Webfont: Overpass-Italic */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-Italic.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-Italic.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-Italic.svg#Overpass-Italic') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: 600;
-    text-rendering: optimizeLegibility;
-}
-
-
-/* Webfont: Overpass-Light */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-Light.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-Light.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-Light.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-Light.svg#Overpass-Light') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-
-/* Webfont: Overpass-LightItalic */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-LightItalic.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-LightItalic.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-LightItalic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-LightItalic.svg#Overpass-LightItalic') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
-}
-
-/* Webfont: Overpass-ExtraLight */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-ExtraLight.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-ExtraLight.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-ExtraLight.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-ExtraLight.svg#Overpass-ExtraLight') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: 300;
-    text-rendering: optimizeLegibility;
-}
-
-/* Webfont: Overpass-ExtraLightItalic */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-ExtraLightItalic.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-ExtraLightItalic.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-ExtraLightItalic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-ExtraLightItalic.svg#Overpass-ExtraLightItalic') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: 300;
-    text-rendering: optimizeLegibility;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-label {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-style: normal;
-  padding: .2em .4em;
-}
-
-body {
-  padding: 2em;
-  text-align: left;
-  max-width: 55em;
-  font-family: Overpass,sans-serif;
-  margin: 0 auto;
-  color: #545a64;
-  background-color: #eee;
-  font-size: 1rem;
-}
-
-label {
-  transition: box-shadow .25s ease;
-}
-
-.x05 {
-  font-size: 0.5em;
-}
-
-.x066 {
-  font-size: .66em;
-}
-
-.x075 {
-  font-size: .75em;
-}
-
-.x08 {
-  font-size: .8em;
-}
-
-.x1 {
-  font-size: 1em;
-}
-
-.x15 {
-  font-size: 1.5em;
-}
-
-.x2 {
-  font-size: 2em;
-}
-
-.x3 {
-  font-size: 3em;
-}
-
-.x4 {
-  font-size: 4em;
-}
-
-.x5 {
-  font-size: 5em;
-}
-
-.x6 {
-  font-size: 6em;
-}
-
-.x7 {
-  font-size: 7em;
-}
-
-input + label:hover {
-  color: #555;
-}
-
-.padd .sample-line {
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.sample-line {
-  line-height: 1.33em;
-  margin-bottom: 1rem;
-}
-
-.sample-line:before {
-  content: "";
-  clear: both;
-  height: 1em;
-  display: block;
-  width: 100%;
-  height: 1rem;
-  border-top: 1px solid #ddd;
-}
-
-#type-sample {
-  margin: 1rem auto;
-  font-family: Overpass,sans-serif;
-  display: block;
-  font-size: 2em;
-  appearance: none;
-  border: 0;
-  padding: .3333em .6em;
-  color: #333;
-  background-color: rgba(222, 222, 222, 0.3);
-  outline: 0;
-  margin-bottom: 1rem;
-  width: 100%;
-}
-#type-sample:focus, #type-sample:hover {
-  background-color: #ddd;
-  color: #000;
-}
-
-.extra-light {
-  font-weight: 300;
-}
-
-.light {
-  font-weight: 400;
-}
-
-.regular {
-  font-weight: 600;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.uppercase, .caps {
-  text-transform: uppercase;
-}
-
-.grid {
-  font-size: 3.5rem;
-  margin: 4rem auto;
-  color: #888ea2;
-}
-.grid span {
-  user-select: none;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-  transition: none;
-  vertical-align: top;
-  width: 1.5em;
-  line-height: 2em;
-  height: 2em;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.015);
-  margin: .5px;
-}
-.grid span:hover {
-  transition: transform 0.2s cubic-bezier(0, 1, 0.9, 1);
-  transform: scale(2.5);
-  z-index: 4;
-  box-shadow: 0 0.15em 0.25em 1px rgba(0, 0, 0, 0.25);
-  cursor: default;
-  background-color: #fff;
-  color: #000;
-}
-
-
-
-label{cursor:pointer; color:#aaa; font-size: .7em;;display:inline-block; 
-  line-height:3em; height: 3em; margin-bottom:1em;}
-
-input:checked + label{ box-shadow: 0 .5em 0 -.2em #4a7; color:#333;}
-#italic:checked ~ div{font-style: italic}
-#non-italic:checked ~ div{font-style: normal}
-
-
-#uppercase:checked ~ div{text-transform: uppercase;}
-#lowercase:checked ~ div{text-transform: lowercase;}
-
-
-#extralight-variant:checked ~ div{font-weight: 300}
-#light-variant:checked ~ div{font-weight: 400}
-#regular-variant:checked ~ div{font-weight: 600}
-#bold-variant:checked ~ div{font-weight: 700}
-
-input[type="radio"]{display:none;}
-
-h1{    width: 7em; margin: 3rem 0;
-font-size: 3em;
-    transition: all .15s ease;
-    font-weight: 400;
-    padding: .9em 0; float:left;
-    user-select: none !important;
-    background-color: #4a7;
-    color: #fff;
-    text-align: center;
-    border-radius: .133333em;
-    box-shadow: 0 0 0 .1em #fff, 0 0 0 .15em #4a7; margin-right: 1em;
-}
-.vr{border-left: .1em solid; opacity:.2; margin: .2em; margin-right:.5em;  height: 2em;}
-
-#type-sample, input, #inner-editor{}
-
-.about{min-width: 10em; float:left;}
-
-hr{width: 100%; clear:both; opacity:0;}
-
-.button a{ font-weight: 600; text-transform:uppercase; letter-spacing: .1em; background-color:#555; color:#fff !important; display:inline-block; text-decoration: none;   padding: .2em 1em; box-shadow:0 0 0 .15em #fff, 0 0 0 .35em #444; border-radius:.1em; }
-
-.button a:hover{background-color:#c00;box-shadow:0 0 0 .15em #fff, 0 0 0 .35em #900;}
-
-.editor{display:block; width: 100%; height: auto;}
-
-
-a:link, a:visited{color:#36c; text-decoration:none; display:inline-block; }
-
-.padd{padding: 0em 1em }
-
-.spec{line-height:1em; margin:1rem 0;}
+@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-Bold.eot);src:url(//overpassfont.org/Webfonts/Overpass-Bold.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-Bold.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-Bold.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-Bold.svg#Overpass-Bold) format("svg");font-style:normal;font-weight:700;text-rendering:optimizeLegibility}@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-BoldItalic.eot);src:url(//overpassfont.org/Webfonts/Overpass-BoldItalic.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-BoldItalic.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-BoldItalic.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-BoldItalic.svg#Overpass-BoldItalic) format("svg");font-style:italic;font-weight:700;text-rendering:optimizeLegibility}@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-Reg.eot);src:url(//overpassfont.org/Webfonts/Overpass-Reg.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-Reg.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-Reg.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-Reg.svg#Overpass-Reg) format("svg");font-style:normal;font-weight:600;text-rendering:optimizeLegibility}@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-Italic.eot);src:url(//overpassfont.org/Webfonts/Overpass-Italic.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-Italic.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-Italic.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-Italic.svg#Overpass-Italic) format("svg");font-style:italic;font-weight:600;text-rendering:optimizeLegibility}@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-Light.eot);src:url(//overpassfont.org/Webfonts/Overpass-Light.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-Light.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-Light.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-Light.svg#Overpass-Light) format("svg");font-style:normal;font-weight:400;text-rendering:optimizeLegibility}@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-LightItalic.eot);src:url(//overpassfont.org/Webfonts/Overpass-LightItalic.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-LightItalic.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-LightItalic.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-LightItalic.svg#Overpass-LightItalic) format("svg");font-style:italic;font-weight:400;text-rendering:optimizeLegibility}@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-ExtraLight.eot);src:url(//overpassfont.org/Webfonts/Overpass-ExtraLight.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-ExtraLight.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-ExtraLight.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-ExtraLight.svg#Overpass-ExtraLight) format("svg");font-style:normal;font-weight:300;text-rendering:optimizeLegibility}@font-face{font-family:'Overpass';src:url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.eot);src:url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.eot?#iefix) format("embedded-opentype"),url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.woff) format("woff"),url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.ttf) format("truetype"),url(//overpassfont.org/Webfonts/Overpass-ExtraLightItalic.svg#Overpass-ExtraLightItalic) format("svg");font-style:italic;font-weight:300;text-rendering:optimizeLegibility}*{box-sizing:border-box}label{text-transform:uppercase;font-weight:600;font-style:normal;padding:.2em .4em}body{padding:2em;text-align:left;max-width:55em;font-family:Overpass,sans-serif;margin:0 auto;color:#545a64;background-color:#eee;font-size:1rem}label{transition:all .25s ease}.x05{font-size:.5em}.x066{font-size:.66em}.x075{font-size:.75em}.x08{font-size:.8em}.x1{font-size:1em}.x15{font-size:1.5em}.x2{font-size:2em}.x3{font-size:3em}.x4{font-size:4em}.x5{font-size:5em}.x6{font-size:6em}.x7{font-size:7em}.x13{font-size:13em}input + label:hover{color:#555}.padd .sample-line{overflow:hidden;white-space:nowrap}.sample-line{line-height:1.33em;margin-bottom:1rem}.sample-line:before{content:"";clear:both;height:1em;display:block;width:100%;height:1rem;border-top:1px solid #ddd}#type-sample{margin:1rem auto;font-family:Overpass,sans-serif;display:block;font-size:2em;appearance:none;border:0;padding:.3333em .6em;color:#333;background-color:rgba(222,222,222,0.3);outline:0;margin-bottom:1rem;width:100%}#type-sample:focus,#type-sample:hover{background-color:#ddd;color:#000}.extra-light{font-weight:300}.light{font-weight:400}.regular{font-weight:600}.bold{font-weight:700}.italic{font-style:italic}.uppercase,.caps{text-transform:uppercase}.grid{font-size:3.5rem;margin:4rem auto;color:#aaa}.grid span{user-select:none;text-align:center;display:inline-block;position:relative;transition:none;vertical-align:top;width:1.5em;line-height:2em;height:2em;box-shadow:0 0 0 1px rgba(0,0,0,0.015);margin:.5px}.grid span:hover{transition:transform .2s cubic-bezier(0,1,0.9,1);transform:scale(2.5);z-index:4;box-shadow:0 .15em .25em 1px rgba(0,0,0,0.25);cursor:default;background-color:#fff;color:#000}label{cursor:pointer;color:#aaa;font-size:.7rem;display:inline-block;line-height:3em;height:3em;margin-bottom:1em}input:checked + label{olor:#333;color:#fff;background-color:#4a7}#italic:checked ~ div{font-style:italic}#non-italic:checked ~ div{font-style:normal}#uppercase:checked ~ div{text-transform:uppercase}#lowercase:checked ~ div{text-transform:lowercase}#extralight-variant:checked ~ div{font-weight:300}#light-variant:checked ~ div{font-weight:400}#regular-variant:checked ~ div{font-weight:600}#bold-variant:checked ~ div{font-weight:700}input[type="radio"]{display:none}h1{width:7em;margin:3rem 0;font-size:3em;transition:all .15s ease;font-weight:400;padding:.9em 0;float:left;user-select:none!important;background-color:#4a7;color:#fff;text-align:center;border-radius:.133333em;box-shadow:0 0 0 .1em #fff,0 0 0 .15em #4a7;margin-right:1em}.vr{border-left:.1em solid;opacity:.2;margin:.2em;margin-right:.5em;height:2em}.about{min-width:10em;float:left}hr{width:100%;clear:both;opacity:0}.button a{font-weight:600;text-transform:uppercase;letter-spacing:.1em;background-color:#555;color:#fff!important;display:inline-block;text-decoration:none;padding:.2em 1em;box-shadow:0 0 0 .15em #fff,0 0 0 .35em #444;border-radius:.1em}.button a:hover{background-color:#c00;box-shadow:0 0 0 .15em #fff,0 0 0 .35em #900}.editor{display:block;width:100%;height:auto}a:link,a:visited{color:#396;font-weight:600;text-decoration:none;display:inline-block}.padd{padding:0 1em}.spec{line-height:1em;margin:1rem 0}body:after{content:"Font Controls";display:block;position:fixed;text-align:center;text-transform:uppercase;font-weight:800;padding-top:1em;background-color:#fff;box-shadow:0 .5em 3em rgba(0,0,0,0.3);font-size:1rem;width:18em;height:22em;right:.5em;bottom:.5em;border-radius:.5em;z-index:1;font-size:.7rem}label:nth-child(5),label:nth-child(7),label:nth-child(9),label:nth-child(11),label:nth-child(13),label:nth-child(15),label:nth-child(17),label:nth-child(19),label:nth-child(21){position:fixed;bottom:.5em;right:.5em;width:18em;text-align:center;z-index:2}label:nth-child(7){bottom:3.5em}label:nth-child(9){bottom:6.5em}label:nth-child(11){bottom:9.5em}label:nth-child(13){bottom:12.5em;right:9em;width:9.5em}label:nth-child(15){bottom:12.5em;width:9em}label:nth-child(17){bottom:15.5em;width:6em;right:6.5em}label:nth-child(19){bottom:15.5em;width:6em;right:12.5em}label:nth-child(21){bottom:15.5em;width:6em}
         </style>
 
     </head>
     <body style="">
-  <h1>OVERPASS</h1>
+<h1>OVERPASS</h1>
 
 <br>
 <div class="about">
@@ -344,12 +26,6 @@ a:link, a:visited{color:#36c; text-decoration:none; display:inline-block; }
 <br>
 <a style="font-size: small" href="https://github.com/RedHatBrand/overpass/releases/download/2.1/overpass-fonts-web-fonts-2.1.zip">Download only the Webfont Files (967kb)</a></p>
 </div>
-<hr>
-
-
-
-
-<br>
 
 <input id="extralight-variant" type="radio" name="variant" />
 <label for="extralight-variant">300</label>
@@ -363,15 +39,15 @@ a:link, a:visited{color:#36c; text-decoration:none; display:inline-block; }
 <input id="bold-variant" type="radio" name="variant" />
 <label for="bold-variant">700</label>
 
-<span class="vr" ></span>
+
 <input id="italic" type="radio" name="italics" />
 <label for="italic">italic</label>
 
 <input id="non-italic" type="radio" name="italics" checked/>
-<label for="non-italic">non</label>
+<label for="non-italic"> / non</label>
 
 
-<span class="vr" ></span>
+
 <input id="uppercase" type="radio" name="uppercase" />
 <label for="uppercase">upper </label>
 
@@ -382,8 +58,32 @@ a:link, a:visited{color:#36c; text-decoration:none; display:inline-block; }
 <input id="lowercase" type="radio" name="uppercase" />
 <label for="lowercase">lower </label>
 
-<br>
+<hr>
 
+
+
+<label class="editor"> Click below to edit sample text
+  <input onkeyup="getVal()" id="type-sample" value="your text here" type="text"  onclick="this.value = &#39;&#39;" />
+</label>
+
+<div class="padd">
+  <div class="sample-line x075">If I have seen further, it is by standing on the shoulders of giants. — Isaac Newton</div>
+  <div class="sample-line x1  ">If I have seen further, it is by standing on the shoulders of giants. — Isaac Newton</div>
+  <div class="sample-line x15">If I have seen further, it is by standing on the shoulders of giants. — Isaac Newton</div>
+  <div class="sample-line x2  ">If I have seen further, it is by standing on the shoulders of giants. — Isaac Newton</div>
+  <div class="sample-line x4 ">If I have seen further, it is by standing on the shoulders of giants</div>
+  <div class="sample-line x7">If I have seen further</div>
+  <div class="sample-line x13">If I have </div>
+
+</div>
+
+
+<div class="grid">1234567890abcdefghijklmnopqrstuvwxyz~!@#$%^&*()_+`-=,./<>?[]\{}|;':"°•›‹</div>
+  
+  <p class="x3 bold spec">Lorem ipsum dolor sit amet,</p><p class="spec x4 extra-light"> consectetur adipiscing elit. Vestibulum justo risus</p><p class="spec bold caps"> interdum id condimentum eget, fermentum vel ex. </p><p class="spec caps x2 regular italic">Curabitur pharetra, tellus id finibus accumsan,</p><p class="spec "> ligula est pharetra ex, eget lobortis tortor mauris vitae tortor. </p><p class="spec">Vestibulum interdum ligula vel gravida euismod. </p>
+  <br><br><br>
+  
+  
 <div>
 <p class="x075">Hello everybody out there using minix — I’m doing a (free) operating
 system (just a hobby, won’t be big and professional like gnu) for 386
@@ -410,117 +110,6 @@ minix, as my OS resembles it somewhat (same physical layout of the
 </div>
 
 
-
-
-<label class="editor"> Click below to edit sample text
-  <input onkeyup="getVal()" id="type-sample" value="your text here" type="text"  onclick="this.value = &#39;&#39;" />
-</label>
-
-<div class="padd">
-  <div class="sample-line x075">If I have seen further, it is by standing on the shoulders of giants. — Isaac Newton</div>
-  <div class="sample-line x1  ">If I have seen further, it is by standing on the shoulders of giants. — Isaac Newton</div>
-  <div class="sample-line x15">If I have seen further, it is by standing on the shoulders of giants. — Isaac Newton</div>
-  <div class="sample-line x2  ">If I have seen further, it is by standing on the shoulders of giants. — Isaac Newton</div>
-  <div class="sample-line x4 ">If I have seen further, it is by standing on the shoulders of giants</div>
-  <div class="sample-line x7">If I have seen further</div>
-</div>
-
-<div class="grid"  >
-<span class="r1" >1</span>
-<span class="r2" >2</span>
-<span class="r3" >3</span>
-<span class="r4" >4</span>
-<span class="r5" >5</span>
-<span class="r6"
-  >6</span>
-<span class="r7" >7</span>
-<span class="r8" >8</span>
-<span class="r9" >9</span>
-<span class="r10" >0</span>
-<span class="r11" >a</span>
-
-<span class="r12" >b</span>
-<span class="r13" >c</span>
-<span class="r14" >d</span>
-<span class="r15" >e</span>
-<span class="r16" >f</span>
-<span class="r17" >g</span>
-
-  <span
-    class="r18" >h</span>
-<span class="r19" >i</span>
-<span class="r20" >j</span>
-<span class="r21" >k</span>
-<span class="r22" >l</span>
-<span class="r23" >m</span>
-
-    <span
-      class="r24" >n</span>
-<span class="r25" >o</span>
-<span class="r26" >p</span>
-<span class="r27" >q</span>
-<span class="r28" >r</span>
-<span class="r29" >s</span>
-
-      <span
-        class="r30" >t</span>
-<span class="r31" >u</span>
-<span class="r32" >v</span>
-<span class="r33" >w</span>
-<span class="r34" >x</span>
-<span class="r35" >y</span>
-
-        <span
-          class="r36" >z</span>
-<span class="r37" >~</span>
-<span class="r38" >!</span>
-<span class="r39" >@</span>
-<span class="r40" >#</span>
-<span class="r41" >$</span>
-
-          <span
-            class="r42" >%</span>
-<span class="r43" >^</span>
-<span class="r44" >&amp;</span>
-<span class="r45" >*</span>
-<span class="r46" >(</span>
-<span class="r47" >)</span>
-
-            <span
-              class="r48" >_</span>
-<span class="r49" >+</span>
-<span class="r50" >`</span>
-<span class="r51" >-</span>
-<span class="r52" >=</span>
-<span class="r53" >,</span>
-
-              <span class="r54" >.</span>
-<span class="r55" >/</span>
-<span class="r56" >&lt;</span>
-<span class="r57" >&gt;</span>
-<span class="r58" >?</span>
-<span class="r59" >[</span>
-
-                <span class="r60" >]</span>
-<span class="r61" >\</span>
-<span class="r62" >{</span>
-<span class="r63" >}</span>
-<span class="r64" >|</span>
-<span class="r65" >;</span>
-<span
-                    class="r66" >'</span>
-<span class="r67" >:</span>
-<span class="r68" >"</span>
-<span class="r69" >°</span>
-<span class="r70" >•</span>
-<span class="r71" >›</span>
-<span
-                      class="r72" >‹</span>
-
-</div>
-  
-  <p class="x3 bold spec">Lorem ipsum dolor sit amet,</p><p class="spec x4 extra-light"> consectetur adipiscing elit. Vestibulum justo risus</p><p class="spec bold caps"> interdum id condimentum eget, fermentum vel ex. </p><p class="spec caps x2 regular italic">Curabitur pharetra, tellus id finibus accumsan,</p><p class="spec "> ligula est pharetra ex, eget lobortis tortor mauris vitae tortor. </p><p class="spec">Vestibulum interdum ligula vel gravida euismod. </p><p class="spec">Morbi suscipit consectetur elit, eu ultrices felis maximus sit amet. Aliquam aliquam ex eu pharetra venenatis. Pellentesque semper vehicula nisi, non sollicitudin purus dignissim et. Fusce sit amet arcu sed tellus euismod consequat id in libero. Quisque congue varius metus, sit amet aliquam dolor sagittis ut. Donec blandit quam at diam sagittis, sit amet gravida arcu faucibus. In laoreet commodo dui, eget congue orci molestie id. Duis maximus erat quis elit ornare, id elementum orci laoreet. Maecenas consectetur erat nibh, ac luctus eros dictum sed. Integer et est vel tellus egestas imperdiet. Duis auctor ut lorem non facilisis. Suspendisse potenti.</p>
-  <br><br><br>
 
          
         <script>$(document).ready(function() {
