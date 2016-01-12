@@ -651,4 +651,6 @@ footer{background-color:#333; color:#fff;position:relative; z-index:10; box-shad
 
 footer .sponsor .logotext{fill:#fff}
 @media (min-width:45rem){
-  header .about{width: 45%; top:3rem;position:absolute; left:55%; }}
+  header .about{width: 45%;  top:3rem;position:absolute; left:55%; }
+.about p:first-child{font-size: 2rem;}
+}
