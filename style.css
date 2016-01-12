@@ -674,7 +674,7 @@ footer .sponsor .logotext{fill:#fff}
 .about p:first-child{font-size: 2rem;}
 }
 .all-characters span{display:inline-block; position:relative;}
-.all-characters{font-size: 5rem;}
+.all-characters{font-size: 4.5rem;}
  .all-characters small{display:none;}
 
 .all-characters > span:hover small{display:block; display:block; font-size: .15rem !important; opacity:.4; text-transform: lowercase ; padding: .5em 1em; letter-spacing: 0; line-height: 1em; position:absolute; bottom:0; left:0; width: 100%; text-align:center;}
