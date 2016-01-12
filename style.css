@@ -641,7 +641,7 @@ header{background-color:#555; background-repeat:no-repeat; overflow:hidden;
 
 
  header a{position:relative; z-index:9}
-
+header:after{content:"Photo by Paul Took"; opacity:.5; display:block; text-align:center; width: 100%;}
 
 
 header a:link, header a:visited{color:#c3cfc9;}
