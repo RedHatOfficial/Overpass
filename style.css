@@ -229,15 +229,16 @@ input + label:hover {
   margin-bottom: 1rem;
 }
 
-.sample-line:before {
+.sample-line:after {
   content: "";
   clear: both;
   display: block;
   width: 100%;
   height: 1rem;
-  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
+.sample-line.grid:after{border:none}
 .button a, .grid span, label {
   display: inline-block;
 }
@@ -364,7 +365,7 @@ h1 {
   padding: .9em 0;
   -webkit-user-select: none !important;
   border-radius: .133333em;
-  box-shadow: 0 0 0 .15em #fff,  0 0 0 .2em #5b8, 0 .25em 1em rgba(0,0,0,0.4);
+  box-shadow: 0 0 0 .15em #fff,  0 0 0 .2em #5b8, 0 0 0 .35em rgba(0,0,0,0.1);
 }
 
 .editor, hr {
@@ -524,7 +525,7 @@ body > .specimen svg{height: 20rem;}
 
 
 .comparison p {font-size: 1.5rem;margin:0; ;}
-h1{margin-bottom:3rem;}
+h1{margin-bottom:3rem; width: 100%; !important}
 
   .repo {
     display: block;
@@ -613,33 +614,10 @@ h1{margin-bottom:3rem;}
   letter-spacing: .079em;
 }
 aside{width: 50%; right:0; position:absolute; top:0;}
-header{background-color:#285; background-repeat:no-repeat; overflow:hidden;
+header{background-color:#285; background-image:url(overpass-irina-blok.jpg); /* source : https://unsplash.com/photos/QwmB-VgL7vs*/background-repeat:no-repeat; overflow:hidden;
   background-position: 50% 50%; background-size: cover;
- background-blend-mode: multiply; color:#fff; z-index:9; position:relative; min-height: 100vh; box-shadow: 0 .5em 1em rgba(0,0,0,0.2)}
+ background-blend-mode: multiply; color:#fff; z-index:9; position:relative;box-shadow: 0 .5em 1em rgba(0,0,0,0.2)}
 
-
- header{perspective: 120px;
-    width: 100%; height: 100vh;  position: relative;  padding:1rem;
- perspective-origin: 50% -25%;
- }
-
- header .line{content:""; z-index:-1;
-   position:absolute;
-   transform: rotatex(95deg)  ;
-   top:0%;  display:block; height: 100vh; width: 80%; left:20%; opacity:.25;background-color:#444;
-}
-
- header .line-2{content:""; z-index:-1;
-   position:absolute;
-   transform: rotatex(95deg)  scale(.5) translate(50%, -100%);
-   top:0%;    display:block; height: 10vh; width: 4%; left:52%;  opacity:.25; background-color:#aaa;
- animation: 1s roadline infinite}
-section{position:relative;}
- @keyframes roadline{
-   0{}
-   100%{transform: rotatex(95deg)  scale(1) translate(50%, 200%);
-   top:0%;}
- }
 
  header a{position:relative; z-index:9}
 
@@ -650,7 +628,7 @@ header a:link,header a:visited{color:#fff;color:rgba(255,255,255,0.75)}
 
 .sample h2{ width: 24%; }
 
-.sample h2{font-size: 3em; display:inline-block;  margin:0; padding: .5rem 0rem; position:relative;  }
+.sample h2{font-size: 3em; display:inline-block;  margin:0; padding: .5rem 0rem; position:relative;   margin-bottom: 4rem;}
 
 .sample h2:before{  vertical-align: top;position:absolute; top:0;font-weight: 400; font-style:normal ; text-transform: uppercase; content: attr(class); opacity:.5; font-size: .7rem; display:inline-block; }
 
