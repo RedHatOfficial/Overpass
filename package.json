@@ -1,0 +1,26 @@
+{
+  "name": "overpass-website",
+  "version": "0.2.1",
+  "description": "ghpages site for Overpass webfont project",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andyfitz/overpass.git"
+  },
+  "keywords": [
+    "webfont",
+    "ghpages"
+  ],
+  "author": "Andy Fitzsimon",
+  "license": "LGPL",
+  "bugs": {
+    "url": "https://github.com/andyfitz/overpass/issues"
+  },
+  "homepage": "https://github.com/andyfitz/overpass",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
