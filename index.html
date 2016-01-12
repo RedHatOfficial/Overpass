@@ -82,7 +82,6 @@
       <div class="sample-line x7">If I have seen further</div>
       <div class="sample-line x13">If I have seen</div>
     </div>
-    <div class="grid sample-line"></div>
 
     <div>
       <p class="x2"> Overpass is the typeface used by the Red Hat Brand. All font files in this project are open source under the <a href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL">OFL</a> and <a href="https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License">LGPL</a>. Overpass is free to use and remix.  </p>
@@ -597,7 +596,6 @@
 
 <script src="lib/jquery.min.js"></script>
 <script src="lib/prefixfree.min.js"></script>
-<script src="lib/jquery.lettering.min.js"></script>
 
 <script>
 $('body').removeClass('nojs').addClass('js');
@@ -606,10 +604,6 @@ $('#type-sample').on('keyup change', function (event) {
     var data = $(this).val();
     $('.sample-line').text(data);
     $(".grid").lettering();
-});
-
-$(document).ready(function() {
-  $(".grid").lettering();
 });
 
 </script>

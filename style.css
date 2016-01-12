@@ -1,693 +1,153 @@
-.nojs .sample-line {display: none !important;}
-
-#type-sample, body {font-family: Overpass,sans-serif;}
-
-#uppercase:checked ~ input,
-#uppercase:checked ~ div,
-
-#uppercase:checked ~ section,
- .caps, .uppercase, label {
-  text-transform: uppercase;}
-
-.all-characters span,
-.grid span, body:after, h1 {  text-align: center;}
-
-
-
-.grid, .grid span{font-weight: inherit;}
-
-/* Webfont: Overpass-Bold */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-Bold.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-Bold.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-Bold.svg#Overpass-Bold') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: 700;
-    text-rendering: optimizeLegibility;
-}
-
-/* Webfont: Overpass-BoldItalic */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-Bold-Italic.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-Bold-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-Bold-Italic.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-Bold-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-Bold-Italic.svg#Overpass-BoldItalic') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: 700;
-    text-rendering: optimizeLegibility;
-}
-
-
-/* Webfont: Overpass-Bold */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-Bold.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-Bold.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-Bold.svg#Overpass-Bold') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: 700;
-    text-rendering: optimizeLegibility;
-}
-
-/* Webfont: Overpass-BoldItalic */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-Bold-Italic.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-Bold-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-Bold-Italic.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-Bold-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-Bold-Italic.svg#Overpass-BoldItalic') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: 700;
-    text-rendering: optimizeLegibility;
-}
-
-/* Webfont: Overpass-Regular */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-Regular.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-Regular.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-Regular.svg#Overpass-Regular') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: 600;
-    text-rendering: optimizeLegibility;
-}
-
-
-/* Webfont: Overpass-Italic */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-Italic.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-Italic.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-Italic.svg#Overpass-Italic') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: 600;
-    text-rendering: optimizeLegibility;
-}
-
-
-/* Webfont: Overpass-Light */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-Light.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-Light.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-Light.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-Light.svg#Overpass-Light') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: 400;
-    text-rendering: optimizeLegibility;
-}
-
-/* Webfont: Overpass-LightItalic */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-LightItalic.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-LightItalic.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-LightItalic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-LightItalic.svg#Overpass-LightItalic') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: 400;
-    text-rendering: optimizeLegibility;
-}
-
-/* Webfont: Overpass-ExtraLight */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-ExtraLight.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-ExtraLight.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-ExtraLight.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-ExtraLight.svg#Overpass-ExtraLight') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: 200;
-    text-rendering: optimizeLegibility;
-}
-
-/* Webfont: Overpass-ExtraLightItalic */@font-face {
-    font-family: 'Overpass';
-    src: url('Webfonts/Overpass-ExtraLight-Italic.eot'); /* IE9 Compat Modes */
-    src: url('Webfonts/Overpass-ExtraLight-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('Webfonts/Overpass-ExtraLight-Italic.woff') format('woff'), /* Modern Browsers */
-         url('Webfonts/Overpass-ExtraLight-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('Webfonts/Overpass-ExtraLight-Italic.svg#Overpass-ExtraLightItalic') format('svg'); /* Legacy iOS */
-    font-style: italic;
-    font-weight: 200;
-    text-rendering: optimizeLegibility;
-}
-
-
-
-
-* {
-  box-sizing: border-box;
-}
-
-label {
-  font-weight: 600;
-  font-style: normal;
-  padding: .2em .4em;
-  transition: all .25s ease;
-}
-
-#italic:checked ~ input,
-#italic:checked ~ section,
-#italic:checked ~ div, .italic {
-  font-style: italic;
-}
-
-body {  color: #545a64; background-color: #eee; font-size: 1rem; padding:0; margin:0;}
-
-section{
-  padding: 2em;
-  text-align: left;font-size:1rem;
-  max-width: 80em;
-  margin: 0 auto;
-
-}
-.x05 {
-  font-size: .5em;
-}
-
-.x066 {
-  font-size: .66em;
-}
-
-.x075 {
-  font-size: 0.75rem;
-}
-
-.x08 {
-  font-size: .8em;
-}
-
-.x1 {
-  font-size: 1em;
-}
-
-.x15 {
-  font-size: 1.5em;
-}
-
-.x2 {
-  font-size: 2em;
-}
-
-.x3, h1 {
-  font-size: 3em;
-}
-
-.x4 {
-  font-size: 4em;
-}
-
-.x5 {
-  font-size: 5em;
-}
-
-.x6 {
-  font-size: 6em;
-}
-
-.x7 {
-  font-size: 7em;
-}
-
-.x13 {
-  font-size: 13em;
-}
-
-input + label:hover {
-  color: #555;
-}
-
-.padd .sample-line {
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.sample-line {
-  line-height: 1.33em;
-  margin-bottom: 1rem;
-}
-
-.sample-line:after {
-  content: "";
-  clear: both;
-  display: block;
-  width: 100%;
-  height: 1rem;
-  border-bottom: 1px solid #ddd;
-}
-
-.all-characters span,
-.sample-line.grid:after{border:none}
-.button a, .grid span, label {
-  display: inline-block;
-}
-
-#type-sample {
-  margin: 2rem auto;
-  display: block;
-  font-size: 2em;
-  -webkit-appearance: none;
-  border: 0;
-  padding: .6666em;
-  color: #333;
-  background-color: rgba(222, 222, 222, 0.3);
-    background-color: #fff;
-  outline: 0;
-  width: 100%;
-}
-
-#type-sample:focus, #type-sample:hover {
-
-  color: #000;
-}
-
-.extra-light {
-  font-weight: 200;
-}
-
-.light {
-  font-weight: 400;
-}
-
-.regular {
-  font-weight: 600;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.grid {
-  font-size: 3.5rem;
-  margin: 4rem auto;
-
-}
-
-.all-characters > span,
-.grid span {
-  -webkit-user-select: none;
-  position: relative;
-  transition: none;
-  vertical-align: top;
-  width: 1.5em;
-  line-height: 2em;
-  height: 2em;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.015);
-  margin: .5px;
-}
-
-.all-characters > span:hover,
-.grid span:focus, .grid span:hover {
-  transition: transform 0.2s cubic-bezier(0.65, 0.09, 0.39, 1.45) 0.1s,  box-shadow .25s ease;;
-  transform: scale(2.5);
-  z-index: 4;
-  box-shadow: 0 0.15em 0.25em 1px rgba(0, 0, 0, 0.25);
-  cursor: default;
-  background-color: #fff;
-  color: #000;
-}
-
-h1, input:checked + label {
-  background-color: #4a7;
-  color: #fff;
-
-}
-
-input + label{ transform-origin: 50% 0%; perspective: 200}
-input:checked + label{border-radius: .5em; transform: scale(.9)}
-
-label {
-  cursor: pointer;
-  color: #aaa;
-  font-size: .7rem;
-  line-height: 3em;
-  height: 3em;
-  margin-bottom: 1em;
-}
-
-#non-italic:checked ~ div, .sponsor p {
-  font-style: normal;
-}
-
-#lowercase:checked ~ input,
-#lowercase:checked ~ div,
-#lowercase:checked ~ section {
-  text-transform: lowercase;
-}
-
-#extralight-variant:checked ~ input,
-#extralight-variant:checked ~ div,
-#extralight-variant:checked ~ section {
-  font-weight: 200 ;
-}
-
-#light-variant:checked ~ input,
-#light-variant:checked ~ div,
-#light-variant:checked ~ section {
-  font-weight: 400;
-}
-
-#regular-variant:checked ~ input,
-#regular-variant:checked ~ div,
-#regular-variant:checked ~ section{
-  font-weight: 600 ;
-}
-
-#bold-variant:checked ~ input,
-#bold-variant:checked ~ div,
-#bold-variant:checked ~ section {
-  font-weight: 700;
-}
-
-input[type=radio] {
-  display: none;
-}
-
-h1 {
-  width: 45%;
-
-  transition: all .15s ease;
-  font-weight: 700; font-size: 4rem;
-  padding: 1.5em 0;
-  -webkit-user-select: none !important;
-  border-radius: .133333em; color:#fff;
-  box-shadow: 0 0 0 .08em #fff,  0 0 0 .2em #5b8;
-}
-
-.editor, hr {
-  width: 100%;
-}
-
-.button a, a:link, a:visited {
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.vr {
-  border-left: .1em solid;
-  opacity: .2;
-  margin: .2em .5em .2em .2em;
-  height: 2em;
-}
-
-
-hr {
-  clear: both;
-  opacity: 0;
-}
-
-.button a {
-  text-transform: uppercase;
-  letter-spacing: .1em;
-  background-color: #555;
-  color: #fff !important;
-  padding: .2em 1em;
-  box-shadow: 0 0 0 .15em #fff,0 0 0 .35em #444;
-  border-radius: .1em;
-}
-
-.button a:hover {
-  background-color: #c00;
-  box-shadow: 0 0 0 .15em #fff,0 0 0 .35em #900;
-}
-
-.editor {
-  display: block;
-  height: auto;
-}
-
-a:link, a:visited {
-  color: #396;
-  display: inline-block;
-}
-
-.sponsor p, body:after {
-  text-transform: uppercase;
-  display: block;
-}
-
-.padd {
-  padding: 0 1em;
-}
-
-.spec {
-  line-height: 1em;
-  margin: 1rem 0;
-}
-
-body:after {
-  content: "Font Controls";
-  position: fixed;
-  font-weight: 800;
-  padding-top: 1em;
-  background-color: #fff;
-  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.23); border-radius:1em;
-  width: 18em;
-  height: 22em;
-  right: .5em;
-  bottom: 0.5em;
-  z-index: 5;
-  font-size: .7rem;
-}
-
-
-  label[for="extralight-variant"],
-  label[for="light-variant"],
-  label[for="regular-variant"],
-  label[for="bold-variant"],
-  label[for="italic"],
-  label[for="non-italic"],
-  label[for="uppercase"],
-  label[for="lowercase"],
-  label[for="standard"]
-  {
-  position: fixed;
-  bottom: .5em;
-  right: .5em;
-  width: 18em;
-  text-align: center;
-  z-index: 8;
-}
-
-label[for="uppercase"],
-label[for="lowercase"],
-label[for="standard"]
- {
-  bottom: 15.5em;
-  width: 6em;
-}
-
-  label[for="regular-variant"] {
-  bottom: 3.5em;
-}
-
-  label[for="light-variant"] {
-  bottom: 6.5em;
-}
-
-  label[for="extralight-variant"] {
-  bottom: 9.5em;
-}
-
-label[for="italic"]
- {
-  bottom: 12.5em;
-  right: 9em;
-  width: 9.5em;
-}
-
-label[for="non-italic"] {
-  bottom: 12.5em;
-  width: 9em;
-}
-
-label[for="lowercase"] {
-  right: 6.5em;
-}
-
-label[for="uppercase"] {
-  right: 12.5em;
-}
-
-a, label {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none;
-
-}
-.comparison {font-size: 1.5rem;}
-@media (max-width: 55em){
-  .sample > h2{width: 49% !important; font-size: 1.75rem !important ;}
-  h1{width: 90%; margin: 3rem auto;}
-
-  .about p:first-child{font-size: 2rem; font-weight: 200 !important}
-  .sample{margin-top:3rem;}
-  .sample h2{margin-bottom:1rem !important; }
-}
-@media (max-width: 45em){}
-
-@media (max-width:55em){  body > .comparison , body > .comparison > div, body > .comparison > div > p {display:block ; width: 100%;}
-    .comparison   p  span{display:none}
-  .comparison  p{width: 100%; display:block;font-size: 1.5rem;margin:0; ;}
-
-h1{margin-bottom:3rem;  font-size:3em;padding: .5em 0; width: 100%; !important}
+.nojs .sample-line { display: none }
+
+#type-sample, body { font-family: Overpass,sans-serif }
+#type-sample:focus, #type-sample:hover { color: #000 }
+body:after { width: 18em; right: .5em; height: 22em; bottom: 0.5em; content: "Font Controls"; z-index: 5; position: fixed; font-size: .7rem; box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.23); font-weight: 800; padding-top: 1em; border-radius: 1em; background-color: #fff; }
+#uppercase:checked ~ input, #uppercase:checked ~ div, #uppercase:checked ~ section, .caps, .uppercase, label { text-transform: uppercase }
+.grid, .grid span { font-weight: inherit }
+    .button a, .grid span, label { display: inline-block }
+.button a:hover { box-shadow: 0 0 0 .15em #fff,0 0 0 .35em #900; background-color: #c00; }
+
+@font-face { src: url("Webfonts/Overpass-Bold.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-Bold.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-Bold.woff") format("woff"), url("Webfonts/Overpass-Bold.ttf") format("truetype"), url("Webfonts/Overpass-Bold.svg#Overpass-Bold") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 700; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("Webfonts/Overpass-Bold-Italic.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-Bold-Italic.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-Bold-Italic.woff") format("woff"), url("Webfonts/Overpass-Bold-Italic.ttf") format("truetype"), url("Webfonts/Overpass-Bold-Italic.svg#Overpass-BoldItalic") format("svg"); /* Legacy iOS */ font-style: italic; font-weight: 700; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("Webfonts/Overpass-Regular.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-Regular.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-Regular.woff") format("woff"), url("Webfonts/Overpass-Regular.ttf") format("truetype"), url("Webfonts/Overpass-Regular.svg#Overpass-Regular") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 600; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("Webfonts/Overpass-Italic.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-Italic.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-Italic.woff") format("woff"), url("Webfonts/Overpass-Italic.ttf") format("truetype"), url("Webfonts/Overpass-Italic.svg#Overpass-Italic") format("svg"); /* Legacy iOS */ font-style: italic; font-weight: 600; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("Webfonts/Overpass-Light.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-Light.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-Light.woff") format("woff"), url("Webfonts/Overpass-Light.ttf") format("truetype"), url("Webfonts/Overpass-Light.svg#Overpass-Light") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 400; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("Webfonts/Overpass-LightItalic.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-LightItalic.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-LightItalic.woff") format("woff"), url("Webfonts/Overpass-LightItalic.ttf") format("truetype"), url("Webfonts/Overpass-LightItalic.svg#Overpass-LightItalic") format("svg"); /* Legacy iOS */ font-style: italic; font-weight: 400; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("Webfonts/Overpass-ExtraLight.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-ExtraLight.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-ExtraLight.woff") format("woff"), url("Webfonts/Overpass-ExtraLight.ttf") format("truetype"), url("Webfonts/Overpass-ExtraLight.svg#Overpass-ExtraLight") format("svg"); /* Legacy iOS */ font-style: normal; font-weight: 200; text-rendering: optimizeLegibility; ; }
+@font-face { src: url("Webfonts/Overpass-ExtraLight-Italic.eot"); font-family: 'Overpass'; /* IE9 Compat Modes */ src: url("Webfonts/Overpass-ExtraLight-Italic.eot?#iefix") format("embedded-opentype"), url("Webfonts/Overpass-ExtraLight-Italic.woff") format("woff"), url("Webfonts/Overpass-ExtraLight-Italic.ttf") format("truetype"), url("Webfonts/Overpass-ExtraLight-Italic.svg#Overpass-ExtraLightItalic") format("svg"); /* Legacy iOS */ font-style: italic; font-weight: 200; text-rendering: optimizeLegibility; ; }
+
+* { box-sizing: border-box }
+label { padding: .2em .4em; font-style: normal; transition: all .25s ease; font-weight: 600; }
+#italic:checked ~ input, #italic:checked ~ section, #italic:checked ~ div, .italic { font-style: italic }
+body { color: #545a64; margin: 0; padding: 0; font-size: 1rem; background-color: #eee; }
+section { margin: 0 auto; padding: 2em; font-size: 1rem; max-width: 80em; text-align: left; }
+.x05 { font-size: .5em }
+.x066 { font-size: .66em }
+.x075 { font-size: 0.75rem }
+.x08 { font-size: .8em }
+.x1 { font-size: 1em }
+.x15 { font-size: 1.5em }
+.x2 { font-size: 2em }
+.x3, h1 { font-size: 3em }
+.x4 { font-size: 4em }
+.x5 { font-size: 5em }
+.x6 { font-size: 6em }
+.x7 { font-size: 7em }
+.x13 { font-size: 13em }
+.sample-line { line-height: 1.33em; margin-bottom: 1rem; }
+.sample-line:after { clear: both; width: 100%; height: 1rem; content: ""; display: block; border-bottom: 1px solid #ddd; }
+#type-sample { color: #333; width: 100%; margin: 2rem auto; border: 0; display: block; padding: .6666em; outline: 0; font-size: 2em; background-color: rgba(222, 222, 222, 0.3); background-color: #fff; -webkit-appearance: none; }
+.extra-light { font-weight: 200 }
+.light { font-weight: 400 }
+.regular { font-weight: 600 }
+.bold { font-weight: 700 }
+.grid { margin: 4rem auto; font-size: 3.5rem; }
+h1, input:checked + label { color: #fff; background-color: #4a7; }
+input + label { perspective: 200; transform-origin: 50% 0%; }
+input + label:hover { color: #555 }
+input:checked + label { transform: scale(0.9); border-radius: .5em; }
+label { color: #aaa; cursor: pointer; height: 3em; font-size: .7rem; line-height: 3em; margin-bottom: 1em; }
+#lowercase:checked ~ input, #lowercase:checked ~ div, #lowercase:checked ~ section { text-transform: lowercase }
+#extralight-variant:checked ~ input, #extralight-variant:checked ~ div, #extralight-variant:checked ~ section { font-weight: 200 }
+#light-variant:checked ~ input, #light-variant:checked ~ div, #light-variant:checked ~ section { font-weight: 400 }
+#regular-variant:checked ~ input, #regular-variant:checked ~ div, #regular-variant:checked ~ section { font-weight: 600 }
+#bold-variant:checked ~ input, #bold-variant:checked ~ div, #bold-variant:checked ~ section { font-weight: 700 }
+input[type=radio] { display: none }
+h1 { width: 45%; color: #fff; padding: 1.5em 0; font-size: 4rem; transition: all .15s ease; box-shadow: 0 0 0 .08em #fff,  0 0 0 .2em #5b8; font-weight: 700; border-radius: .133333em; -webkit-user-select: none !important; }
+.editor, hr { width: 100% }
+.vr { margin: .2em .5em .2em .2em; height: 2em; opacity: .2; border-left: .1em solid; }
+hr { clear: both; opacity: 0; }
+.button a { color: #fff !important; padding: .2em 1em; box-shadow: 0 0 0 .15em #fff,0 0 0 .35em #444; border-radius: .1em; text-transform: uppercase; letter-spacing: .1em; background-color: #555; }
+.editor { height: auto; display: block; }
+.padd { padding: 0 1em }
+    .padd .sample-line { overflow: hidden; white-space: nowrap; }
+.spec { margin: 1rem 0; line-height: 1em; }
+label[for="extralight-variant"], label[for="light-variant"], label[for="regular-variant"], label[for="bold-variant"], label[for="italic"], label[for="non-italic"], label[for="uppercase"], label[for="lowercase"], label[for="standard"] { right: .5em; width: 18em; bottom: .5em; z-index: 8; position: fixed; text-align: center; }
+label[for="uppercase"], label[for="lowercase"], label[for="standard"] { width: 6em; bottom: 15.5em; }
+label[for="regular-variant"] { bottom: 3.5em }
+label[for="light-variant"] { bottom: 6.5em }
+label[for="extralight-variant"] { bottom: 9.5em }
+label[for="italic"] { right: 9em; width: 9.5em; bottom: 12.5em; }
+label[for="non-italic"] { width: 9em; bottom: 12.5em; }
+label[for="lowercase"] { right: 6.5em }
+label[for="uppercase"] { right: 12.5em }
+a, label { -webkit-user-select: none; -webkit-tap-highlight-color: transparent; }
+.button a, a:link, a:visited { font-weight: 600; text-decoration: none; }
+a:link, a:visited { color: #396; display: inline-block; }
+.comparison { font-size: 1.5rem }
+    .comparison > { display: table }
+        .comparison > div { display: table-row }
+            .comparison > div > p { width: 25%; display: table-cell; padding: 1rem; line-height: 2rem; }
+@media (max-width: 55em) {
+	h1 { width: 90%; margin: 3rem auto; }
+	.about p:first-child { font-size: 2rem; font-weight: 200 !important; }
+	.sample { margin-top: 3rem }
+	    .sample > h2 { width: 49% !important; font-size: 1.75rem !important; }
+	    .sample h2 { margin-bottom: 1rem !important }
+}
+@media (max-width: 55em) {
+	.comparison p { width: 100%; margin: 0; display: block; font-size: 1.5rem; }
+	    .comparison p span { display: none }
+	h1 { width: 100%; padding: .5em 0; font-size: 3em; margin-bottom: 3rem; }
+	body > .comparison, body > .comparison > div, body > .comparison > div > p { width: 100%; display: block; }
 }
 @media (max-width: 45em) {
-
-
-body:after{border-radius: .6666em .6666em 0 0; box-shadow: 0 -.2em .5em rgba(0,0,0,0.2)}
-  .sample-line.x13, .sample-line.x7{display:none}
-
-body > .specimen svg{height: 20rem;}
-  .repo, body:after, h1 {
-    width: 100%;
-  }
-
-
-
-
-  .repo {
-    display: block;
-    line-height: 4em;
-    text-align: center;
-    border: none; border-radius: .5em;
-
-  }
-
-  label[for="extralight-variant"],
-  label[for="light-variant"],
-  label[for="regular-variant"],
-  label[for="bold-variant"] {
-    bottom: .25em;
-    width: 25%;
-  }
-
-  body:after {
-    right: 0;
-    height: 7em;
-    bottom: 0;
-    color: transparent;
-  }
-
-  label[for="regular-variant"] {
-    right: 25%;
-  }
-
-  label[for="light-variant"]
-{
-    right: 50%;
-  }
-
-  label[for="extralight-variant"]{
-    right: 75%;
-  }
-
-
-  label[for="non-italic"] {
-    bottom: 3.5em;
-    width: 20%;
-    right: 0;
-  }
-
-  label[for="italic"] {
-    bottom: 3.5em;
-    width: 20%;
-    right: 20%;
-  }
-
-  label[for="lowercase"]  {
-    bottom: 3.5em;
-    width: 20%;
-    right: 40%;
-  }
-
-  label[for="standard"] {
-    bottom: 3.5em;
-    width: 20%;
-    right: 60%;
-  }
-
-  label[for="uppercase"] {
-    bottom: 3.5em;
-    width: 20%;
-    right: 80%;
-  }
-
-  section {
-    padding: 2em 1em;
-  }
+	body:after { box-shadow: 0 -0.2em 0.5em rgba(0, 0, 0, 0.2); border-radius: .6666em .6666em 0 0; }
+	.sample-line.x13, .sample-line.x7 { display: none }
+	body > .specimen svg { height: 20rem }
+	.repo, body:after, h1 { width: 100% }
+	.repo { border: none; display: block; text-align: center; line-height: 4em; border-radius: .5em; }
+	label[for="extralight-variant"], label[for="light-variant"], label[for="regular-variant"], label[for="bold-variant"] { width: 25%; bottom: .25em; }
+	body:after { right: 0; color: transparent; height: 7em; bottom: 0; }
+	label[for="regular-variant"] { right: 25% }
+	label[for="light-variant"] { right: 50% }
+	label[for="extralight-variant"] { right: 75% }
+	label[for="non-italic"] { width: 20%; right: 0; bottom: 3.5em; }
+	label[for="italic"] { width: 20%; right: 20%; bottom: 3.5em; }
+	label[for="lowercase"] { width: 20%; right: 40%; bottom: 3.5em; }
+	label[for="standard"] { width: 20%; right: 60%; bottom: 3.5em; }
+	label[for="uppercase"] { width: 20%; right: 80%; bottom: 3.5em; }
+	section { padding: 2em 1em }
 }
-.sponsor {
-  margin: 5em auto;
-  width: 304px;
-  padding-bottom: 4em;
+.sponsor { width: 304px; margin: 5em auto; padding-bottom: 4em; }
+    #non-italic:checked ~ div, .sponsor p { font-style: normal }
+    .sponsor p { color: #fff; width: 19rem; padding: .666em 1em; font-size: 1rem; font-weight: 600; letter-spacing: .079em; background-color: #c00; }
+    .sponsor p, body:after { display: block; text-transform: uppercase; }
+aside { top: 0; width: 50%; right: 0; position: absolute; }
+header { color: #c3cfc9; z-index: 9; overflow: hidden; position: relative; box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2); background-size: cover; background-color: #555; background-image: url(/overpass-paul-took.jpg); background-repeat: no-repeat; background-position: 50% 0%; background-blend-mode: soft-light; }
+    header .about p:nth-child(2) a:link, header .about p:nth-child(2) a:visited { color: #fff; padding: .2em; }
+header:after { width: 100%; content: "Photo by Paul Took"; opacity: .25; display: block; text-align: center; }
+header a { z-index: 9; position: relative; }
+header a:link, header a:visited { color: #c3cfc9 }
+.sample h2 { width: 24%; color: white; margin: 0; display: inline-block; padding: .5rem 0rem; position: relative; font-size: 3em; margin-bottom: 4rem; }
+.sample h2:before { top: 0; content: attr(class); opacity: .75; display: inline-block; position: absolute; font-size: .7rem; font-style: normal; font-weight: 400; vertical-align: top; text-transform: uppercase; }
+.download, .download:link, .download:visited { color: #fff; padding: .35rem .75rem; margin-right: .25rem; margin-bottom: .5rem; border-radius: .25em; background-color: #4a7; }
+.download:hover, .download:focus { color: #4a7; box-shadow: 0 0 0 .1rem #fff; background-color: #fff; }
+.download span { font-weight: 200 !important }
+.repo { margin-top: 1rem }
+.comparison, .specimen { z-index: 9; position: relative; max-width: 100%; box-shadow: 0 0.2em 0 0.5em rgba(0, 0, 0, 0.05); background-color: #fff; }
+    .specimen svg { width: 100%; height: 50rem; }
+        .specimen svg path { fill: #fafafa }
+.specimen { z-index: 8; padding: 5rem 0; box-shadow: 0 0.5em 0 0.5em rgba(0, 0, 0, 0.2); background-color: #2c322f; }
+footer { color: #fff; margin: 0; z-index: 9; padding: 2rem; overflow: hidden; position: relative; transition: background .25s ease; box-shadow: 0 -0.5em 0 rgba(0, 0, 0, 0.1); background-size: cover; background-color: #555; background-image: url(/overpass-paul-took.jpg); background-color: #666; background-repeat: no-repeat; background-position: 50% 0%; background-blend-mode: soft-light; }
+    footer .sponsor .logotext { fill: #fff }
+    footer a:hover p { background-color: #d00 }
+footer:hover { background-color: #900 }
+@media (min-width: 57rem) {
+	h1 { margin: 2rem 1em 8rem 0 }
+	header .about { top: 3rem; left: 50%; width: 45%; position: absolute; }
+	.about p:first-child { font-size: 2rem; font-weight: 200 !important; }
 }
-
-.sponsor p {
-  font-size: 1rem;
-  color: #fff;
-  font-weight: 600;
-  background-color: #c00;
-  width: 19rem;
-  padding: .666em 1em;
-  letter-spacing: .079em;
-}
-aside{width: 50%; right:0; position:absolute; top:0;}
-header{background-color:#555; background-repeat:no-repeat; overflow:hidden;
-  background-position: 50% 50%; background-size: cover;
-  background-image: url(/overpass-paul-took.jpg) ;
- background-blend-mode: soft-light; color:#c3cfc9; z-index:9; position:relative;box-shadow: 0 .5em 1em rgba(0,0,0,0.2)}
-
-
- header a{position:relative; z-index:9}
-header:after{content:"Photo by Paul Took"; opacity:.25; display:block; text-align:center; width: 100%;}
-
-
-header a:link, header a:visited{color:#c3cfc9;}
-header .about p:nth-child(2) a:link,header .about p:nth-child(2) a:visited{color:#fff; padding:.2em; }
-
-.sample h2{ }
-
-.sample h2{width: 24%; color:white;font-size: 3em; display:inline-block;  margin:0; padding: .5rem 0rem; position:relative;   margin-bottom: 4rem;}
-
-.sample h2:before{  vertical-align: top;position:absolute; top:0;font-weight: 400; font-style:normal ; text-transform: uppercase; content: attr(class); opacity:.75; font-size: .7rem; display:inline-block; }
-
-.download,.download:link, .download:visited{padding:.35rem .75rem; color:#fff;margin-right: .25rem;margin-bottom: .5rem; background-color:#4a7; border-radius: .25em;}
-.download:hover,.download:focus{background-color:#fff; color:#4a7; box-shadow: 0 0 0 .1rem #fff}
-.repo{margin-top:1rem;}
-.download span{font-weight: 200 !important}
-
-.comparison > {display:table}
-.comparison > div{display:table-row}
-.comparison > div > p{display:table-cell;width: 25%; line-height: 2rem; padding: 1rem;}
-.comparison, .specimen{background-color: #fff; position:relative; z-index:9; max-width: 100%; box-shadow: 0 .2em 0 .5em rgba(0,0,0,0.05)}
-
-.specimen{background-color:#2c322f; z-index:8; box-shadow: 0 .5em 0 .5em rgba(0,0,0,0.2); padding: 5rem 0}
-.specimen svg{width: 100%; height: 50rem}
-.specimen svg path{fill:#fafafa}
-
-footer{background-color:#333; color:#fff;position:relative; z-index:9; box-shadow:  0 -.5em 0 rgba(0,0,0,0.1); margin:0; padding: 2rem;}
-
-
-footer .sponsor .logotext{fill:#fff}
-@media (min-width:57rem){
-  h1{  margin: 2rem 1em 8rem 0;}
-  header .about{width: 45%;  top:3rem;position:absolute; left:50%; }
-.about p:first-child{font-size: 2rem; font-weight: 200 !important;}
-}
-.all-characters{padding:7rem 0 ;}
-.all-characters span{display:inline-block; position:relative;}
-.all-characters{font-size: 4.5rem;}
- .all-characters small{display:none;}
-
-.all-characters > span:hover small{display:block; display:block; font-size: .5rem !important; opacity:.4; text-transform: lowercase ; padding: .5em 1em; letter-spacing: 0; line-height: 1em; position:absolute; bottom:0; left:0; width: 100%; text-align:center;}
-
-@media (max-width:55em){
-  .all-characters span{font-size:16vw !important;}
+.all-characters { padding: 7rem 0 }
+    .all-characters > span, .grid span { width: 1.5em; height: 2em; margin: .5px; position: relative; transition: none; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.015); line-height: 2em; vertical-align: top; -webkit-user-select: none; }
+    .all-characters > span:hover, .grid span:focus, .grid span:hover { color: #000; cursor: default; z-index: 4; transform: scale(2.5); transition: transform 0.2s cubic-bezier(0.65, 0.09, 0.39, 1.45) 0.1s, box-shadow 0.25s ease; box-shadow: 0 0.15em 0.25em 1px rgba(0, 0, 0, 0.25); background-color: #fff; }
+        .all-characters > span:hover small { left: 0; width: 100%; bottom: 0; display: block; display: block; opacity: .4; padding: .5em 1em; position: absolute; font-size: .5rem !important; text-align: center; line-height: 1em; text-transform: lowercase; letter-spacing: 0; }
+    .all-characters small { display: none }
+    .all-characters span, .grid span, body:after, h1 { text-align: center }
+    .all-characters span, .sample-line.grid:after { border: none }
+    .all-characters span { display: inline-block; position: relative; }
+.all-characters { font-size: 4.5rem }
+@media (max-width: 55em) {
+	.all-characters span { font-size: 16vw !important }
 }
