@@ -681,6 +681,7 @@ footer .sponsor .logotext{fill:#fff}
   header .about{width: 45%;  top:3rem;position:absolute; left:50%; }
 .about p:first-child{font-size: 2rem; font-weight: 200 !important;}
 }
+.all-characters{padding:7rem 0 ;}
 .all-characters span{display:inline-block; position:relative;}
 .all-characters{font-size: 4.5rem;}
  .all-characters small{display:none;}
