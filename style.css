@@ -9,6 +9,7 @@
  .caps, .uppercase, label {
   text-transform: uppercase;}
 
+.all-characters span,
 .grid span, body:after, h1 {  text-align: center;}
 
 
@@ -242,6 +243,7 @@ input + label:hover {
   border-bottom: 1px solid #ddd;
 }
 
+.all-characters span,
 .sample-line.grid:after{border:none}
 .button a, .grid span, label {
   display: inline-block;
@@ -288,6 +290,7 @@ input + label:hover {
   color: #aaa;
 }
 
+.all-characters > span,
 .grid span {
   -webkit-user-select: none;
   position: relative;
@@ -300,6 +303,7 @@ input + label:hover {
   margin: .5px;
 }
 
+.all-characters > span:hover,
 .grid span:focus, .grid span:hover {
   transition: transform 0.2s cubic-bezier(0.65, 0.09, 0.39, 1.45) 0.1s,  box-shadow .25s ease;;
   transform: scale(2.5);
@@ -668,3 +672,8 @@ footer .sponsor .logotext{fill:#fff}
   header .about{width: 45%;  top:3rem;position:absolute; left:50%; }
 .about p:first-child{font-size: 2rem;}
 }
+.all-characters span{display:inline-block; position:relative;}
+.all-characters{font-size: 5rem;}
+ .all-characters small{display:none;}
+
+.all-characters > span:hover small{display:block; display:block; font-size: .15rem !important; opacity:.4; text-transform: lowercase ; padding: .5em 1em; letter-spacing: 0; line-height: 1em; position:absolute; bottom:0; left:0; width: 100%; text-align:center;}
