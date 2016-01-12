@@ -3,7 +3,10 @@
 #type-sample, body {font-family: Overpass,sans-serif;}
 
 #uppercase:checked ~ input,
-#uppercase:checked ~ div, .caps, .uppercase, label {
+#uppercase:checked ~ div,
+
+#uppercase:checked ~ section,
+ .caps, .uppercase, label {
   text-transform: uppercase;}
 
 .grid span, body:after, h1 {  text-align: center;}
@@ -150,6 +153,7 @@ label {
 }
 
 #italic:checked ~ input,
+#italic:checked ~ section,
 #italic:checked ~ div, .italic {
   font-style: italic;
 }
@@ -244,7 +248,7 @@ input + label:hover {
 }
 
 #type-sample {
-  margin: 1rem auto;
+  margin: 2rem auto;
   display: block;
   font-size: 2em;
   -webkit-appearance: none;
@@ -252,12 +256,13 @@ input + label:hover {
   padding: .6666em;
   color: #333;
   background-color: rgba(222, 222, 222, 0.3);
+    background-color: #fff;
   outline: 0;
   width: 100%;
 }
 
 #type-sample:focus, #type-sample:hover {
-  background-color: #ddd;
+
   color: #000;
 }
 
@@ -365,7 +370,7 @@ h1 {
   padding: .9em 0;
   -webkit-user-select: none !important;
   border-radius: .133333em;
-  box-shadow: 0 0 0 .15em #fff,  0 0 0 .2em #5b8, 0 0 0 .35em rgba(0,0,0,0.1);
+  box-shadow: 0 0 0 .125em #fff,  0 0 0 .2em #5b8;
 }
 
 .editor, hr {
@@ -614,17 +619,17 @@ h1{margin-bottom:3rem; width: 100%; !important}
   letter-spacing: .079em;
 }
 aside{width: 50%; right:0; position:absolute; top:0;}
-header{background-color:#285; background-image:url(overpass-irina-blok.jpg); /* source : https://unsplash.com/photos/QwmB-VgL7vs*/background-repeat:no-repeat; overflow:hidden;
-  background-position: 50% 50%; background-size: cover;
- background-blend-mode: multiply; color:#fff; z-index:9; position:relative;box-shadow: 0 .5em 1em rgba(0,0,0,0.2)}
+header{background-color:#65746e; /* source : https://unsplash.com/photos/QwmB-VgL7vs*/background-repeat:no-repeat; overflow:hidden;
+  background-position: 100% 90%; background-size: cover;
+ background-blend-mode: multiply; color:#c3cfc9; z-index:9; position:relative;box-shadow: 0 .5em 1em rgba(0,0,0,0.2)}
 
 
  header a{position:relative; z-index:9}
 
 
 
-header a:link, header a:visited{color:#fff;}
-header .about p:nth-child(2) a:link,header .about p:nth-child(2) a:visited{ padding:.2em;box-shadow: 0 .1em }
+header a:link, header a:visited{color:#c3cfc9;}
+header .about p:nth-child(2) a:link,header .about p:nth-child(2) a:visited{color:#fff; padding:.2em;box-shadow: 0 .1em }
 
 .sample h2{ width: 24%; }
 
@@ -632,7 +637,7 @@ header .about p:nth-child(2) a:link,header .about p:nth-child(2) a:visited{ padd
 
 .sample h2:before{  vertical-align: top;position:absolute; top:0;font-weight: 400; font-style:normal ; text-transform: uppercase; content: attr(class); opacity:.5; font-size: .7rem; display:inline-block; }
 
-.download,.download:link, .download:visited{padding:.5rem .75rem; color:#fff;margin-right: .25rem;margin-bottom: .5rem; background-color:#4a7; box-shadow: 0 0 0 .1rem;}
+.download,.download:link, .download:visited{padding:.5rem .75rem; color:#fff;margin-right: .25rem;margin-bottom: .5rem; background-color:#4a7; border-radius: .25em;}
 .download:hover,.download:focus{background-color:#fff; color:#4a7; box-shadow: 0 0 0 .1rem #fff}
 .repo{margin-top:1rem;}
 .download span{font-weight: 200 !important}
