@@ -1,0 +1,670 @@
+.nojs .sample-line {display: none !important;}
+
+#type-sample, body {font-family: Overpass,sans-serif;}
+
+#uppercase:checked ~ input,
+#uppercase:checked ~ div, .caps, .uppercase, label {
+  text-transform: uppercase;}
+
+.grid span, body:after, h1 {  text-align: center;}
+
+
+
+
+/* Webfont: Overpass-Bold */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-Bold.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-Bold.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-Bold.svg#Overpass-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Overpass-BoldItalic */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-Bold-Italic.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-Bold-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-Bold-Italic.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-Bold-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-Bold-Italic.svg#Overpass-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: Overpass-Bold */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-Bold.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-Bold.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-Bold.svg#Overpass-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Overpass-BoldItalic */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-Bold-Italic.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-Bold-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-Bold-Italic.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-Bold-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-Bold-Italic.svg#Overpass-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Overpass-Regular */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-Regular.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-Regular.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-Regular.svg#Overpass-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: Overpass-Italic */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-Italic.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-Italic.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-Italic.svg#Overpass-Italic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 600;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: Overpass-Light */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-Light.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-Light.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-Light.svg#Overpass-Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Overpass-LightItalic */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-LightItalic.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-LightItalic.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-LightItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-LightItalic.svg#Overpass-LightItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Overpass-ExtraLight */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-ExtraLight.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-ExtraLight.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-ExtraLight.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-ExtraLight.svg#Overpass-ExtraLight') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 200;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Overpass-ExtraLightItalic */@font-face {
+    font-family: 'Overpass';
+    src: url('Webfonts/Overpass-ExtraLight-Italic.eot'); /* IE9 Compat Modes */
+    src: url('Webfonts/Overpass-ExtraLight-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Webfonts/Overpass-ExtraLight-Italic.woff') format('woff'), /* Modern Browsers */
+         url('Webfonts/Overpass-ExtraLight-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Webfonts/Overpass-ExtraLight-Italic.svg#Overpass-ExtraLightItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: 200;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+label {
+  font-weight: 600;
+  font-style: normal;
+  padding: .2em .4em;
+  transition: all .25s ease;
+}
+
+#italic:checked ~ input,
+#italic:checked ~ div, .italic {
+  font-style: italic;
+}
+
+body {  color: #545a64; background-color: #eee; font-size: 1rem; padding:0; margin:0;}
+
+section{
+  padding: 2em;
+  text-align: left;font-size:1rem;
+  max-width: 80em;
+  margin: 0 auto;
+
+}
+.x05 {
+  font-size: .5em;
+}
+
+.x066 {
+  font-size: .66em;
+}
+
+.x075 {
+  font-size: 0.75rem;
+}
+
+.x08 {
+  font-size: .8em;
+}
+
+.x1 {
+  font-size: 1em;
+}
+
+.x15 {
+  font-size: 1.5em;
+}
+
+.x2 {
+  font-size: 2em;
+}
+
+.x3, h1 {
+  font-size: 3em;
+}
+
+.x4 {
+  font-size: 4em;
+}
+
+.x5 {
+  font-size: 5em;
+}
+
+.x6 {
+  font-size: 6em;
+}
+
+.x7 {
+  font-size: 7em;
+}
+
+.x13 {
+  font-size: 13em;
+}
+
+input + label:hover {
+  color: #555;
+}
+
+.padd .sample-line {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sample-line {
+  line-height: 1.33em;
+  margin-bottom: 1rem;
+}
+
+.sample-line:before {
+  content: "";
+  clear: both;
+  display: block;
+  width: 100%;
+  height: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.button a, .grid span, label {
+  display: inline-block;
+}
+
+#type-sample {
+  margin: 1rem auto;
+  display: block;
+  font-size: 2em;
+  -webkit-appearance: none;
+  border: 0;
+  padding: .6666em;
+  color: #333;
+  background-color: rgba(222, 222, 222, 0.3);
+  outline: 0;
+  width: 100%;
+}
+
+#type-sample:focus, #type-sample:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.extra-light {
+  font-weight: 200;
+}
+
+.light {
+  font-weight: 400;
+}
+
+.regular {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.grid {
+  font-size: 3.5rem;
+  margin: 4rem auto;
+  color: #aaa;
+}
+
+.grid span {
+  -webkit-user-select: none;
+  position: relative;
+  transition: none;
+  vertical-align: top;
+  width: 1.5em;
+  line-height: 2em;
+  height: 2em;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.015);
+  margin: .5px;
+}
+
+.grid span:focus, .grid span:hover {
+  transition: transform 0.2s cubic-bezier(0.65, 0.09, 0.39, 1.45) 0.1s,  box-shadow .25s ease;;
+  transform: scale(2.5);
+  z-index: 4;
+  box-shadow: 0 0.15em 0.25em 1px rgba(0, 0, 0, 0.25);
+  cursor: default;
+  background-color: #fff;
+  color: #000;
+}
+
+h1, input:checked + label {
+  background-color: #4a7;
+  color: #fff;
+}
+
+label {
+  cursor: pointer;
+  color: #aaa;
+  font-size: .7rem;
+  line-height: 3em;
+  height: 3em;
+  margin-bottom: 1em;
+}
+
+#non-italic:checked ~ div, .sponsor p {
+  font-style: normal;
+}
+
+#lowercase:checked ~ input,
+#lowercase:checked ~ div {
+  text-transform: lowercase;
+}
+
+#extralight-variant:checked ~ input,
+#extralight-variant:checked ~ div {
+  font-weight: 200 ;
+}
+
+#light-variant:checked ~ input,
+#light-variant:checked ~ div {
+  font-weight: 400;
+}
+
+#regular-variant:checked ~ input,
+#regular-variant:checked ~ div{
+  font-weight: 600 ;
+}
+
+#bold-variant:checked ~ input,
+#bold-variant:checked ~ div {
+  font-weight: 700;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+h1 {
+  width: 45%;
+  margin: 2rem 1em 14rem 0;
+  transition: all .15s ease;
+  font-weight: 400;
+  padding: .9em 0;
+  -webkit-user-select: none !important;
+  border-radius: .133333em;
+  box-shadow: 0 0 0 .15em #fff,  0 0 0 .2em #5b8, 0 .25em 1em rgba(0,0,0,0.4);
+}
+
+.editor, hr {
+  width: 100%;
+}
+
+.button a, a:link, a:visited {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.vr {
+  border-left: .1em solid;
+  opacity: .2;
+  margin: .2em .5em .2em .2em;
+  height: 2em;
+}
+
+
+hr {
+  clear: both;
+  opacity: 0;
+}
+
+.button a {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background-color: #555;
+  color: #fff !important;
+  padding: .2em 1em;
+  box-shadow: 0 0 0 .15em #fff,0 0 0 .35em #444;
+  border-radius: .1em;
+}
+
+.button a:hover {
+  background-color: #c00;
+  box-shadow: 0 0 0 .15em #fff,0 0 0 .35em #900;
+}
+
+.editor {
+  display: block;
+  height: auto;
+}
+
+a:link, a:visited {
+  color: #396;
+  display: inline-block;
+}
+
+.sponsor p, body:after {
+  text-transform: uppercase;
+  display: block;
+}
+
+.padd {
+  padding: 0 1em;
+}
+
+.spec {
+  line-height: 1em;
+  margin: 1rem 0;
+}
+
+body:after {
+  content: "Font Controls";
+  position: fixed;
+  font-weight: 800;
+  padding-top: 1em;
+  background-color: #fff;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.13); border-radius:1em;
+  width: 18em;
+  height: 22em;
+  right: .5em;
+  bottom: 0.5em;
+  z-index: 5;
+  font-size: .7rem;
+}
+
+
+  label[for="extralight-variant"],
+  label[for="light-variant"],
+  label[for="regular-variant"],
+  label[for="bold-variant"],
+  label[for="italic"],
+  label[for="non-italic"],
+  label[for="uppercase"],
+  label[for="lowercase"],
+  label[for="standard"]
+  {
+  position: fixed;
+  bottom: .5em;
+  right: .5em;
+  width: 18em;
+  text-align: center;
+  z-index: 8;
+}
+
+label[for="uppercase"],
+label[for="lowercase"],
+label[for="standard"]
+ {
+  bottom: 15.5em;
+  width: 6em;
+}
+
+  label[for="regular-variant"] {
+  bottom: 3.5em;
+}
+
+  label[for="light-variant"] {
+  bottom: 6.5em;
+}
+
+  label[for="extralight-variant"] {
+  bottom: 9.5em;
+}
+
+label[for="italic"]
+ {
+  bottom: 12.5em;
+  right: 9em;
+  width: 9.5em;
+}
+
+label[for="non-italic"] {
+  bottom: 12.5em;
+  width: 9em;
+}
+
+label[for="lowercase"] {
+  right: 6.5em;
+}
+
+label[for="uppercase"] {
+  right: 12.5em;
+}
+
+a, label {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+
+}
+.comparison {font-size: 1.5rem;}
+@media (max-width: 55em){.sample > h2{width: 49% !important;}
+}
+@media (max-width: 45em) {
+body:after{border-radius: 0; opacity:.93}
+  .sample-line.x13, .sample-line.x7{display:none}
+
+body > .comparison , body > .comparison > div, body > .comparison > div > p {display:block ; width: 100%;}
+  .comparison   p  span{display:none}
+.comparison  p{width: 100%; display:block;}
+body > .specimen svg{height: 20rem;}
+  .repo, body:after, h1 {
+    width: 100%;
+  }
+
+
+.comparison p {font-size: 1.5rem;margin:0; ;}
+h1{margin-bottom:3rem;}
+
+  .repo {
+    display: block;
+    line-height: 4em;
+    text-align: center;
+    border: none; border-radius: .5em;
+
+  }
+
+  label[for="extralight-variant"],
+  label[for="light-variant"],
+  label[for="regular-variant"],
+  label[for="bold-variant"] {
+    bottom: .25em;
+    width: 25%;
+  }
+
+  body:after {
+    right: 0;
+    height: 7em;
+    bottom: 0;
+    color: transparent;
+  }
+
+  label[for="regular-variant"] {
+    right: 25%;
+  }
+
+  label[for="light-variant"]
+{
+    right: 50%;
+  }
+
+  label[for="extralight-variant"]{
+    right: 75%;
+  }
+
+
+  label[for="non-italic"] {
+    bottom: 3.5em;
+    width: 20%;
+    right: 0;
+  }
+
+  label[for="italic"] {
+    bottom: 3.5em;
+    width: 20%;
+    right: 20%;
+  }
+
+  label[for="lowercase"]  {
+    bottom: 3.5em;
+    width: 20%;
+    right: 40%;
+  }
+
+  label[for="standard"] {
+    bottom: 3.5em;
+    width: 20%;
+    right: 60%;
+  }
+
+  label[for="uppercase"] {
+    bottom: 3.5em;
+    width: 20%;
+    right: 80%;
+  }
+
+  section {
+    padding: 2em 1em;
+  }
+}
+.sponsor {
+  margin: 5em auto;
+  width: 304px;
+  padding-bottom: 4em;
+}
+
+.sponsor p {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 600;
+  background-color: #c00;
+  width: 19rem;
+  padding: .666em 1em;
+  letter-spacing: .079em;
+}
+aside{width: 50%; right:0; position:absolute; top:0;}
+header{background-color:#285; background-repeat:no-repeat; overflow:hidden;
+  background-position: 50% 50%; background-size: cover;
+ background-blend-mode: multiply; color:#fff; z-index:9; position:relative; min-height: 100vh; box-shadow: 0 .5em 1em rgba(0,0,0,0.2)}
+
+
+ header{perspective: 120px;
+    width: 100%; height: 100vh;  position: relative;  padding:1rem;
+ perspective-origin: 50% -25%;
+ }
+
+ header .line{content:""; z-index:-1;
+   position:absolute;
+   transform: rotatex(95deg)  ;
+   top:0%;  display:block; height: 100vh; width: 80%; left:20%; background-color:#555;
+}
+
+ header .line-2{content:""; z-index:-1;
+   position:absolute;
+   transform: rotatex(95deg)  scale(.5);
+   top:0%;    display:block; height: 10vh; width: 4%; left:52%; background-color:#aaa;
+ animation: 1s roadline infinite}
+section{position:relative;}
+ @keyframes roadline{
+   0{}
+   100%{transform: rotatex(95deg)  scale(1) translate(50%, 200%);
+   top:0%;}
+ }
+
+ header a{position:relative; z-index:9}
+
+
+
+
+header a:link,header a:visited{color:#fff;color:rgba(255,255,255,0.75)}
+
+.sample h2{ width: 24%; }
+
+.sample h2{font-size: 3em; display:inline-block;  margin:0; padding: .5rem 0rem; position:relative;  }
+
+.sample h2:before{  vertical-align: top;position:absolute; top:0;font-weight: 400; font-style:normal ; text-transform: uppercase; content: attr(class); opacity:.5; font-size: .7rem; display:inline-block; }
+
+.download,.download:link, .download:visited{padding:.5rem .75rem; color:#fff;margin-right: .25rem;margin-bottom: .5rem; background-color:#4a7; box-shadow: 0 0 0 .1rem;}
+.download:hover,.download:focus{background-color:#fff; color:#4a7; box-shadow: 0 0 0 .1rem #fff}
+.repo{margin-top:1rem;}
+.download span{font-weight: 200 !important}
+
+.comparison > {display:table}
+.comparison > div{display:table-row}
+.comparison > div > p{display:table-cell;width: 25%; line-height: 2rem; padding: 1rem;}
+.comparison, .specimen{background-color: #fff; position:relative; z-index:9; max-width: 100%; box-shadow: 0 0 1em rgba(0,0,0,0.2)}
+
+.specimen{background-color:#ddd; z-index:8; box-shadow: none;}
+.specimen svg{width: 100%; height: 50rem}
+.specimen svg path{fill:#777}
+
+footer{background-color:#333; color:#fff;position:relative; z-index:10; box-shadow:inset  0 0 1em rgba(0,0,0,0.72); margin:0; padding: 2rem;}
+
+
+footer .sponsor .logotext{fill:#fff}
+@media (min-width:45rem){
+  header .about{width: 45%; top:3rem;position:absolute; left:55%; }}
