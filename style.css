@@ -364,7 +364,7 @@ input[type=radio] {
 
 h1 {
   width: 45%;
-  margin: 2rem 1em 14rem 0;
+
   transition: all .15s ease;
   font-weight: 400;
   padding: .9em 0;
@@ -515,8 +515,15 @@ a, label {
 }
 .comparison {font-size: 1.5rem;}
 @media (max-width: 55em){.sample > h2{width: 49% !important;}
+  h1{width: 90%; margin: 3rem auto;}
+
+  .about p:first-child{font-size: 2rem;}
+  .sample{margin-top:3rem;}
+  .sample h2{margin-bottom:1rem !important;}
 }
 @media (max-width: 45em) {
+
+
 body:after{border-radius: 0; opacity:.93}
   .sample-line.x13, .sample-line.x7{display:none}
 
@@ -619,8 +626,9 @@ h1{margin-bottom:3rem; width: 100%; !important}
   letter-spacing: .079em;
 }
 aside{width: 50%; right:0; position:absolute; top:0;}
-header{background-color:#65746e; /* source : https://unsplash.com/photos/QwmB-VgL7vs*/background-repeat:no-repeat; overflow:hidden;
+header{background-color:#65746e; background-repeat:no-repeat; overflow:hidden;
   background-position: 100% 90%; background-size: cover;
+  background-image:url(https://images.unsplash.com/photo-1447622919665-d95b0d80b251?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=fd2c1acffb3742b3793055919d77d9e1);
  background-blend-mode: multiply; color:#c3cfc9; z-index:9; position:relative;box-shadow: 0 .5em 1em rgba(0,0,0,0.2)}
 
 
@@ -655,7 +663,8 @@ footer{background-color:#333; color:#fff;position:relative; z-index:10; box-shad
 
 
 footer .sponsor .logotext{fill:#fff}
-@media (min-width:45rem){
+@media (min-width:57rem){
+  h1{  margin: 2rem 1em 14rem 0;}
   header .about{width: 45%;  top:3rem;position:absolute; left:50%; }
 .about p:first-child{font-size: 2rem;}
 }
