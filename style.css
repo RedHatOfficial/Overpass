@@ -645,7 +645,7 @@ header{background-color:#555; background-repeat:no-repeat; overflow:hidden;
 
 
 header a:link, header a:visited{color:#c3cfc9;}
-header .about p:nth-child(2) a:link,header .about p:nth-child(2) a:visited{color:#fff; padding:.2em;box-shadow: 0 .1em }
+header .about p:nth-child(2) a:link,header .about p:nth-child(2) a:visited{color:#fff; padding:.2em; }
 
 .sample h2{ }
 
