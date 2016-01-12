@@ -287,7 +287,7 @@ input + label:hover {
 .grid {
   font-size: 3.5rem;
   margin: 4rem auto;
-  color: #aaa;
+
 }
 
 .all-characters > span,
@@ -659,7 +659,7 @@ header .about p:nth-child(2) a:link,header .about p:nth-child(2) a:visited{color
 .comparison > div > p{display:table-cell;width: 25%; line-height: 2rem; padding: 1rem;}
 .comparison, .specimen{background-color: #fff; position:relative; z-index:9; max-width: 100%; box-shadow: 0 0 1em rgba(0,0,0,0.2)}
 
-.specimen{background-color:#ddd; z-index:8; box-shadow: none; padding: 5rem 0}
+.specimen{background-color:#ddd; z-index:8; box-shadow: 0 .5em 1em rgba(0,0,0,0.3); padding: 5rem 0}
 .specimen svg{width: 100%; height: 50rem}
 .specimen svg path{fill:#777}
 
