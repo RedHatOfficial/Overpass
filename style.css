@@ -518,13 +518,15 @@ a, label {
 
 }
 .comparison {font-size: 1.5rem;}
-@media (max-width: 55em){.sample > h2{width: 49% !important;}
+@media (max-width: 55em){
+  .sample > h2{width: 49% !important; font-size: 1.75rem !important ;}
   h1{width: 90%; margin: 3rem auto;}
 
   .about p:first-child{font-size: 2rem;}
   .sample{margin-top:3rem;}
-  .sample h2{margin-bottom:1rem !important;}
+  .sample h2{margin-bottom:1rem !important; }
 }
+@media (max-width: 45em){
 
 @media (max-width:55em){  body > .comparison , body > .comparison > div, body > .comparison > div > p {display:block ; width: 100%;}
     .comparison   p  span{display:none}
