@@ -448,8 +448,7 @@ body:after {
   font-weight: 800;
   padding-top: 1em;
   background-color: #fff;
-  box-shadow: 0 0.5em 1em r
-  gba(0, 0, 0, 0.13); border-radius:1em;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.23); border-radius:1em;
   width: 18em;
   height: 22em;
   right: .5em;
@@ -536,11 +535,13 @@ a, label {
 @media (max-width:55em){  body > .comparison , body > .comparison > div, body > .comparison > div > p {display:block ; width: 100%;}
     .comparison   p  span{display:none}
   .comparison  p{width: 100%; display:block;font-size: 1.5rem;margin:0; ;}
+
+h1{margin-bottom:3rem;  font-size:3em;padding: .5em 0; width: 100%; !important}
 }
 @media (max-width: 45em) {
 
 
-body:after{border-radius: 0; opacity:.93}
+body:after{border-radius: .6666em .6666em 0 0; box-shadow: 0 -.2em .5em rgba(0,0,0,0.2)}
   .sample-line.x13, .sample-line.x7{display:none}
 
 body > .specimen svg{height: 20rem;}
@@ -549,7 +550,7 @@ body > .specimen svg{height: 20rem;}
   }
 
 
-h1{margin-bottom:3rem; width: 100%; !important}
+
 
   .repo {
     display: block;
@@ -671,7 +672,7 @@ header .about p:nth-child(2) a:link,header .about p:nth-child(2) a:visited{color
 .specimen svg{width: 100%; height: 50rem}
 .specimen svg path{fill:#fafafa}
 
-footer{background-color:#333; color:#fff;position:relative; z-index:10; box-shadow:inset  0 0 1em rgba(0,0,0,0.72); margin:0; padding: 2rem;}
+footer{background-color:#333; color:#fff;position:relative; z-index:9; box-shadow:  0 -.5em 0 rgba(0,0,0,0.1); margin:0; padding: 2rem;}
 
 
 footer .sponsor .logotext{fill:#fff}
