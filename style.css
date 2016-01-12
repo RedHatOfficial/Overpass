@@ -43,7 +43,7 @@ section { margin: 0 auto; padding: 2em; font-size: 1rem; max-width: 80em; text-a
 .regular { font-weight: 600 }
 .bold { font-weight: 700 }
 .grid { margin: 4rem auto; font-size: 3.5rem; }
-h1, input:checked + label { color: #fff; background-color: #4a7; }
+h1, input:checked + label { color: #fff !important; background-color: #4a7; }
 input + label { perspective: 200; transform-origin: 50% 0%; }
 input + label:hover { color: #555 }
 input:checked + label { transform: scale(0.9); border-radius: .5em; }
