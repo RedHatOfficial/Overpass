@@ -54,7 +54,7 @@ label { color: #aaa; cursor: pointer; height: 3em; font-size: .7rem; line-height
 #regular-variant:checked ~ input, #regular-variant:checked ~ div, #regular-variant:checked ~ section { font-weight: 600 }
 #bold-variant:checked ~ input, #bold-variant:checked ~ div, #bold-variant:checked ~ section { font-weight: 700 }
 input[type=radio] { display: none }
-h1 { width: 45%; color: #fff; padding: 1.5em 0; font-size: 4rem; transition: all .15s ease; box-shadow: 0 0 0 .08em #fff,  0 0 0 .2em #5b8; font-weight: 700; border-radius: .133333em; -webkit-user-select: none !important; }
+h1 { width: 45%; color: #fff; padding: 1.15em 0; font-size: 4rem; transition: all .15s ease; box-shadow: 0 0 0 .08em #fff,  0 0 0 .2em #5b8; font-weight: 700; border-radius: .133333em; -webkit-user-select: none !important; }
 .editor, hr { width: 100% }
 .vr { margin: .2em .5em .2em .2em; height: 2em; opacity: .2; border-left: .1em solid; }
 hr { clear: both; opacity: 0; }
@@ -79,9 +79,13 @@ a:link, a:visited { color: #396; display: inline-block; }
     .comparison > { display: table }
         .comparison > div { display: table-row }
             .comparison > div > p { width: 25%; display: table-cell; padding: 1rem; line-height: 2rem; }
+
+
+.about > p:first-child { font-size: 2rem; font-weight: 200 ; margin:.5rem 0;}
+
+.about > p:nth-child(2){margin:0}
 @media (max-width: 55em) {
 	h1 { width: 90%; margin: 3rem auto; }
-	.about p:first-child { font-size: 2rem; font-weight: 200 !important; }
 	.sample { margin-top: 3rem }
 	    .sample > h2 { width: 49% !important; font-size: 1.75rem !important; }
 	    .sample h2 { margin-bottom: 1rem !important }
@@ -137,7 +141,6 @@ footer:hover { background-color: #900 }
 @media (min-width: 57rem) {
 	h1 { margin: 2rem 1em 8rem 0 }
 	header .about { top: 3rem; left: 50%; width: 45%; position: absolute; }
-	.about p:first-child { font-size: 2rem; font-weight: 200 !important; }
 }
 .all-characters { padding: 7rem 0 }
     .all-characters > span, .grid span { width: 1.5em; height: 2em; margin: .5px; position: relative; transition: none; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.015); line-height: 2em; vertical-align: top; -webkit-user-select: none; }
@@ -148,6 +151,7 @@ footer:hover { background-color: #900 }
     .all-characters span, .sample-line.grid:after { border: none }
     .all-characters span { display: inline-block; position: relative; }
 .all-characters { font-size: 4.5rem }
+
 @media (max-width: 55em) {
-	.all-characters span { font-size: 16vw !important }
+	.all-characters > span { font-size: 14vw !important }
 }
