@@ -683,5 +683,5 @@ footer .sponsor .logotext{fill:#fff}
 .all-characters > span:hover small{display:block; display:block; font-size: .15rem !important; opacity:.4; text-transform: lowercase ; padding: .5em 1em; letter-spacing: 0; line-height: 1em; position:absolute; bottom:0; left:0; width: 100%; text-align:center;}
 
 @media (max-width:55em){
-  .all-characters span{font-size:4.2rem}
+  .all-characters span{font-size:4rem !important}
 }
