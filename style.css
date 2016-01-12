@@ -525,22 +525,23 @@ a, label {
   .sample{margin-top:3rem;}
   .sample h2{margin-bottom:1rem !important;}
 }
+
+@media (max-width:55em){  body > .comparison , body > .comparison > div, body > .comparison > div > p {display:block ; width: 100%;}
+    .comparison   p  span{display:none}
+  .comparison  p{width: 100%; display:block;font-size: 1.5rem;margin:0; ;}
+}
 @media (max-width: 45em) {
 
 
 body:after{border-radius: 0; opacity:.93}
   .sample-line.x13, .sample-line.x7{display:none}
 
-body > .comparison , body > .comparison > div, body > .comparison > div > p {display:block ; width: 100%;}
-  .comparison   p  span{display:none}
-.comparison  p{width: 100%; display:block;}
 body > .specimen svg{height: 20rem;}
   .repo, body:after, h1 {
     width: 100%;
   }
 
 
-.comparison p {font-size: 1.5rem;margin:0; ;}
 h1{margin-bottom:3rem; width: 100%; !important}
 
   .repo {
