@@ -626,13 +626,13 @@ header{background-color:#285; background-repeat:no-repeat; overflow:hidden;
  header .line{content:""; z-index:-1;
    position:absolute;
    transform: rotatex(95deg)  ;
-   top:0%;  display:block; height: 100vh; width: 80%; left:20%; background-color:#555;
+   top:0%;  display:block; height: 100vh; width: 80%; left:20%; opacity:.25;background-color:#444;
 }
 
  header .line-2{content:""; z-index:-1;
    position:absolute;
-   transform: rotatex(95deg)  scale(.5);
-   top:0%;    display:block; height: 10vh; width: 4%; left:52%; background-color:#aaa;
+   transform: rotatex(95deg)  scale(.5) translate(50%, -100%);
+   top:0%;    display:block; height: 10vh; width: 4%; left:52%;  opacity:.25; background-color:#aaa;
  animation: 1s roadline infinite}
 section{position:relative;}
  @keyframes roadline{
