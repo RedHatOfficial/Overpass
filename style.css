@@ -153,5 +153,5 @@ footer:hover { background-color: #900 }
 .all-characters { font-size: 4.5rem }
 
 @media (max-width: 55em) {
-	.all-characters > span { font-size: 14vw !important }
+	.all-characters > span { font-size: 16vw !important }
 }
