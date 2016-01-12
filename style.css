@@ -626,10 +626,10 @@ h1{margin-bottom:3rem; width: 100%; !important}
   letter-spacing: .079em;
 }
 aside{width: 50%; right:0; position:absolute; top:0;}
-header{background-color:#65746e; background-repeat:no-repeat; overflow:hidden;
+header{background-color:#444; background-repeat:no-repeat; overflow:hidden;
   background-position: 100% 90%; background-size: cover;
-  background-image:url(https://images.unsplash.com/photo-1447622919665-d95b0d80b251?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=fd2c1acffb3742b3793055919d77d9e1);
- background-blend-mode: multiply; color:#c3cfc9; z-index:9; position:relative;box-shadow: 0 .5em 1em rgba(0,0,0,0.2)}
+  background-image:url(overpass-caleb-george.jpg) ;/* source:https://unsplash.com/photos/URmkfvtK3Qw */
+ background-blend-mode: soft-light; color:#c3cfc9; z-index:9; position:relative;box-shadow: 0 .5em 1em rgba(0,0,0,0.2)}
 
 
  header a{position:relative; z-index:9}
@@ -643,7 +643,7 @@ header .about p:nth-child(2) a:link,header .about p:nth-child(2) a:visited{color
 
 .sample h2{font-size: 3em; display:inline-block;  margin:0; padding: .5rem 0rem; position:relative;   margin-bottom: 4rem;}
 
-.sample h2:before{  vertical-align: top;position:absolute; top:0;font-weight: 400; font-style:normal ; text-transform: uppercase; content: attr(class); opacity:.5; font-size: .7rem; display:inline-block; }
+.sample h2:before{  vertical-align: top;position:absolute; top:0;font-weight: 400; font-style:normal ; text-transform: uppercase; content: attr(class); opacity:.75; font-size: .7rem; display:inline-block; }
 
 .download,.download:link, .download:visited{padding:.5rem .75rem; color:#fff;margin-right: .25rem;margin-bottom: .5rem; background-color:#4a7; border-radius: .25em;}
 .download:hover,.download:focus{background-color:#fff; color:#4a7; box-shadow: 0 0 0 .1rem #fff}
