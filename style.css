@@ -155,3 +155,5 @@ footer:hover { background-color: #900 }
 @media (max-width: 55em) {
 	.all-characters > span { font-size: 16vw !important }
 }
+
+.waterfall p{margin: .5rem 0}
