@@ -144,7 +144,8 @@ footer:hover { background-color: #900 }
 }
 .all-characters { padding: 7rem 0 }
     .all-characters > span, .grid span { width: 1.5em; height: 2em; margin: .5px; position: relative; transition: none; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.015); line-height: 2em; vertical-align: top; -webkit-user-select: none; }
-    .all-characters > span:hover, .grid span:focus, .grid span:hover { color: #000; cursor: default; z-index: 4; transform: scale(2.5); transition: transform 0.2s cubic-bezier(0.65, 0.09, 0.39, 1.45) 0.1s, box-shadow 0.25s ease; box-shadow: 0 0.15em 0.25em 1px rgba(0, 0, 0, 0.25); background-color: #fff; }
+    .all-characters > span:hover, .grid span:focus, .grid span:hover {
+      color: #fff; cursor: default; z-index: 4; transform: scale(2.5); transition: transform 0.2s cubic-bezier(0.65, 0.09, 0.39, 1.45) 0.1s, box-shadow 0.25s ease; box-shadow: 0 0.15em 0.25em 1px rgba(0, 0, 0, 0.25), inset 0 0 0 .05em #4a7, inset 0 0 0 .075em #fff; background-color: #4a7; border-radius:.15em }
         .all-characters > span:hover small { left: 0; width: 100%; bottom: 0; display: block; display: block; opacity: .4; padding: .5em 1em; position: absolute; font-size: .5rem !important; text-align: center; line-height: 1em; text-transform: lowercase; letter-spacing: 0; }
     .all-characters small { display: none }
     .all-characters span, .grid span, body:after, h1 { text-align: center }
