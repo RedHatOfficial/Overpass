@@ -73,7 +73,7 @@ label[for="non-italic"] { width: 9em; bottom: 12.5em; }
 label[for="lowercase"] { right: 6.5em }
 label[for="uppercase"] { right: 12.5em }
 a, label { -webkit-user-select: none; -webkit-tap-highlight-color: transparent; }
-.button a, a:link, a:visited { font-weight: 600; text-decoration: none; }
+.button a, a:link, a:visited {  text-decoration: none; }
 a:link, a:visited { color: #396; display: inline-block; }
 .comparison { font-size: 1.5rem }
     .comparison > { display: table }
@@ -157,4 +157,4 @@ footer:hover { background-color: #900 }
 	.all-characters > span { font-size: 16vw !important }
 }
 
-.waterfall p{margin: .5rem 0}
+.waterfall p{margin:  0;padding: .5rem 0; line-height: 1.3em;}
