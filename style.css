@@ -119,7 +119,13 @@ a:link, a:visited { color: #396; display: inline-block; }
     .sponsor p { color: #fff; width: 19rem; padding: .666em 1em; font-size: 1rem; font-weight: 600; letter-spacing: .079em; background-color: #c00; }
     .sponsor p, body:after { display: block; text-transform: uppercase; }
 aside { top: 0; width: 50%; right: 0; position: absolute; }
-header { color: #c3cfc9; z-index: 9; overflow: hidden; position: relative; box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2); background-size: cover; background-color: #555; background-image: url(/overpass-paul-took.jpg); background-repeat: no-repeat; background-position: 50% 0%; background-blend-mode: soft-light; }
+header {color: #c3cfc9;z-index: 9;overflow: hidden;position: relative;box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);background-size: cover;background-color: #555;background-image: url(/overpass-paul-took.jpg);background-repeat: no-repeat;background-position: 50% 0%;
+}
+
+footer div , header section{position:relative;}
+
+
+footer:before, header:before{content:""; position:absolute; top:0; left:0; right:0; bottom:0; width: 100% height: 100%; background-color:#323436; opacity:.5}
     header .about p:nth-child(2) a:link, header .about p:nth-child(2) a:visited { color: #fff; padding: .2em; }
 header:after { width: 100%; content: "Photo by Paul Took"; opacity: .25; display: block; text-align: center; }
 header a { z-index: 9; position: relative; }
@@ -134,10 +140,11 @@ header a:link, header a:visited { color: #c3cfc9 }
     .specimen svg { width: 100%; height: 50rem; }
         .specimen svg path { fill: #fafafa }
 .specimen { z-index: 8; padding: 5rem 0; box-shadow: 0 0.5em 0 0.5em rgba(0, 0, 0, 0.2); background-color: #2c322f; }
-footer { color: #fff; margin: 0; z-index: 9; padding: 2rem; overflow: hidden; position: relative; transition: background .25s ease; box-shadow: 0 -0.5em 0 rgba(0, 0, 0, 0.1); background-size: cover; background-color: #555; background-image: url(/overpass-paul-took.jpg); background-color: #666; background-repeat: no-repeat; background-position: 50% 0%; background-blend-mode: soft-light; }
+footer { color: #fff; margin: 0; z-index: 9; padding: 2rem; overflow: hidden; position: relative; transition: background .25s ease; box-shadow: 0 -0.5em 0 rgba(0, 0, 0, 0.1); background-size: cover; background-color: #555; background-image: url(/overpass-paul-took.jpg); background-color: #666; background-repeat: no-repeat; background-position: 50% 0%;   }
     footer .sponsor .logotext { fill: #fff }
     footer a:hover p { background-color: #d00 }
-footer:hover { background-color: #900 }
+footer:hover:before { background-color: #900 }
+
 @media (min-width: 57rem) {
 	h1 { margin: 2rem 1em 8rem 0 }
 	header .about { top: 3rem; left: 50%; width: 45%; position: absolute; }
