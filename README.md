@@ -27,4 +27,7 @@ For more information, please visit  [overpassfont.org](http://www.overpassfont.o
 
 Copyright 2016 Red Hat, Inc.,
 
-This Font Software is licensed under the SIL Open Font License, Version 1.1. http://scripts.sil.org/OFL
+This Font Software is dual licensed under the SIL Open Font License and the GNU Lesser General Public License,
+LGPL 2.1 : http://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html
+OFL  1.1  : http://scripts.sil.org/OFL
+
