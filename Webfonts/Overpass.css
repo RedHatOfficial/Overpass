@@ -30,7 +30,7 @@
          url('Overpass-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('Overpass-Regular.svg#Overpass-Regular') format('svg'); /* Legacy iOS */
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     text-rendering: optimizeLegibility;
 }
 
@@ -43,7 +43,7 @@
          url('Overpass-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
          url('Overpass-Italic.svg#Overpass-Italic') format('svg'); /* Legacy iOS */
     font-style: italic;
-    font-weight: 600;
+    font-weight: 400;
     text-rendering: optimizeLegibility;
 }
 
@@ -56,7 +56,7 @@
          url('Overpass-Light.ttf') format('truetype'), /* Safari, Android, iOS */
          url('Overpass-Light.svg#Overpass-Light') format('svg'); /* Legacy iOS */
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     text-rendering: optimizeLegibility;
 }
 
@@ -68,7 +68,7 @@
          url('Overpass-Light-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
          url('Overpass-Light-Italic.svg#Overpass-LightItalic') format('svg'); /* Legacy iOS */
     font-style: italic;
-    font-weight: normal;
+    font-weight: 300;
     text-rendering: optimizeLegibility;
 }
 
@@ -80,7 +80,7 @@
          url('Overpass-ExtraLight.ttf') format('truetype'), /* Safari, Android, iOS */
          url('Overpass-ExtraLight.svg#Overpass-ExtraLight') format('svg'); /* Legacy iOS */
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     text-rendering: optimizeLegibility;
 }
 
@@ -92,7 +92,7 @@
          url('Overpass-ExtraLight-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
          url('Overpass-ExtraLight-Italic.svg#Overpass-ExtraLightItalic') format('svg'); /* Legacy iOS */
     font-style: italic;
-    font-weight: 300;
+    font-weight: 200;
     text-rendering: optimizeLegibility;
 }
 
