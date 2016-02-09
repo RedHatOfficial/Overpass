@@ -168,9 +168,10 @@ footer:hover:before { background-color: #900 }
 
 /*thanks keyCDN*/
 .cdn{width: 100%; display:block; line-height: 1em  !important ; font-size: .5em; color:#888;}
-.cdn label{display:inline-block; width : 100% !important; height: 1em !important; line-height: 1em; padding:0; margin:0 !important;}
+.cdn label{display:inline-block; width : 100% !important; height: 1em !important; line-height: 1.65em;  padding:0; margin:0 !important;}
+.cdn label > span{display:inline-block; width: 3.5em; text-align:right;}
 .cdn input{display:inline-block; cursor: text; left: 10%; position:absolute; width: 80%;  font-size: 1em; line-height: 1.65em !important; height: 1.65em; font-family: menlo, dejavu mono, monospace; appearance: none; color: #777; background: rgba(0,0,0,0.3); border:none; padding: 0 .15em}
 
 
 ::-moz-selection { color:white; background: #4a7; }
-::selection { color:white; background: #4a7 ; }
+::selection { color:white; background: #4a7 ;  }
