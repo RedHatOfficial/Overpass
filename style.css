@@ -106,7 +106,7 @@ a:link, a:visited { color: #396; display: inline-block; }
     #non-italic:checked ~ div, .sponsor p { font-style: normal }
     .sponsor p { color: #fff; width: 19rem; padding: .666em 1em; font-size: 1rem; font-weight: 600; letter-spacing: .079em; background-color: #c00; }
     .sponsor p, body:after { display: block; text-transform: uppercase; }
-header {color: #c3cfc9;z-index: 9;overflow: hidden;position: relative;box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);background-size: cover;background-color: #555;background-image: url(/overpass-paul-took.jpg);background-repeat: no-repeat;background-position: 50% 0%;
+header {color: #c3cfc9;z-index: 9;overflow: hidden;position: relative;box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);background-size: cover;background-color: #555;background-image: url(overpass-paul-took.jpg);background-repeat: no-repeat;background-position: 50% 0%;
 }
 
 footer div , header section{position:relative;}
