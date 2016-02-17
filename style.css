@@ -4,7 +4,6 @@
 #type-sample:focus, #type-sample:hover { color: #000 }
 body:after { width: 18em; right: .5em; height: 22em; bottom: 0.5em; content: "Font Controls"; z-index: 5; position: fixed; font-size: .7rem; box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.23); font-weight: 800; padding-top: 1em; border-radius: 1em; background-color: #fff; }
 #uppercase:checked ~ input, #uppercase:checked ~ div, #uppercase:checked ~ section, .caps, .uppercase, label { text-transform: uppercase }
-.grid, .grid span { font-weight: inherit }
     .button a, .grid span, label { display: inline-block }
 .button a:hover { box-shadow: 0 0 0 .15em #fff,0 0 0 .35em #900; background-color: #c00; }
 
@@ -23,16 +22,12 @@ label { padding: .2em .4em; font-style: normal; transition: all .25s ease; font-
 body { color: #545a64; margin: 0; padding: 0; font-size: 1rem; background-color: #eee; }
 section { margin: 0 auto; padding: 2em; font-size: 1rem; max-width: 80em; text-align: left; }
 .x05 { font-size: .5em }
-.x066 { font-size: .66em }
 .x075 { font-size: 0.75rem }
-.x08 { font-size: .8em }
 .x1 { font-size: 1em }
 .x15 { font-size: 1.5em }
 .x2 { font-size: 2em }
 .x3, h1 { font-size: 3em }
 .x4 { font-size: 4em }
-.x5 { font-size: 5em }
-.x6 { font-size: 6em }
 .x7 { font-size: 7em }
 .x13 { font-size: 13em }
 .sample-line { line-height: 1.33em; margin-bottom: 1rem; }
@@ -42,7 +37,6 @@ section { margin: 0 auto; padding: 2em; font-size: 1rem; max-width: 80em; text-a
 .light { font-weight: 400 }
 .regular { font-weight: 600 }
 .bold { font-weight: 700 }
-.grid { margin: 4rem auto; font-size: 3.5rem; }
 h1, input:checked + label { color: #fff !important; background-color: #4a7; }
 input + label { perspective: 200; transform-origin: 50% 0%; }
 input + label:hover { color: #555 }
@@ -55,14 +49,9 @@ label { color: #aaa; cursor: pointer; height: 3em; font-size: .7rem; line-height
 #bold-variant:checked ~ input, #bold-variant:checked ~ div, #bold-variant:checked ~ section { font-weight: 700 }
 input[type=radio] { display: none }
 h1 { width: 45%; color: #fff; padding: 1.15em 0; font-size: 4rem; transition: all .15s ease; box-shadow: 0 0 0 .08em #fff,  0 0 0 .2em #5b8; font-weight: 700; border-radius: .133333em; -webkit-user-select: none !important; }
-.editor, hr { width: 100% }
-.vr { margin: .2em .5em .2em .2em; height: 2em; opacity: .2; border-left: .1em solid; }
-hr { clear: both; opacity: 0; }
 .button a { color: #fff !important; padding: .2em 1em; box-shadow: 0 0 0 .15em #fff,0 0 0 .35em #444; border-radius: .1em; text-transform: uppercase; letter-spacing: .1em; background-color: #555; }
-.editor { height: auto; display: block; }
 .padd { padding: 0 1em }
     .padd .sample-line { overflow: hidden; white-space: nowrap; }
-.spec { margin: 1rem 0; line-height: 1em; }
 label[for="extralight-variant"], label[for="light-variant"], label[for="regular-variant"], label[for="bold-variant"], label[for="italic"], label[for="non-italic"], label[for="uppercase"], label[for="lowercase"], label[for="standard"] { right: .5em; width: 18em; bottom: .5em; z-index: 8; position: fixed; text-align: center; }
 label[for="uppercase"], label[for="lowercase"], label[for="standard"] { width: 6em; bottom: 15.5em; }
 label[for="regular-variant"] { bottom: 3.5em }
@@ -75,8 +64,7 @@ label[for="uppercase"] { right: 12.5em }
 a, label { -webkit-user-select: none; -webkit-tap-highlight-color: transparent; }
 .button a, a:link, a:visited {  text-decoration: none; }
 a:link, a:visited { color: #396; display: inline-block; }
-.comparison { font-size: 1.5rem }
-    .comparison > { display: table }
+.comparison { font-size: 1.5rem ; display: table }
         .comparison > div { display: table-row }
             .comparison > div > p { width: 25%; display: table-cell; padding: 1rem; line-height: 2rem; }
 
@@ -118,7 +106,6 @@ a:link, a:visited { color: #396; display: inline-block; }
     #non-italic:checked ~ div, .sponsor p { font-style: normal }
     .sponsor p { color: #fff; width: 19rem; padding: .666em 1em; font-size: 1rem; font-weight: 600; letter-spacing: .079em; background-color: #c00; }
     .sponsor p, body:after { display: block; text-transform: uppercase; }
-aside { top: 0; width: 50%; right: 0; position: absolute; }
 header {color: #c3cfc9;z-index: 9;overflow: hidden;position: relative;box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);background-size: cover;background-color: #555;background-image: url(/overpass-paul-took.jpg);background-repeat: no-repeat;background-position: 50% 0%;
 }
 
@@ -153,8 +140,6 @@ footer:hover:before { background-color: #900 }
     .all-characters > span, .grid span { width: 1.5em; height: 2em; margin: .5px; position: relative; transition: none; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.015); line-height: 2em; vertical-align: top; -webkit-user-select: none; }
     .all-characters > span:hover, .grid span:focus, .grid span:hover {
       color: #fff; cursor: default; z-index: 4; transform: scale(2.5); transition: transform 0.2s cubic-bezier(0.65, 0.09, 0.39, 1.45) 0.1s, box-shadow 0.25s ease; box-shadow: 0 0.15em 0.25em 1px rgba(0, 0, 0, 0.25), inset 0 0 0 .05em #4a7, inset 0 0 0 .075em #fff; background-color: #4a7; border-radius:.15em }
-        .all-characters > span:hover small { left: 0; width: 100%; bottom: 0; display: block; display: block; opacity: .4; padding: .5em 1em; position: absolute; font-size: .5rem !important; text-align: center; line-height: 1em; text-transform: lowercase; letter-spacing: 0; }
-    .all-characters small { display: none }
     .all-characters span, .grid span, body:after, h1 { text-align: center }
     .all-characters span, .sample-line.grid:after { border: none }
     .all-characters span { display: inline-block; position: relative; }
@@ -162,6 +147,7 @@ footer:hover:before { background-color: #900 }
 
 @media (max-width: 55em) {
 	.all-characters > span { font-size: 16vw !important }
+.cdn{display:none !important;}
 }
 
 .waterfall p{margin:  0;padding: .5rem 0; line-height: 1.3em;}
