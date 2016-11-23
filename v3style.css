@@ -169,8 +169,8 @@ h1{
 {display:none}
 
 
-.about {max-width: 80em; text-align:center;margin: 0 auto; }
-article{display:none;padding-bottom:2rem;padding-top: 12em;
+.about { text-align:center;margin: 0 auto; }
+article{display:none;padding-top: 12em;
 }
 /* hiding  monospace samples on standard select */
 
@@ -211,7 +211,7 @@ article p:first-child{
   margin:0;}
 
 h2{ width: 100%;
-  color:#888;
+  color:#333;
   margin: 0;
   font-size: 4em;
   display:inline-block;
@@ -395,7 +395,7 @@ footer h4{font-weight: 400; margin-bottom:2em;text-transform: uppercase; letter-
 @media (max-width: 50em) {.award{width: 45% !important} .award svg{ height:1em !important;}}
 @media (max-width: 40em) {
   .cdn{display:none !important;}
-  label span{font-size:.5em !important; display:inline-block;line-height:2rem;}
+  label span{font-size:.75em !important;  opacity:.7;}
 }
 
 .cdn label{
@@ -580,7 +580,7 @@ article, section, .glyph-chart, .glyph-chart div{user-select:none}
 
 
 .sample-2 {
-  margin:0;
+  margin:0;margin-top:2em;
   perspective: 60vw;
   font-family: Overpass, sans-serif;
   text-align: center;
@@ -668,14 +668,17 @@ article, section, .glyph-chart, .glyph-chart div{user-select:none}
 
 
 .sample-3 {
+  background-color:#545a64;
   perspective: 60vw;
-  font-size: 4em;
+  font-size: 6vw;
   text-align: center;
+  padding: 2rem;
   font-family: Overpass, sans-serif;
   color: #aaa;
 }
 .sample-3 h3 {
-  margin: 0.5em 0;
+  padding: 0.25em 0;
+  margin:0;
 }
 
 .sample-3 .letter span:nth-child(1n) {
@@ -790,6 +793,12 @@ article, section, .glyph-chart, .glyph-chart div{user-select:none}
   }
   96% {
     font-weight: 900;
-    color: #333;
+    color: #fff;
   }
+}
+
+
+@media (min-width: 70em){
+  .sample-2{font-size: 5vw}
+  .sample-3{font-size:3vw}
 }
