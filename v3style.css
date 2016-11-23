@@ -207,6 +207,7 @@ article p:first-child{
   font-size: 6em;
   line-height:1em;
   width: 100%;
+  overflow:hidden; max-width: 100%
   text-align:center;
   margin:0;}
 
@@ -426,7 +427,7 @@ footer h4{font-weight: 400; margin-bottom:2em;text-transform: uppercase; letter-
   padding: 0 .15em}
 
 
-.waterfall p{white-space: nowrap; margin: 1rem;; line-height:1em;}
+.waterfall p{white-space: nowrap; margin: 1rem;; line-height:1em; overflow:hidden; }
 
 
 .waterfall p:nth-child(2){font-size: 10rem}
