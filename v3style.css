@@ -393,7 +393,12 @@ footer a:hover svg path{fill:white}
 footer{background-color:#23292c; color: #aaa; padding-top:5rem;padding-bottom:3rem; text-align:center;}
 footer h4{font-weight: 400; margin-bottom:2em;text-transform: uppercase; letter-spacing:.1em;}
 
-@media (max-width: 50em) {.award{width: 45% !important} .award svg{ height:1em !important;}}
+@media (max-width: 50em) {
+  .award{width: 45% !important}
+  .award:after, .award:before{display:none !important}
+
+  .award svg{ height:1.3em !important; width: 80% !important;}
+}
 @media (max-width: 40em) {
   .cdn{display:none !important;}
   label span{font-size:.75em !important;  opacity:.7;}
@@ -585,8 +590,8 @@ article, section, .glyph-chart, .glyph-chart div{user-select:none}
   perspective: 60vw;
   font-family: Overpass, sans-serif;
   text-align: center;
-  color: #eee;
-  background-color: #4a7;
+  color: #285;
+  background-color: #eee;
   font-size: 9vw;
   padding: 0.5em 0 1em 0;
   overflow: hidden;
@@ -649,7 +654,7 @@ article, section, .glyph-chart, .glyph-chart div{user-select:none}
 @keyframes effect {
   15% {
     transform: translate(0, 0.75em) rotateX(75deg) scale(0.9) rotate(1deg);
-    color: #4a7;
+    color: #eee;
     text-shadow: 0 -0.025em rgba(0, 0, 0, 0.2);
   }
   40% {
