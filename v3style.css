@@ -523,3 +523,41 @@ article, section, .glyph-chart, .glyph-chart div{user-select:none}
 .glyph-chart p{font-size:.24em; color:#aaa; font-weight: 200; display:none;}
 .glyph-chart div{cursor: default; font-size: 1.75em; transition: transform .15s cubic-bezier(.2,.4,.2,1.2) .12s;}
 .glyph-chart div:hover{transform:scale(4); background-color:white; color:black;box-shadow: 0 .05em .2em rgba(0,0,0,0.4)}
+
+
+
+
+
+.onion-skin text {
+  font-family: overpass;
+  text-align: center;
+  font-size: 80px;
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: .2px;
+  opacity: .5;
+}
+.onion-skin text:nth-child(1) {
+  font-weight: 200;
+}
+.onion-skin text:nth-child(2) {
+  font-weight: 300;
+}
+.onion-skin text:nth-child(3) {
+  font-weight: 400;
+}
+.onion-skin text:nth-child(4) {
+  font-weight: 500;
+}
+.onion-skin text:nth-child(5) {
+  font-weight: 600;
+}
+.onion-skin text:nth-child(6) {
+  font-weight: 700;
+}
+.onion-skin text:nth-child(7) {
+  font-weight: 800;
+}
+.onion-skin text:nth-child(8) {
+  font-weight: 900;
+}
