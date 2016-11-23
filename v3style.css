@@ -169,7 +169,7 @@ h1{
 {display:none}
 
 
-.about {max-width: 80em; text-align:center;margin: 0 auto;  padding:  1em;}
+.about {max-width: 80em; text-align:center;margin: 0 auto; }
 article{display:none;padding-bottom:2rem;padding-top: 12em;
 }
 /* hiding  monospace samples on standard select */
@@ -350,6 +350,7 @@ body > input:checked + label {
 #variant-900:checked ~  input{
   font-weight: 900}
 
+.onion-skin text{transition: all .5s ease}
 
   #variant-200:checked ~  article .onion-skin text:nth-child(1),
   #variant-300:checked ~  article .onion-skin text:nth-child(2),
@@ -359,7 +360,7 @@ body > input:checked + label {
   #variant-700:checked ~  article .onion-skin text:nth-child(6),
   #variant-800:checked ~  article .onion-skin text:nth-child(7),
   #variant-900:checked ~  article .onion-skin text:nth-child(8)
-  { fill:currentcolor}
+  { fill:currentcolor; }
 
 
   #variant-italic:checked + label,
@@ -427,14 +428,14 @@ footer h4{font-weight: 400; text-transform: uppercase; letter-spacing:.1em;}
 .waterfall p{white-space: nowrap; margin: 1rem;; line-height:1em;}
 
 
-.waterfall p:nth-child(1){font-size: 10rem}
-.waterfall p:nth-child(2){font-size: 6rem}
-.waterfall p:nth-child(3){font-size: 4rem}
-.waterfall p:nth-child(4){font-size: 2rem}
-.waterfall p:nth-child(5){font-size: 1rem}
-.waterfall p:nth-child(6){font-size: .75rem}
-.waterfall p:nth-child(7){font-size: .5rem}
-.waterfall p:nth-child(8){font-size: .25rem}
+.waterfall p:nth-child(2){font-size: 10rem}
+.waterfall p:nth-child(3){font-size: 6rem}
+.waterfall p:nth-child(4){font-size: 4rem}
+.waterfall p:nth-child(5){font-size: 2rem}
+.waterfall p:nth-child(6){font-size: 1rem}
+.waterfall p:nth-child(7){font-size: .75rem}
+.waterfall p:nth-child(8){font-size: .5rem}
+.waterfall p:nth-child(9){font-size: .25rem}
 
 }
 .cdn-sponsor path{fill: currentcolor;}
@@ -573,4 +574,221 @@ article, section, .glyph-chart, .glyph-chart div{user-select:none}
 }
 .onion-skin text:nth-child(8) {
   font-weight: 900;
+}
+
+
+
+.sample-2 {
+  margin:0;
+  perspective: 60vw;
+  font-family: Overpass, sans-serif;
+  text-align: center;
+  color: #eee;
+  background-color: #4a7;
+  font-size: 9vw;
+  padding: 0.5em 0 1em 0;
+  overflow: hidden;
+}
+
+.sample-2 .letter span:nth-child(1n) {
+  animation-delay: 1.06667s;
+}
+
+.sample-2 .letter span:nth-child(2n) {
+  animation-delay: 1.13333s;
+}
+
+.sample-2 .letter span:nth-child(3n) {
+  animation-delay: 1.2s;
+}
+
+.sample-2 .letter span:nth-child(4n) {
+  animation-delay: 1.26667s;
+}
+
+.sample-2 .letter span:nth-child(5n) {
+  animation-delay: 1.33333s;
+}
+
+.sample-2 .letter span:nth-child(6n) {
+  animation-delay: 1.4s;
+}
+
+.sample-2 .letter span:nth-child(7n) {
+  animation-delay: 1.46667s;
+}
+
+.sample-2 .letter span:nth-child(8n) {
+  animation-delay: 1.53333s;
+}
+
+.sample-2 .letter span:nth-child(9n) {
+  animation-delay: 1.6s;
+}
+
+.sample-2 .letter span:nth-child(10n) {
+  animation-delay: 1.66667s;
+}
+
+.sample-2 .letter span:nth-child(11n) {
+  animation-delay: 1.73333s;
+}
+
+.sample-2 .letter span:nth-child(12n) {
+  animation-delay: 1.8s;
+}
+
+.sample-2 .letter {
+  margin: .26em 0;
+  line-height: 1em;
+  padding: 0;
+}
+
+@keyframes effect {
+  15% {
+    transform: translate(0, 0.75em) rotateX(75deg) scale(0.9) rotate(1deg);
+    color: #4a7;
+    text-shadow: 0 -0.025em rgba(0, 0, 0, 0.2);
+  }
+  40% {
+    transform: none;
+    text-shadow: 0 1.25em 0 transparent;
+    transform: none;
+    color: currentcolor;
+  }
+}
+.sample-2 .letter span {
+  min-width: .3em;
+  transform-origin: 50% 100%;
+  display: inline-block;
+  animation: effect 6s cubic-bezier(1, 0, 0, 1.1) infinite;
+  text-shadow: 0 1.5em 0 rgba(0, 0, 0, 0.015);
+}
+
+
+.sample-3 {
+  perspective: 60vw;
+  font-size: 4em;
+  text-align: center;
+  font-family: Overpass, sans-serif;
+  color: #aaa;
+}
+.sample-3 h3 {
+  margin: 0.5em 0;
+}
+
+.sample-3 .letter span:nth-child(1n) {
+  animation-delay: 1.2s;
+}
+
+.sample-3 .letter span:nth-child(2n) {
+  animation-delay: 1.4s;
+}
+
+.sample-3 .letter span:nth-child(3n) {
+  animation-delay: 1.6s;
+}
+
+.sample-3 .letter span:nth-child(4n) {
+  animation-delay: 1.8s;
+}
+
+.sample-3 .letter span:nth-child(5n) {
+  animation-delay: 2s;
+}
+
+.sample-3 .letter span:nth-child(6n) {
+  animation-delay: 2.2s;
+}
+
+.sample-3 .letter span:nth-child(7n) {
+  animation-delay: 2.4s;
+}
+
+.sample-3 .letter span:nth-child(8n) {
+  animation-delay: 2.6s;
+}
+
+.sample-3 .letter span:nth-child(9n) {
+  animation-delay: 2.8s;
+}
+
+.sample-3 .letter span:nth-child(10n) {
+  animation-delay: 3s;
+}
+
+.sample-3 .letter span:nth-child(11n) {
+  animation-delay: 3.2s;
+}
+
+.sample-3 .letter span:nth-child(12n) {
+  animation-delay: 3.4s;
+}
+
+.sample-3 .letter span:nth-child(13n) {
+  animation-delay: 3.6s;
+}
+
+.sample-3 .letter span:nth-child(14n) {
+  animation-delay: 3.8s;
+}
+
+.sample-3 .letter span:nth-child(15n) {
+  animation-delay: 4s;
+}
+
+.sample-3 .letter span:nth-child(16n) {
+  animation-delay: 4.2s;
+}
+
+.sample-3 .letter span:nth-child(17n) {
+  animation-delay: 4.4s;
+}
+
+.sample-3 .letter span:nth-child(18n) {
+  animation-delay: 4.6s;
+}
+
+.sample-3 .letter span:nth-child(19n) {
+  animation-delay: 4.8s;
+}
+
+.sample-3 .letter span:nth-child(20n) {
+  animation-delay: 5s;
+}
+
+.sample-3 .letter span {
+  animation: fadeit 4s linear infinite;
+  margin: .1em 0;
+  line-height: 1em;
+  padding: 0;
+}
+
+@keyframes fadeit {
+  12% {
+    font-weight: 200;
+    color: #ccc;
+  }
+  24% {
+    font-weight: 300;
+  }
+  36% {
+    font-weight: 400;
+  }
+  48% {
+    font-weight: 500;
+  }
+  60% {
+    font-weight: 600;
+  }
+  72% {
+    font-weight: 700;
+  }
+  84% {
+    font-weight: 800;
+  }
+  96% {
+    font-weight: 900;
+    color: #333;
+  }
 }
