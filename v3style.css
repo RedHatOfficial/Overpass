@@ -200,7 +200,7 @@ article{display:none;padding-top: 12em;
 .monospace-sample{
   font-family: overpass-mono, monospace;
   font-style: normal !important;
-  background-color:#545a64;
+  background-color:#444a54;
   color: white}
 
 article p:first-child{
@@ -394,6 +394,7 @@ footer{background-color:#23292c; color: #aaa; padding-top:5rem;padding-bottom:3r
 footer h4{font-weight: 400; margin-bottom:2em;text-transform: uppercase; letter-spacing:.1em;}
 
 @media (max-width: 50em) {
+  .onion-skin{display:none}
   .award{width: 45% !important}
   .award:after, .award:before{display:none !important}
 
@@ -525,9 +526,9 @@ a, label{-webkit-tap-highlight-color: rgba(255, 255, 255, 0);}
 ::selection { color:white; background: #4a7 ;  }
 
 
-.button{display:inline-block; padding: .3em 1em; border-radius: .3em; background-color: #4a7; color:#fff;}
+.button{display:inline-block; padding: 1em 2em; font-weight: 500; border-radius: .3em; background-color: #4a7; color:#fff;}
 
-article section{display:none}
+article section{display:none; padding-top: 3rem}
 #carousel-3:checked ~ .variants{display:block}
 
 #carousel-1:checked ~ .waterfall{display:block}
@@ -594,7 +595,7 @@ article, section, .glyph-chart, .glyph-chart div{user-select:none}
   background-color: #eee;
   font-size: 9vw;
   padding: 0.5em 0 1em 0;
-  overflow: hidden;
+  overflow: hidden;/B
 }
 
 .sample-2 .letter span:nth-child(1n) {
