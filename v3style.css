@@ -350,11 +350,24 @@ body > input:checked + label {
 #variant-900:checked ~  input{
   font-weight: 900}
 
-#variant-italic:checked + label,
-#variant-italic:checked ~  article  ,
-#variant-italic:checked ~  input {
-  font-style: italic
-}
+
+  #variant-200:checked ~  article .onion-skin text:nth-child(1),
+  #variant-300:checked ~  article .onion-skin text:nth-child(2),
+  #variant-400:checked ~  article .onion-skin text:nth-child(3),
+  #variant-500:checked ~  article .onion-skin text:nth-child(4),
+  #variant-600:checked ~  article .onion-skin text:nth-child(5),
+  #variant-700:checked ~  article .onion-skin text:nth-child(6),
+  #variant-800:checked ~  article .onion-skin text:nth-child(7),
+  #variant-900:checked ~  article .onion-skin text:nth-child(8)
+  { fill:currentcolor}
+
+
+  #variant-italic:checked + label,
+  #variant-italic:checked + article .onion-skin text,
+  #variant-italic:checked ~  article  ,
+  #variant-italic:checked ~  input {
+    font-style: italic
+  }
 
 #variant-italic + label {
   letter-spacing:.05em;
