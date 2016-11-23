@@ -393,17 +393,6 @@ footer a:hover svg path{fill:white}
 footer{background-color:#23292c; color: #aaa; padding-top:5rem;padding-bottom:3rem; text-align:center;}
 footer h4{font-weight: 400; margin-bottom:2em;text-transform: uppercase; letter-spacing:.1em;}
 
-@media (max-width: 50em) {
-  .onion-skin{display:none}
-  .award{width: 45% !important}
-  .award:after, .award:before{display:none !important}
-
-  .award svg{ height:1.3em !important; width: 80% !important;}
-}
-@media (max-width: 40em) {
-  .cdn{display:none !important;}
-  label span{font-size:.75em !important;  opacity:.7;}
-}
 
 .cdn label{
   display:inline-block;
@@ -808,4 +797,17 @@ article, section, .glyph-chart, .glyph-chart div{user-select:none}
 @media (min-width: 70em){
   .sample-2{font-size: 5vw}
   .sample-3{font-size:3vw}
+}
+
+
+@media (max-width: 50em) {
+  .onion-skin{display:none !important}
+  .award{width: 45% !important}
+  .award:after, .award:before{display:none !important}
+
+  .award svg{ height:1.3em !important; width: 80% !important;}
+}
+@media (max-width: 40em) {
+  .cdn{display:none !important;}
+  label span{font-size:.75em !important;  opacity:.7;}
 }
