@@ -143,6 +143,7 @@ h1{
   width: 20% !important}
 
 #variant-style-mono:checked ~ #type-sample{
+  background-color:#111; color: white;
   font-family: overpass-mono, monospace;
   font-style:normal !important; }
 
@@ -578,6 +579,10 @@ article, section, .glyph-chart, .glyph-chart div{user-select:none}
   font-weight: 900;
 }
 
+
+.monospace-sample input:checked + label{color: white;}
+.monospace-sample .glyphs div{color:#a3a6a9}
+.monospace-sample .glyphs div:hover{color:#222}
 
 
 .sample-2 {
