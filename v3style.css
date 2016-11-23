@@ -64,7 +64,8 @@ article input:checked + label{color:#000; box-shadow: 0 .1em }
 .monospace-button{
 
   left:66.6666666%;
-  font-family: overpass-mono, monospace;}
+  font-family: overpass-mono, monospace;
+font-style:normal}
 
 #type-sample{
   font-family: overpass, sans-serif;
@@ -195,6 +196,7 @@ article{display:none;padding-bottom:2rem;padding-top: 12em;
 #about:checked ~ article.about{display:block;padding-top: 5rem}
 .monospace-sample{
   font-family: overpass-mono, monospace;
+  font-style: normal !important;
   background-color:#545a64;
   color: white}
 
@@ -397,11 +399,23 @@ footer{background-color:#23292c; color: white; padding-top:5rem;padding-bottom:3
   line-height: 2em;
   height: 2em;
   font-family: overpass-mono, menlo, dejavu mono, monospace;
+  font-style: normal;
   appearance: none;
   border:none;
   padding: 0 .15em}
 
 
+.waterfall p{white-space: nowrap; margin: 1rem;; line-height:1em;}
+
+
+.waterfall p:nth-child(1){font-size: 10rem}
+.waterfall p:nth-child(2){font-size: 6rem}
+.waterfall p:nth-child(3){font-size: 4rem}
+.waterfall p:nth-child(4){font-size: 2rem}
+.waterfall p:nth-child(5){font-size: 1rem}
+.waterfall p:nth-child(6){font-size: .75rem}
+.waterfall p:nth-child(7){font-size: .5rem}
+.waterfall p:nth-child(8){font-size: .25rem}
 
 .cdn-sponsor{width: 20%; height: 3em;margin:0 2%; color:#ccc; }
 .cdn-sponsor path{fill: currentcolor;}
@@ -436,11 +450,15 @@ footer{background-color:#23292c; color: white; padding-top:5rem;padding-bottom:3
 .button{display:inline-block; padding: .3em 1em; border-radius: .3em; background-color: #4a7; color:#fff;}
 
 article section{display:none}
-#carousel-3:checked ~ .waterfall{display:block}
+#carousel-3:checked ~ .variants{display:block}
 
+#carousel-1:checked ~ .waterfall{display:block}
+#carousel-2:checked ~ .glyphs{display:block}
 
-
-article > label{margin-top: 1em; display:inline-block; width: 24%; position:relative; overflow: hidden;}
+article{text-align:center;}
+article > label{
+  margin-top: 1em;
+  display:inline-block; width: 30%; position:relative; overflow: hidden;}
 
 
 .glyph-chart div{display: inline-block; width: 1.5em; text-align:center;}
