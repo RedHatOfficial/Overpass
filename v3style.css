@@ -390,7 +390,7 @@ body > input:checked + label {
 footer svg path{fill:currentcolor}
 footer a:hover svg path{fill:white}
 footer{background-color:#23292c; color: #aaa; padding-top:5rem;padding-bottom:3rem; text-align:center;}
-footer h4{font-weight: 400; text-transform: uppercase; letter-spacing:.1em;}
+footer h4{font-weight: 400; margin-bottom:2em;text-transform: uppercase; letter-spacing:.1em;}
 
 @media (max-width: 50em) {.award{width: 45% !important} .award svg{ height:1em !important;}}
 @media (max-width: 40em) {
@@ -422,6 +422,7 @@ footer h4{font-weight: 400; text-transform: uppercase; letter-spacing:.1em;}
   font-style: normal;
   appearance: none;
   border:none;
+  text-align:center;
   padding: 0 .15em}
 
 
@@ -533,10 +534,10 @@ article > label{
 
 article, section, .glyph-chart, .glyph-chart div{user-select:none}
 
-.glyph-chart div{display: inline-block; width: 1.5em; text-align:center;}
-.glyph-chart p{font-size:.24em; color:#aaa; font-weight: 200; display:none;}
-.glyph-chart div{cursor: default; font-size: 1.75em; transition: transform .15s cubic-bezier(.2,.4,.2,1.2) .12s;}
-.glyph-chart div:hover{transform:scale(4); background-color:white; color:black;box-shadow: 0 .05em .2em rgba(0,0,0,0.4)}
+.glyph-chart div{display: inline-block;  width: 1.5em; text-align:center;}
+
+.glyph-chart div{cursor: default; font-size: 3em; transition: transform .15s cubic-bezier(.2,.4,.2,1.2) .12s;}
+.glyph-chart div:hover{transform:scale(4); z-index:5; background-color:white; color:black;box-shadow: 0 .05em .2em rgba(0,0,0,0.4)}
 
 
 
