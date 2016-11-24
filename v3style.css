@@ -484,9 +484,16 @@ footer h4{font-weight: 400; margin-bottom:2em;text-transform: uppercase; letter-
 }
 
 
+
+
+a[href="#"]{position:fixed; bottom:1em; right:1em; display:block; background-color:rgba(0,0,0,0.5); width: 2em;  color: white;
+width: 1em; height:1em; border-radius: 50%;  text-transform: uppercase;  font-weight: 900;z-index:1; font-size: 2rem; line-height: 1em;}
+
+
 .award:after {
   transform: scaleX(-1);
 }
+
 
 .award {
   filter: grayscale(1) brightness(.8);
