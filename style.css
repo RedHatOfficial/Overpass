@@ -561,6 +561,7 @@ article, section, .glyph-chart, .glyph-chart div{user-select:none}
   position: relative;
   font-family: overpass-mono, sans-serif;
   text-transform: uppercase;
+  font-style:normal;
   z-index: 2;
   text-shadow: 0 .075em #222;
   box-shadow: inset 0 0 0 0.025em rgba(0, 0, 0, 0.4), 0 0 0 0.012em rgba(150, 150, 150, 0.25);
