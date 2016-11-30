@@ -1,12 +1,19 @@
 .nojs .sample-line { display: none }
 *{box-sizing: border-box ; max-width: 100vw;}
 a{text-decoration:none}
-body{margin:0; padding:0;
+body{
+  margin:0;
+  padding:0;
   overflow-x: hidden;
   overflow-y:scroll;;
-  height: 100vh; top:0; right:0; bottom:0; left:0;
+  height: 100vh;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
   position:absolute;
-  font-family: Overpass,sans-serif ;max-width: 100vw; }
+  font-family: Overpass,sans-serif;
+  max-width: 100vw; }
 
 body:before{
   content:"";
@@ -33,9 +40,15 @@ body:before{
 
 }
 article, section{max-width: 100% }
-.empty:after{z-index:-1;  content:"";
-position:fixed; height: 6em;background-color:#396;
-top:0; left:0;right:0;}
+.empty:after{
+  z-index:-1;
+  content:"";
+  position:fixed;
+  height: 6em;
+  background-color:#396;
+  top:0;
+  left:0;
+  right:0;}
 
 #about:checked ~ .empty:after{height:3em}
 body:before{
@@ -50,6 +63,7 @@ body:before{
 .about-button{left:0; }
 
 article input:checked + label{color:#000; box-shadow: 0 .1em }
+
 .about-button,
 .proportional-button,
 .monospace-button{
@@ -68,7 +82,7 @@ article input:checked + label{color:#000; box-shadow: 0 .1em }
 
   left:66.6666666%;
   font-family: overpass-mono, monospace;
-font-style:normal}
+  font-style:normal}
 
 #type-sample{
   font-family: overpass, sans-serif;
@@ -103,8 +117,11 @@ h1{
   font-weight: 900;
   text-align:center;
   margin:0;
-  padding:  0}
-.sample{text-align:center;}
+  padding:0;}
+
+.sample{
+  text-align:center;
+  padding-bottom: 4rem}
 
    ::-webkit-input-placeholder {
       color: #aaa;
@@ -134,7 +151,6 @@ h1{
   letter-spacing: -.05em;
   width: 10%;
   position:fixed;
-
   top: 3rem;
   height: 3rem;}
 
@@ -143,7 +159,8 @@ h1{
   width: 20% !important}
 
 #variant-style-mono:checked ~ #type-sample{
-  background-color:#22262c; color: white;
+  background-color:#22262c;
+  color: white;
   font-family: overpass-mono, monospace;
   font-style:normal !important; }
 
@@ -171,8 +188,13 @@ h1{
 {display:none}
 
 
-.about { text-align:center;margin: 0 auto; }
-article{display:none;padding-top: 12em;
+.about {
+  text-align:center;
+  margin: 0 auto;
+}
+article{
+  display:none;
+  padding-top: 12em;
 }
 /* hiding  monospace samples on standard select */
 
@@ -198,7 +220,10 @@ article{display:none;padding-top: 12em;
 
 #about:checked ~ .empty{top:3em; }
 
-#about:checked ~ article.about{display:block;padding-top: 5rem}
+#about:checked ~ article.about{
+  display:block;
+  padding-top: 5rem;
+}
 .monospace-sample{
   font-family: overpass-mono, monospace;
   font-style: normal !important;
@@ -209,7 +234,8 @@ article .big-sample{
   font-size: 9vw;
   line-height:1.3em;
   width: 100%;
-  overflow:hidden; max-width: 100%
+  overflow:hidden;
+  max-width: 100%
   text-align:center;
   margin:0;}
 
@@ -220,7 +246,9 @@ h2{ width: 100%;
   display:inline-block;
   line-height:1em;}
 
-h2 span{font-style:normal}
+h2 span{
+  font-style:normal;
+}
 h2 span, h2 i{
   min-width: 40%;
   text-align:center;
@@ -267,7 +295,8 @@ body > input + label:before{
   display:block;
   top: 50%;
   z-index:-1;
-  margin: 0 auto; left: 50%;
+  margin: 0 auto;
+  left: 50%;
   margin-top: -3em;
   margin-left: -3em;
   border-radius: 50%;
@@ -306,13 +335,12 @@ input:checked + [for="variant-900"]:before{
 a{color:#37c}
 
 body > input + label {
-  background-color:#396;
-  color: white;
+  background-color:#4a7;
+  color: #003010;
   font-weight: 600;}
 body > input:checked + label {
   color:#fff;
   background-color:#1c7c4c;
-  box-shadow: inset 0 -.15em #006030 ;
 
 }
 
@@ -390,16 +418,40 @@ body > input:checked + label {
   text-align:center;
    margin: 0 auto;
   padding-bottom: 4em; }
-.sponsor svg{width: 304px;display:block; margin: 0 auto;}
 
-footer svg path{fill:currentcolor}
+.sponsor svg{
+  width: 304px;
+  display:block;
+  margin: 0 auto;
+}
+
+footer svg path{fill:currentcolor;}
 footer a:hover svg path{fill:white}
-footer{background-color:#23292c;color: #aaa; padding-top:5rem;padding-bottom:3rem; text-align:center;}
-footer h4{font-weight: 400; margin-bottom:2em;text-transform: uppercase; letter-spacing:.1em;}
+footer{
+  background-color:#23292c;
+  color: #aaa;
+  padding-top:5rem;
+  padding-bottom:3rem;
+  text-align:center;
+}
 
+footer h4{
+  font-weight: 400;
+  margin-bottom:2em;
+  text-transform: uppercase;
+  letter-spacing:.1em;}
 
-.sample-4{background-color:#12161c; padding: 2rem 0}
-.sample-3{background-image: url(overpass.jpg); background-position: 50% 50% ; background-repeat: no-repeat; background-size: cover;}
+.sample-4{
+  background-color:#12161c;
+  padding: 2rem 0}
+
+.sample-3{
+  background-image: url(overpass.jpg);
+  background-position: 50% 50% ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .cdn label{
   display:inline-block;
   width : 100% ;
@@ -415,7 +467,8 @@ footer h4{font-weight: 400; margin-bottom:2em;text-transform: uppercase; letter-
   color: currentcolor;
   cursor: text;
   left: 10%;
-  width: 80%; padding: .5em;
+  width: 80%;
+  padding: .5em;
   background-color: transparent;
   font-size: 1em;
   line-height: 2em;
@@ -429,8 +482,6 @@ footer h4{font-weight: 400; margin-bottom:2em;text-transform: uppercase; letter-
 
 
 .waterfall p{white-space: nowrap; margin: .2rem;; line-height:1.23em; overflow:hidden; }
-
-
 .waterfall p:nth-child(2){font-size: 10rem}
 .waterfall p:nth-child(3){font-size: 6rem}
 .waterfall p:nth-child(4){font-size: 4rem}
@@ -467,8 +518,18 @@ footer h4{font-weight: 400; margin-bottom:2em;text-transform: uppercase; letter-
 }
 
 
-.award{position:relative;width: 30%; font-size: 2em; opacity:.5; }
-.award svg{width: 50%; height: 2rem;color: white;}
+.award{
+  position:relative;
+  width: 30%;
+  font-size: 2em;
+  opacity:.5;
+}
+
+.award svg{
+  width: 50%;
+  height: 2rem;
+  color: white;
+}
 
 .award:after,
 .award:before {
@@ -486,8 +547,23 @@ footer h4{font-weight: 400; margin-bottom:2em;text-transform: uppercase; letter-
 
 
 
-a[href="#"]{position:fixed; bottom:1em; right:1em; display:block; background-color:rgba(0,0,0,0.5); width: 2em;  color: white;
-width: 1em; height:1em; border-radius: 50%;  text-transform: uppercase;  font-weight: 900;z-index:1; font-size: 2rem; line-height: 1em;}
+a[href="#"]{
+  position:fixed;
+  bottom:1em;
+  right:1em;
+  display:block;
+  background-color:rgba(0,0,0,0.5);
+  width: 2em;
+  color: white;
+  width: 2em;
+  height:2em;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-weight: 900;
+  z-index:1;
+  font-size: 2rem;
+  line-height: 2em;
+}
 
 
 .award:after {
@@ -525,29 +601,60 @@ a, label{-webkit-tap-highlight-color: rgba(255, 255, 255, 0);}
 ::selection { color:white; background: #4a7 ;  }
 
 
-.button{display:inline-block; width: 20em; max-width: 100%; padding: 1em 2em; font-weight: 500; border-radius: .3em; background-color: #4a7; color:#fff;}
+.button{
+  display:inline-block;
+  width: 20em;
+  max-width: 100%;
+  padding: 1em 2em;
+  font-weight: 500;
+  border-radius: .3em;
+  background-color: #4a7;
+  color:#fff;}
+
 .repo{background-color:#567}
 article section{display:none; padding-top: 3rem}
 #carousel-3:checked ~ .variants{display:block}
 
 #carousel-1:checked ~ .waterfall{display:block}
 
+#mono-carousel-2:checked ~ .syntax,
 #mono-carousel-1:checked ~ .glyphs,
 #carousel-2:checked ~ .glyphs{display:block}
+
+section{min-height:100vh}
+
 
 
 #mono-carousel-3:checked ~ .display{display:block; padding-bottom:3rem;}
 article{text-align:center;}
 article > label{
   margin-top: 1em;
-  display:inline-block; width: 30%; position:relative; overflow: hidden;}
+  display:inline-block;
+  width: 30%;
+  position:relative;
+  overflow: hidden;}
 
 article, section, .glyph-chart, .glyph-chart div{user-select:none}
 
-.glyph-chart div{display: inline-block; height:1.5em; width: 1.5em; text-align:center;box-shadow:0 0 0 0.01em rgba(0,0,0,0.1);}
+.glyph-chart div{
+  display: inline-block;
+  height:1.5em;
+  width: 1.5em;
+  text-align:center;
+  box-shadow:0 0 0 0.01em rgba(0,0,0,0.1);}
 
-.glyph-chart div{cursor: default; font-size: 3em; transition: transform .15s cubic-bezier(.2,.4,.2,1.2) .12s;}
-.glyph-chart div:hover{transform:scale(4); z-index:5; background-color:white; color:black;box-shadow: 0 .05em .2em rgba(0,0,0,0.4)}
+.glyph-chart div{
+  cursor: default;
+  font-size: 3em;
+  transition: transform .15s cubic-bezier(.2,.4,.2,1.2) .12s;}
+
+.glyph-chart div:hover{
+  transform:scale(4);
+  z-index:5;
+  background-color:white;
+  color:black;
+  box-shadow: 0 .05em .2em rgba(0,0,0,0.4);
+}
 
 
 .board {
@@ -668,7 +775,6 @@ article, section, .glyph-chart, .glyph-chart div{user-select:none}
   margin: .1em .025em;
   line-height: 1.5em;
   height: 1.5em;
-
   background: #c00 linear-gradient(to bottom, rgba(200, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.15) 100%);
   text-align: center;
   width: .8em;
@@ -893,7 +999,7 @@ article, section, .glyph-chart, .glyph-chart div{user-select:none}
   animation-delay: 1.33333s;
 }
 
-.sample-2 .letter span:nth-child(6n) {
+3.sample-2 .letter span:nth-child(6n) {
   animation-delay: 1.4s;
 }
 
@@ -1090,10 +1196,13 @@ article, section, .glyph-chart, .glyph-chart div{user-select:none}
   .onion-skin{display:none !important}
   .award{width: 45% !important}
   .award:after, .award:before{display:none !important}
-
   .award svg{ height:1.3em !important; width: 80% !important;}
 }
 @media (max-width: 40em) {
   .cdn{display:none !important;}
   label span{display:none}
 }
+
+
+
+textarea{font-family: overpass-mono, monospace; fontsize: 4em;}
