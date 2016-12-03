@@ -1,5 +1,5 @@
 {
-.appVersion = "895";
+.appVersion = "939";
 classes = (
 {
 automatic = 1;
@@ -607,6 +607,10 @@ ascender = 750;
 capHeight = 700;
 customParameters = (
 {
+name = "Master Name";
+value = "Thin Italic";
+},
+{
 name = underlineThickness;
 value = 33;
 },
@@ -615,24 +619,28 @@ name = underlinePosition;
 value = -122;
 },
 {
-name = typoLineGap;
-value = 266;
+name = typoAscender;
+value = 750;
 },
 {
 name = typoDescender;
 value = -250;
 },
 {
-name = typoAscender;
-value = 750;
+name = typoLineGap;
+value = 266;
+},
+{
+name = hheaAscender;
+value = 982;
+},
+{
+name = hheaDescender;
+value = -284;
 },
 {
 name = hheaLineGap;
 value = 266;
-},
-{
-name = "Master Name";
-value = "Thin Italic";
 },
 {
 name = winAscent;
@@ -640,15 +648,7 @@ value = 1062;
 },
 {
 name = winDescent;
-value = -378;
-},
-{
-name = hheaDescender;
-value = -378;
-},
-{
-name = hheaAscender;
-value = 1062;
+value = 378;
 }
 );
 descender = -250;
@@ -687,6 +687,10 @@ ascender = 750;
 capHeight = 700;
 customParameters = (
 {
+name = "Master Name";
+value = "Light Italic";
+},
+{
 name = underlineThickness;
 value = 77;
 },
@@ -695,16 +699,24 @@ name = underlinePosition;
 value = -100;
 },
 {
-name = typoLineGap;
-value = 266;
+name = typoAscender;
+value = 750;
 },
 {
 name = typoDescender;
 value = -250;
 },
 {
-name = typoAscender;
-value = 750;
+name = typoLineGap;
+value = 266;
+},
+{
+name = hheaAscender;
+value = 982;
+},
+{
+name = hheaDescender;
+value = -284;
 },
 {
 name = hheaLineGap;
@@ -716,15 +728,7 @@ value = 1062;
 },
 {
 name = winDescent;
-value = -378;
-},
-{
-name = hheaDescender;
-value = -378;
-},
-{
-name = hheaAscender;
-value = 1062;
+value = 378;
 }
 );
 descender = -250;
@@ -771,16 +775,28 @@ name = underlinePosition;
 value = -87;
 },
 {
-name = typoLineGap;
-value = 266;
+name = "Master Name";
+value = "Regular Italic";
+},
+{
+name = typoAscender;
+value = 750;
 },
 {
 name = typoDescender;
 value = -250;
 },
 {
-name = typoAscender;
-value = 750;
+name = typoLineGap;
+value = 266;
+},
+{
+name = hheaAscender;
+value = 982;
+},
+{
+name = hheaDescender;
+value = -284;
 },
 {
 name = hheaLineGap;
@@ -792,15 +808,7 @@ value = 1062;
 },
 {
 name = winDescent;
-value = -378;
-},
-{
-name = hheaDescender;
-value = -378;
-},
-{
-name = hheaAscender;
-value = 1062;
+value = 378;
 }
 );
 descender = -250;
@@ -848,36 +856,8 @@ name = underlinePosition;
 value = -77;
 },
 {
-name = typoLineGap;
-value = 266;
-},
-{
-name = typoDescender;
-value = -250;
-},
-{
-name = typoAscender;
-value = 750;
-},
-{
-name = hheaLineGap;
-value = 266;
-},
-{
-name = winAscent;
-value = 1062;
-},
-{
-name = winDescent;
-value = -378;
-},
-{
-name = hheaDescender;
-value = -378;
-},
-{
-name = hheaAscender;
-value = 1062;
+name = "Master Name";
+value = "Bold Italic";
 }
 );
 descender = -250;
@@ -918,6 +898,10 @@ ascender = 750;
 capHeight = 700;
 customParameters = (
 {
+name = "Master Name";
+value = "Heavy Italic";
+},
+{
 name = underlineThickness;
 value = 105;
 },
@@ -926,24 +910,28 @@ name = underlinePosition;
 value = -72;
 },
 {
-name = typoLineGap;
-value = 266;
+name = typoAscender;
+value = 750;
 },
 {
 name = typoDescender;
 value = -250;
 },
 {
-name = typoAscender;
-value = 750;
+name = typoLineGap;
+value = 266;
+},
+{
+name = hheaAscender;
+value = 982;
+},
+{
+name = hheaDescender;
+value = -284;
 },
 {
 name = hheaLineGap;
 value = 266;
-},
-{
-name = "Master Name";
-value = "Heavy Italic";
 },
 {
 name = winAscent;
@@ -951,15 +939,7 @@ value = 1062;
 },
 {
 name = winDescent;
-value = -378;
-},
-{
-name = hheaDescender;
-value = -378;
-},
-{
-name = hheaAscender;
-value = 1062;
+value = 378;
 }
 );
 descender = -250;
@@ -8521,9 +8501,8 @@ width = 363;
 unicode = 00B2;
 },
 {
-color = 4;
 glyphname = brokenbar;
-lastChange = "2016-11-21 17:54:21 +0000";
+lastChange = "2016-12-02 21:53:30 +0000";
 layers = (
 {
 background = {
@@ -30806,9 +30785,8 @@ rightKerningGroup = O;
 unicode = 0051;
 },
 {
-color = 4;
 glyphname = R;
-lastChange = "2016-11-19 06:29:09 +0000";
+lastChange = "2016-12-02 21:53:30 +0000";
 layers = (
 {
 anchors = (
@@ -48921,9 +48899,8 @@ width = 373;
 unicode = 007B;
 },
 {
-color = 4;
 glyphname = bar;
-lastChange = "2016-11-21 05:07:05 +0000";
+lastChange = "2016-12-02 21:53:30 +0000";
 layers = (
 {
 background = {
@@ -54783,9 +54760,8 @@ rightKerningGroup = agrave;
 unicode = 00E3;
 },
 {
-color = 4;
 glyphname = aring;
-lastChange = "2016-11-20 21:57:00 +0000";
+lastChange = "2016-12-02 21:53:30 +0000";
 layers = (
 {
 background = {
@@ -62153,9 +62129,8 @@ width = 413;
 unicode = 2022;
 },
 {
-color = 4;
 glyphname = paragraph;
-lastChange = "2016-11-21 05:08:56 +0000";
+lastChange = "2016-12-02 21:53:30 +0000";
 layers = (
 {
 background = {
@@ -63235,9 +63210,8 @@ rightKerningGroup = s;
 unicode = 00DF;
 },
 {
-color = 4;
 glyphname = registered;
-lastChange = "2016-11-19 06:04:38 +0000";
+lastChange = "2016-12-02 21:53:30 +0000";
 layers = (
 {
 background = {
@@ -64060,9 +64034,8 @@ rightKerningGroup = O;
 unicode = 00AE;
 },
 {
-color = 4;
 glyphname = copyright;
-lastChange = "2016-11-19 06:11:38 +0000";
+lastChange = "2016-12-02 21:53:30 +0000";
 layers = (
 {
 background = {
@@ -64857,9 +64830,8 @@ rightKerningGroup = O;
 unicode = 00A9;
 },
 {
-color = 4;
 glyphname = trademark;
-lastChange = "2016-11-19 06:08:57 +0000";
+lastChange = "2016-12-02 21:53:30 +0000";
 layers = (
 {
 background = {
@@ -93698,9 +93670,8 @@ width = 497;
 unicode = 02D9;
 },
 {
-color = 4;
 glyphname = ring;
-lastChange = "2016-11-20 21:57:04 +0000";
+lastChange = "2016-12-02 21:53:30 +0000";
 layers = (
 {
 anchors = (
@@ -125880,9 +125851,8 @@ rightKerningGroup = ugrave;
 unicode = 016D;
 },
 {
-color = 4;
 glyphname = Uring;
-lastChange = "2016-11-20 21:57:00 +0000";
+lastChange = "2016-12-02 21:53:35 +0000";
 layers = (
 {
 background = {
@@ -126089,9 +126059,8 @@ rightKerningGroup = U;
 unicode = 016E;
 },
 {
-color = 4;
 glyphname = uring;
-lastChange = "2016-11-20 21:57:00 +0000";
+lastChange = "2016-12-02 21:53:35 +0000";
 layers = (
 {
 background = {
@@ -171193,7 +171162,7 @@ value = "Thin Italic";
 },
 {
 name = fileName;
-value = "Overpass Thin Italic";
+value = "overpass-thin-italic";
 },
 {
 name = preferredFamilyName;
@@ -171204,20 +171173,40 @@ name = weightClass;
 value = "100";
 },
 {
+name = typoAscender;
+value = 750;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 266;
+},
+{
+name = hheaAscender;
+value = 982;
+},
+{
+name = hheaDescender;
+value = -284;
+},
+{
+name = hheaLineGap;
+value = 266;
+},
+{
 name = winAscent;
 value = 1062;
 },
 {
 name = winDescent;
-value = -378;
+value = 378;
 },
 {
-name = hheaDescender;
-value = -378;
-},
-{
-name = hheaAscender;
-value = 1062;
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 interpolationWeight = 200;
@@ -171245,7 +171234,7 @@ value = "ExtraLight Italic";
 },
 {
 name = fileName;
-value = "Overpass ExtraLight Italic";
+value = "overpass-extralight-italic";
 },
 {
 name = preferredFamilyName;
@@ -171256,20 +171245,40 @@ name = weightClass;
 value = "200";
 },
 {
+name = typoAscender;
+value = 750;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 266;
+},
+{
+name = hheaAscender;
+value = 982;
+},
+{
+name = hheaDescender;
+value = -284;
+},
+{
+name = hheaLineGap;
+value = 266;
+},
+{
 name = winAscent;
 value = 1062;
 },
 {
 name = winDescent;
-value = -378;
+value = 378;
 },
 {
-name = hheaDescender;
-value = -378;
-},
-{
-name = hheaAscender;
-value = 1062;
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 interpolationWeight = 250;
@@ -171298,7 +171307,7 @@ value = "Light Italic";
 },
 {
 name = fileName;
-value = "Overpass Light Italic";
+value = "overpass-light-italic";
 },
 {
 name = preferredFamilyName;
@@ -171309,20 +171318,40 @@ name = weightClass;
 value = "300";
 },
 {
+name = typoAscender;
+value = 750;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 266;
+},
+{
+name = hheaAscender;
+value = 982;
+},
+{
+name = hheaDescender;
+value = -284;
+},
+{
+name = hheaLineGap;
+value = 266;
+},
+{
 name = winAscent;
 value = 1062;
 },
 {
 name = winDescent;
-value = -378;
+value = 378;
 },
 {
-name = hheaDescender;
-value = -378;
-},
-{
-name = hheaAscender;
-value = 1062;
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 interpolationWeight = 300;
@@ -171350,7 +171379,7 @@ value = Italic;
 },
 {
 name = fileName;
-value = "Overpass Italic";
+value = "overpass-italic";
 },
 {
 name = preferredFamilyName;
@@ -171361,20 +171390,40 @@ name = weightClass;
 value = "400";
 },
 {
+name = typoAscender;
+value = 750;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 266;
+},
+{
+name = hheaAscender;
+value = 982;
+},
+{
+name = hheaDescender;
+value = -284;
+},
+{
+name = hheaLineGap;
+value = 266;
+},
+{
 name = winAscent;
 value = 1062;
 },
 {
 name = winDescent;
-value = -378;
+value = 378;
 },
 {
-name = hheaDescender;
-value = -378;
-},
-{
-name = hheaAscender;
-value = 1062;
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 interpolationWeight = 400;
@@ -171402,7 +171451,7 @@ value = "SemiBold Italic";
 },
 {
 name = fileName;
-value = "Overpass SemiBold Italic";
+value = "overpass-semibold-italic";
 },
 {
 name = preferredFamilyName;
@@ -171413,20 +171462,40 @@ name = weightClass;
 value = "600";
 },
 {
+name = typoAscender;
+value = 750;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 266;
+},
+{
+name = hheaAscender;
+value = 982;
+},
+{
+name = hheaDescender;
+value = -284;
+},
+{
+name = hheaLineGap;
+value = 266;
+},
+{
 name = winAscent;
 value = 1062;
 },
 {
 name = winDescent;
-value = -378;
+value = 378;
 },
 {
-name = hheaDescender;
-value = -378;
-},
-{
-name = hheaAscender;
-value = 1062;
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 interpolationWeight = 500;
@@ -171454,7 +171523,7 @@ value = "Bold Italic";
 },
 {
 name = fileName;
-value = "Overpass Bold Italic";
+value = "overpass-bold-italic";
 },
 {
 name = preferredFamilyName;
@@ -171465,20 +171534,40 @@ name = weightClass;
 value = "700";
 },
 {
+name = typoAscender;
+value = 750;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 266;
+},
+{
+name = hheaAscender;
+value = 982;
+},
+{
+name = hheaDescender;
+value = -284;
+},
+{
+name = hheaLineGap;
+value = 266;
+},
+{
 name = winAscent;
 value = 1062;
 },
 {
 name = winDescent;
-value = -378;
+value = 378;
 },
 {
-name = hheaDescender;
-value = -378;
-},
-{
-name = hheaAscender;
-value = 1062;
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 interpolationWeight = 600;
@@ -171508,7 +171597,7 @@ value = "ExtraBold Italic";
 },
 {
 name = fileName;
-value = "Overpass ExtraBold Italic";
+value = "overpass-extrabold-italic";
 },
 {
 name = preferredFamilyName;
@@ -171519,20 +171608,40 @@ name = weightClass;
 value = "800";
 },
 {
+name = typoAscender;
+value = 750;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 266;
+},
+{
+name = hheaAscender;
+value = 982;
+},
+{
+name = hheaDescender;
+value = -284;
+},
+{
+name = hheaLineGap;
+value = 266;
+},
+{
 name = winAscent;
 value = 1062;
 },
 {
 name = winDescent;
-value = -378;
+value = 378;
 },
 {
-name = hheaDescender;
-value = -378;
-},
-{
-name = hheaAscender;
-value = 1062;
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 interpolationWeight = 700;
@@ -171560,7 +171669,7 @@ value = "Heavy Italic";
 },
 {
 name = fileName;
-value = "Overpass Heavy Italic";
+value = "overpass-heavy-italic";
 },
 {
 name = preferredFamilyName;
@@ -171571,20 +171680,40 @@ name = weightClass;
 value = "900";
 },
 {
+name = typoAscender;
+value = 750;
+},
+{
+name = typoDescender;
+value = -250;
+},
+{
+name = typoLineGap;
+value = 266;
+},
+{
+name = hheaAscender;
+value = 982;
+},
+{
+name = hheaDescender;
+value = -284;
+},
+{
+name = hheaLineGap;
+value = 266;
+},
+{
 name = winAscent;
 value = 1062;
 },
 {
 name = winDescent;
-value = -378;
+value = 378;
 },
 {
-name = hheaDescender;
-value = -378;
-},
-{
-name = hheaAscender;
-value = 1062;
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 interpolationWeight = 800;
