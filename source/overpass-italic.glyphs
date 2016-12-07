@@ -1,5 +1,5 @@
 {
-.appVersion = "939";
+.appVersion = "945";
 classes = (
 {
 automatic = 1;
@@ -177372,5 +177372,5 @@ manufacturer = "Delve Fonts";
 manufacturerURL = "http://www.redhat.com";
 unitsPerEm = 1000;
 versionMajor = 3;
-versionMinor = 0;
+versionMinor = 2;
 }

@@ -1,5 +1,5 @@
 {
-.appVersion = "939";
+.appVersion = "945";
 classes = (
 {
 automatic = 1;
@@ -139502,5 +139502,5 @@ GSDimensionPlugin.Dimensions = {
 };
 };
 versionMajor = 3;
-versionMinor = 0;
+versionMinor = 2;
 }
