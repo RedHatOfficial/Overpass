@@ -266,7 +266,7 @@ h2:before {
   text-transform: uppercase;
 }
 
-body > label{  z-index:4; }
+body > label{  z-index:4; line-height:2em; }
 label {
   user-select: none;
   transition: all .3s ease;}
@@ -335,8 +335,8 @@ input:checked + [for="variant-900"]:before{
 a{color:#37c}
 
 body > input + label {
-  background-color:#4a7;
-  color: #003010;
+  background-color:#396;
+  color: #eee;
   font-weight: 600;}
 body > input:checked + label {
   color:#fff;
