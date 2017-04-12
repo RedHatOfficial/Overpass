@@ -1,6 +1,6 @@
 {
   "name": "overpass",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "homepage": "http://overpassfont.org/",
   "authors": [
     "Delve Fonts",
@@ -12,5 +12,5 @@
     "font",
     "overpath"
   ],
-  "license": "SIL"
+  "license": "(LGPL-2.1 AND OFL-1.1)"
 }
