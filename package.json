@@ -1,0 +1,22 @@
+{
+  "name": "overpass",
+  "version": "3.0.2",
+  "description": "Overpass — an open source web font family",
+  "author": "Red Hat",
+  "contributors": [
+    "Delve Fonts"
+  ],
+  "keywords": [
+    "font",
+    "overpass"
+  ],
+  "license": "(LGPL-2.1 AND OFL-1.1)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedHatBrand/Overpass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RedHatBrand/Overpass/issues"
+  },
+  "homepage": "http://overpassfont.org/"
+}
