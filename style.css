@@ -522,9 +522,14 @@ footer h4{
   position:relative;
   width: 30%;
   font-size: 2em;
-  opacity:.5;
+  opacity:1;
 }
+.award {margin-bottom:4em;}
+.award .resource{font-size: .5em; display:block; margin:0;  position:absolute; bottom:-3em; color:#456 ; z-index:9; cursor:pointer;  width: 80%; left:10%; height:3em; line-height:3em;transparent; color:#eee; box-shadow: inset 0 0 0 .1em #456;}
 
+.award a:hover ~ .resource{box-shadow: inset 0 0 0 .1em #fff;}
+
+.award .resource:hover{background-color:#fff; color:black; box-shadow: none;}
 .award svg{
   width: 50%;
   height: 2rem;
