@@ -13,9 +13,6 @@ $supported-weights: (
 
 @mixin _overpass-styles {
     font-family: 'Overpass';
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -35,6 +32,25 @@ $supported-weights: (
                  url("#{$path_to_dist}overpass-#{$weight}#{if($style != normal, #{-$style}, "")}.ttf?") format("truetype");
             font-weight: map-get($supported-weights, $weight);
             font-style: $style;
+          }
+      } 
+    }
+}
+
+@mixin print-overpass-mono-font-face(
+    $weights: (light regular semibold bold),
+    $path_to_dist: './'
+) {
+    @each $weight in $weights {
+      @each $style in $styles {
+          @font-face {
+            font-family: 'Overpass';
+            src: url("#{$path_to_dist}overpass-mono-#{$weight}.eot?");
+            src: url("#{$path_to_dist}overpass-mono-#{$weight}.eot?#iefix") format("embedded-opentype"),
+                 url("#{$path_to_dist}overpass-mono-#{$weight}.woff?") format("woff"),
+                 url("#{$path_to_dist}overpass-mono-#{$weight}.ttf?") format("truetype");
+            font-weight: map-get($supported-weights, $weight);
+            font-style: normal;
           }
       } 
     }
