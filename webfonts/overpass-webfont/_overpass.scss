@@ -1,0 +1,41 @@
+/* Overpass  */
+
+$supported-weights: (
+    thin: 200,
+    extralight: 300,
+    light: 400,
+    regular: 500,
+    semibold: 600,
+    bold: 700,
+    extrabold: 800,
+    heavy: 900
+);
+
+@mixin _overpass-styles {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin print-overpass-font-face(
+    $weights: (thin extralight light regular semibold bold extrabold heavy),
+    $styles: (normal italic),
+    $path_to_dist: './'
+) {
+    @each $weight in $weights {
+      @each $style in $styles {
+          @font-face {
+            font-family: 'Overpass';
+            src: url("#{$path_to_dist}overpass-#{$weight}#{if($style != normal, #{-$style}, "")}.eot?");
+            src: url("#{$path_to_dist}overpass-#{$weight}#{if($style != normal, #{-$style}, "")}.eot?#iefix") format("embedded-opentype"),
+                 url("#{$path_to_dist}overpass-#{$weight}#{if($style != normal, #{-$style}, "")}.woff?") format("woff"),
+                 url("#{$path_to_dist}overpass-#{$weight}#{if($style != normal, #{-$style}, "")}.ttf?") format("truetype");
+            font-weight: map-get($supported-weights, $weight);
+            font-style: $style;
+          }
+      } 
+    }
+}
