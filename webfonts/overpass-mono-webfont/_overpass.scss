@@ -1,0 +1,33 @@
+/* Overpass Mono  */
+
+$supported-weights: (
+    light: 300,
+    regular: 400,
+    semibold: 500,
+    bold: 600
+);
+
+@mixin _overpass-monostyles {
+    font-family: 'overpass-mono';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin print-overpass-mono-font-face(
+    $weights: (light regular semibold bold),
+    $path_to_dist: './'
+) {
+    @each $weight in $weights {
+      @each $style in $styles {
+          @font-face {
+            font-family: 'overpass-mono';
+            src: url("#{$path_to_dist}overpass-mono-#{$weight}.eot?");
+            src: url("#{$path_to_dist}overpass-mono-#{$weight}.eot?#iefix") format("embedded-opentype"),
+                 url("#{$path_to_dist}overpass-mono-#{$weight}.woff?") format("woff"),
+                 url("#{$path_to_dist}overpass-mono-#{$weight}.ttf?") format("truetype");
+            font-weight: map-get($supported-weights, $weight);
+            font-style: normal;
+          }
+      } 
+    }
+}
