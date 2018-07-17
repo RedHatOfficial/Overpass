@@ -1,0 +1,51 @@
+/* Overpass helper mixins */
+
+//-- This is a map of the current font weights, keyed on their file names
+$supported-weights: (
+    thin: 200,
+    extralight: 300,
+    light: 400,
+    regular: 500,
+    semibold: 600,
+    bold: 700,
+    extrabold: 800,
+    heavy: 900
+);
+
+//-- This is a list of the currently supported font styles
+$supported-styles: (normal italic);
+
+//-- This simple mixin adds the overpass basic styles to a typography element
+@mixin _overpass-styles {
+    font-family: 'overpass';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+//-- This mixins will dynamically print the font-face declarations based on your levels of support
+// * Weight and style lists can be limited to those your wish to incorporate in your styles,
+//   if left with defaults, it will add support for all overpass variations
+// * The weight map can be customized if you wish to set your own values
+//   Example: To use `font-weight: bolder` instead of `font-weight: 800`, we create a custom map
+//            that maps the key extrabold to the value bolder -> `extrabold: bolder`
+// * The path to dist represents the location of the overpass font files relative to your architecture
+@mixin print-overpass-font-face(
+    $weights: map-keys($supported-weights),
+    $styles: $supported-styles,
+    $weight-map: $supported-weights,
+    $path_to_dist: './'
+) {
+    @each $weight in $weights {
+      @each $style in $styles {
+          @font-face {
+            font-family: 'overpass';
+            src: url("#{$path_to_dist}overpass-#{$weight}#{if($style != normal, #{-$style}, "")}.eot?");
+            src: url("#{$path_to_dist}overpass-#{$weight}#{if($style != normal, #{-$style}, "")}.eot?#iefix") format("embedded-opentype"),
+                 url("#{$path_to_dist}overpass-#{$weight}#{if($style != normal, #{-$style}, "")}.woff?") format("woff"),
+                 url("#{$path_to_dist}overpass-#{$weight}#{if($style != normal, #{-$style}, "")}.ttf?") format("truetype");
+            font-weight: map-get($weight-map, $weight);
+            font-style: $style;
+          }
+      } 
+    }
+}
