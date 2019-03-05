@@ -5,7 +5,7 @@
 
         
 
-For more information, please visit  [overpassfont.org](http://www.overpassfont.org  "overpassfont.org")
+For more information, please visit  [overpassfont.org](http://overpassfont.org  "overpassfont.org")
 
 
 
