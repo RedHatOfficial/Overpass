@@ -171206,7 +171206,7 @@ value = 378;
 },
 {
 name = "Use Typo Metrics";
-value = 1;
+value = 0;
 }
 );
 interpolationWeight = 200;
@@ -171278,7 +171278,7 @@ value = 378;
 },
 {
 name = "Use Typo Metrics";
-value = 1;
+value = 0;
 }
 );
 interpolationWeight = 250;
@@ -171351,7 +171351,7 @@ value = 378;
 },
 {
 name = "Use Typo Metrics";
-value = 1;
+value = 0;
 }
 );
 interpolationWeight = 300;
@@ -171423,7 +171423,7 @@ value = 378;
 },
 {
 name = "Use Typo Metrics";
-value = 1;
+value = 0;
 }
 );
 interpolationWeight = 400;
@@ -171495,7 +171495,7 @@ value = 378;
 },
 {
 name = "Use Typo Metrics";
-value = 1;
+value = 0;
 }
 );
 interpolationWeight = 500;
@@ -171567,7 +171567,7 @@ value = 378;
 },
 {
 name = "Use Typo Metrics";
-value = 1;
+value = 0;
 }
 );
 interpolationWeight = 600;
@@ -171641,7 +171641,7 @@ value = 378;
 },
 {
 name = "Use Typo Metrics";
-value = 1;
+value = 0;
 }
 );
 interpolationWeight = 700;
@@ -171713,7 +171713,7 @@ value = 378;
 },
 {
 name = "Use Typo Metrics";
-value = 1;
+value = 0;
 }
 );
 interpolationWeight = 800;
