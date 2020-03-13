@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/andyfitz/overpass.git"
+    "url": "https://github.com/RedHatOfficial/Overpass.git"
   },
   "keywords": [
     "webfont",
@@ -17,9 +17,9 @@
   "author": "Andy Fitzsimon",
   "license": "LGPL",
   "bugs": {
-    "url": "https://github.com/andyfitz/overpass/issues"
+    "url": "https://github.com/RedHatOfficial/Overpass/issues"
   },
-  "homepage": "https://github.com/andyfitz/overpass",
+  "homepage": "https://github.com/RedHatOfficial/Overpass",
   "devDependencies": {
     "gulp": "^3.9.0"
   }
