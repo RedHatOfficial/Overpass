@@ -409,15 +409,11 @@ body > input:checked + label {
 
 }
 
-
-
-
-
-
 .sponsor {
   text-align:center;
-   margin: 0 auto;
-  padding-bottom: 4em; }
+  margin: 0 auto;
+  padding-bottom: 4em;
+}
 
 .sponsor svg{
   width: 304px;
@@ -425,8 +421,6 @@ body > input:checked + label {
   margin: 0 auto;
 }
 
-footer svg path{fill:currentcolor;}
-footer a:hover svg path{fill:white}
 footer{
   background-color:#23292c;
   color: #aaa;
@@ -503,21 +497,6 @@ footer h4{
 .extrabold  { font-weight: 800  !important}
 .heavy      { font-weight: 900  !important}
 
-.sponsor{text-decoration:none}
-.sponsor p{
-
-    color: #fff;
-    max-width: 19rem;
-    display:inline-block;
-    padding: .666em 1em;
-    font-size: 1rem;
-    font-weight: 600;text-transform: uppercase;
-    letter-spacing: .079em;
-    background-color: #c00;
-    text-decoration:0;
-}
-
-
 .award{
   position:relative;
   width: 30%;
@@ -535,6 +514,7 @@ footer h4{
   height: 2rem;
   color: white;
 }
+.award svg path{fill:white;}
 
 .award:after,
 .award:before {
