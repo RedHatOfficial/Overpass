@@ -69,8 +69,8 @@ Name = Weight;
 Tag = wght;
 },
 {
-Name = Slant;
-Tag = slnt;
+Name = Italic;
+Tag = ital;
 }
 );
 },
@@ -520,7 +520,7 @@ verticalStems = (
 72,
 78
 );
-widthValue = -10;
+widthValue = 1;
 xHeight = 1022;
 },
 {
@@ -604,7 +604,7 @@ verticalStems = (
 180
 );
 weightValue = 400;
-widthValue = -10;
+widthValue = 1;
 xHeight = 1022;
 },
 {
@@ -689,7 +689,7 @@ verticalStems = (
 328
 );
 weightValue = 900;
-widthValue = -10;
+widthValue = 1;
 xHeight = 1022;
 }
 );
@@ -244164,7 +244164,7 @@ name = localizedStyleName;
 value = "Bulgarian;Свръхсветъл-Курсив";
 }
 );
-interpolationWidth = -10;
+interpolationWidth = 1;
 instanceInterpolations = {
 "42555ED7-786B-4551-A9FC-B380F510FD49" = 1;
 };
@@ -244200,7 +244200,7 @@ value = "Bulgarian;Под-Светъл-Курсив";
 }
 );
 interpolationWeight = 200;
-interpolationWidth = -10;
+interpolationWidth = 1;
 instanceInterpolations = {
 "42555ED7-786B-4551-A9FC-B380F510FD49" = 0.66667;
 "77C27521-0479-4645-83A2-7244263DD4C5" = 0.33333;
@@ -244237,7 +244237,7 @@ value = "Bulgarian;Светъл-Курсив";
 }
 );
 interpolationWeight = 300;
-interpolationWidth = -10;
+interpolationWidth = 1;
 instanceInterpolations = {
 "42555ED7-786B-4551-A9FC-B380F510FD49" = 0.33333;
 "77C27521-0479-4645-83A2-7244263DD4C5" = 0.66667;
@@ -244274,7 +244274,7 @@ value = "Bulgarian;Курсив";
 }
 );
 interpolationWeight = 400;
-interpolationWidth = -10;
+interpolationWidth = 1;
 instanceInterpolations = {
 "77C27521-0479-4645-83A2-7244263DD4C5" = 1;
 };
@@ -244309,7 +244309,7 @@ value = "Bulgarian;Междинен-получер-Курсив";
 }
 );
 interpolationWeight = 500;
-interpolationWidth = -10;
+interpolationWidth = 1;
 instanceInterpolations = {
 "77C27521-0479-4645-83A2-7244263DD4C5" = 0.8;
 "DEEEE81F-2F80-4306-8755-EEA92C96C68A" = 0.2;
@@ -244346,7 +244346,7 @@ value = "Bulgarian;Получер-Курсив";
 }
 );
 interpolationWeight = 600;
-interpolationWidth = -10;
+interpolationWidth = 1;
 instanceInterpolations = {
 "77C27521-0479-4645-83A2-7244263DD4C5" = 0.6;
 "DEEEE81F-2F80-4306-8755-EEA92C96C68A" = 0.4;
@@ -244383,7 +244383,7 @@ value = "Bulgarian;Чер-Курсив";
 }
 );
 interpolationWeight = 700;
-interpolationWidth = -10;
+interpolationWidth = 1;
 instanceInterpolations = {
 "77C27521-0479-4645-83A2-7244263DD4C5" = 0.4;
 "DEEEE81F-2F80-4306-8755-EEA92C96C68A" = 0.6;
@@ -244421,7 +244421,7 @@ value = "Bulgarian;Екстрачер-Курсив";
 }
 );
 interpolationWeight = 800;
-interpolationWidth = -10;
+interpolationWidth = 1;
 instanceInterpolations = {
 "77C27521-0479-4645-83A2-7244263DD4C5" = 0.2;
 "DEEEE81F-2F80-4306-8755-EEA92C96C68A" = 0.8;
@@ -244458,7 +244458,7 @@ value = "Bulgarian;Тежък-Курсив";
 }
 );
 interpolationWeight = 900;
-interpolationWidth = -10;
+interpolationWidth = 1;
 instanceInterpolations = {
 "DEEEE81F-2F80-4306-8755-EEA92C96C68A" = 1;
 };

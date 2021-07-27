@@ -1,11 +1,20 @@
 sources:
   - Overpass.glyphs
 axisOrder:
-  - wght
   - ital
+  - wght
 familyName: Overpass
 stat:
-  Overpass[slnt,wght].ttf:
+  Overpass[ital,wght].ttf:
+  - name: Italic
+    tag: ital
+    values:
+    - name: Roman
+      value: 0
+      flags: 2
+      linkedValue: 1
+    - name: Italic
+      value: 1
   - name: Weight
     tag: wght
     values:
@@ -29,11 +38,3 @@ stat:
       value: 800
     - name: Black
       value: 900
-  - name: Slant
-    tag: slnt
-    values:
-    - name: Upright
-      value: 0
-      flags: 2
-    - name: RightLeaning
-      value: -10
