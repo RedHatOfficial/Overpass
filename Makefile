@@ -16,7 +16,7 @@ build: build.stamp sources/config.yaml $(SOURCES)
 venv: venv/touchfile
 
 build.stamp: venv
-	. venv/bin/activate; gftools builder sources/config.yaml; gftools builder sources/config_mono.yaml  && touch build.stamp
+	. venv/bin/activate; mkdir -p sources/master_ufo; glyphs2ufo sources/Overpass.glyphs -m sources/master_ufo/; gftools builder sources/config.yaml; gftools builder sources/config_mono.yaml  && touch build.stamp
 	
 venv/touchfile: requirements.txt
 	test -d venv || python3 -m venv venv
@@ -31,4 +31,5 @@ proof: venv build.stamp
 
 clean:
 	rm -rf venv
+	rm -rf sources/master_ufo
 	find -iname "*.pyc" -delete

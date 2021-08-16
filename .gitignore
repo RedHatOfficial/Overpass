@@ -13,3 +13,5 @@ proof
 ehthumbs.db
 Thumbs.db
 sources/instance_UFO
+*.ufo
+sources/master_ufo

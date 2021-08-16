@@ -1,5 +1,5 @@
 {
-.appVersion = "1349";
+.appVersion = "1352";
 classes = (
 {
 automatic = 1;
@@ -213,10 +213,6 @@ ascender = 1500;
 capHeight = 1400;
 customParameters = (
 {
-name = typoLineGap;
-value = 0;
-},
-{
 name = winDescent;
 value = 756;
 },
@@ -225,24 +221,36 @@ name = winAscent;
 value = 2316;
 },
 {
-name = hheaAscender;
-value = 1500;
-},
-{
-name = hheaDescender;
-value = -500;
-},
-{
-name = hheaLineGap;
-value = 0;
-},
-{
 name = underlinePosition;
 value = -188;
 },
 {
 name = underlineThickness;
 value = 168;
+},
+{
+name = typoAscender;
+value = 1766;
+},
+{
+name = typoDescender;
+value = -766;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 1766;
+},
+{
+name = hheaDescender;
+value = -766;
+},
+{
+name = hheaLineGap;
+value = 0;
 }
 );
 descender = -500;
@@ -290,10 +298,6 @@ ascender = 1500;
 capHeight = 1400;
 customParameters = (
 {
-name = typoLineGap;
-value = 0;
-},
-{
 name = winDescent;
 value = 756;
 },
@@ -302,24 +306,36 @@ name = winAscent;
 value = 2316;
 },
 {
-name = hheaAscender;
-value = 1500;
-},
-{
-name = hheaDescender;
-value = -500;
-},
-{
-name = hheaLineGap;
-value = 0;
-},
-{
 name = underlinePosition;
 value = -188;
 },
 {
 name = underlineThickness;
 value = 168;
+},
+{
+name = typoAscender;
+value = 1766;
+},
+{
+name = typoDescender;
+value = -766;
+},
+{
+name = typoLineGap;
+value = 0;
+},
+{
+name = hheaAscender;
+value = 1766;
+},
+{
+name = hheaDescender;
+value = -766;
+},
+{
+name = hheaLineGap;
+value = 0;
 }
 );
 descender = -500;

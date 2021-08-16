@@ -32,3 +32,4 @@ vfDir: "../fonts/variable_mono"
 ttDir: "../fonts/ttf_mono"
 otDir: "../fonts/otf_mono"
 woffDir: "../fonts/webfonts_mono"
+autohintTTF: False
