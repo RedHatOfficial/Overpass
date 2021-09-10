@@ -1,5 +1,5 @@
 {
-.appVersion = "1352";
+.appVersion = "1342";
 classes = (
 {
 automatic = 1;
@@ -120480,6 +120480,6 @@ UUID0 = {
 };
 };
 };
-versionMajor = 3;
-versionMinor = 995;
+versionMajor = 4;
+versionMinor = 0;
 }
