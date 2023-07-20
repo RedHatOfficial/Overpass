@@ -35,7 +35,7 @@ Then:
 * `make test` will run [FontBakery](https://github.com/googlefonts/fontbakery)'s quality assurance tests.
 * `make proof` will generate HTML proof files.
 
-## Contributing Guidelines:
+## Contributing Guidelines
 We appreciate your desire to support the Overpass font family project. We value your assistance and are excited about your contributions.
 There are several ways to contribute to the Overpass font family project:
 
