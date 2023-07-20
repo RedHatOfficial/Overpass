@@ -55,6 +55,29 @@ When contributing code, please adhere to the following guidelines:
 * Write clear and concise commit messages.
 * Keep code changes focused and limited to the scope of the pull request.
 
+## Development Instructions
+
+* Clone the Overpass font repository to your local machine:
+  ----
+   `git clone https://github.com/overpassfont/overpass.git
+    cd overpass`
+
+* Install the required dependencies:
+  ----
+    ` npm install `
+
+* Building Fonts:
+  To build the font files, run the following command:
+  ----
+     `npm run build`
+  
+* To generate HTML proof files, use the command:
+  ----
+  `npm run proof`
+
+
+
+
 ## License
 
 Copyright 2016 Red Hat, Inc.,
