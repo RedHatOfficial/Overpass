@@ -47,6 +47,14 @@ There are several ways to contribute to the Overpass font family project:
 
 * Code Contributions: If you are a developer, you may help the project by adding new features, implementing bug fixes, or enhancing the codebase.
 
+## Code Style and Standards
+
+When contributing code, please adhere to the following guidelines:
+
+* Follow the existing code style and formatting used in the project.
+* Write clear and concise commit messages.
+* Keep code changes focused and limited to the scope of the pull request.
+
 ## License
 
 Copyright 2016 Red Hat, Inc.,
